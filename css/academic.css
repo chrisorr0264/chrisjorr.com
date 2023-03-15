@@ -3998,9 +3998,16 @@ input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"
     border-radius: .25rem
 }
 
+/*
 .nav-pills .nav-link.active,.nav-pills .show>.nav-link {
     color: #fff;
     background-color: #5DA2D5
+}
+*/
+
+.nav-pills .nav-link.active,.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #FFFDD0
 }
 
 .nav-fill .nav-item {
@@ -6271,8 +6278,13 @@ a.close.disabled {
     vertical-align: text-top !important
 }
 
+/*
 .bg-primary {
     background-color: #5DA2D5 !important
+}
+*/
+.bg-primary {
+    background-color: #FFFDD0 !important
 }
 
 a.bg-primary:hover,a.bg-primary:focus,button.bg-primary:hover,button.bg-primary:focus {
@@ -10367,9 +10379,24 @@ div.alert-warning>div:first-child::before {
     vertical-align: text-bottom
 }
 
+/*
 .navbar {
     height: 70px;
     background: #5DA2D5;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,0.11);
+    font-size: 16.17px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    padding: 0 1rem
+}
+*/
+
+.navbar {
+    height: 70px;
+    background: #FFFDD0;
     box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,0.11);
     font-size: 16.17px;
     position: fixed;
