@@ -6319,16 +6319,27 @@ a.bg-danger:hover,a.bg-danger:focus,button.bg-danger:hover,button.bg-danger:focu
     background-color: #bd2130 !important
 }
 
+/*
 .bg-light {
     background-color: #f8f9fa !important
+}
+*/
+
+.bg-light {
+    background-color: #FFFDD0 !important
 }
 
 a.bg-light:hover,a.bg-light:focus,button.bg-light:hover,button.bg-light:focus {
     background-color: #dae0e5 !important
 }
 
+/*
 .bg-dark {
     background-color: #343a40 !important
+}
+*/
+.bg-dark {
+    background-color: #FDDA0D !important
 }
 
 a.bg-dark:hover,a.bg-dark:focus,button.bg-dark:hover,button.bg-dark:focus {
