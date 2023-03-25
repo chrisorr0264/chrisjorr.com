@@ -12394,7 +12394,8 @@ div.chart {
 
 .avatar {
     width: 200px;
-    height: 200px
+    height: 200px;
+    object-position: 100% 10%
 }
 
 .portrait-title h2 {
