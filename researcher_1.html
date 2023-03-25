@@ -80,11 +80,9 @@
         <span class="js-widget-page d-none"></span>
         <section id=bio class="home-section wg-about-avatar dark">
             <div class="row">
-  
                 <div class="home-section-bg bg-image"
-                style=background-image:url(https://chrisjorr.com/img/5.jpg);background-size:cover;background-position:50%;filter:brightness(.6)>
+                    style=background-image:url(https://chrisjorr.com/img/5.jpg);background-size:cover;background-position:50%;filter:brightness(.6)>
                 </div> 
-
                 <div class=container>
                     <div id=profile>
                         <img class="avatar avatar-circle"
@@ -114,76 +112,51 @@
                                     <i class="ai ai-google-scholar big-icon"></i>
                                 </a>
                             </li>
-<!-- 
-                            <li>
-                                <a href=# aria-label=cv>
-                                    <i class="ai ai-cv big-icon"></i>
-                                </a>
-                            </li>
--->
                         </ul>
                     </div>
                 </div>
-                    
-
             </div>
-
         </section>
 
-        <section id=nav>
-<!-- 
-            <nav class="nav" id=navbar-main>
-                <div class=container>
+        <section id=navigation class="container">
 
-                    <button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content
-                        aria-controls=navbar aria-expanded=false aria-label="Toggle navigation">
-                        <span><i class="fas fa-bars"></i></span>
-                    </button>
+            <ul class="nav nav-pills nav-justified">
+                <li class=nav-item>
+                    <a class=nav-link href=/#about data-target=#about><span>Home</span></a>
+                </li>
+                <li class=nav-item>
+                    <a class=nav-link href=/#experience data-target=#experience><span>Experience</span></a>
+                </li>
+                <li class=nav-item>
+                    <a class=nav-link href=/#accomplishments data-target=#accomplishments><span>Awards</span></a>
+                </li>
+                <li class=nav-item>
+                    <a class=nav-link href=/#publications data-target=#publications><span>Publications</span></a>
+                </li>
+                <li class=nav-item>
+                    <a class=nav-link href=/#contact data-target=#contact><span>Contact</span></a>
+                </li>
+            </ul>
 
--->                  
-                    <div class="container-fluid">
-
-                        <ul class="nav nav-pills nav-justified">
-                            <li class=nav-item>
-                                <a class=nav-link href=/#about data-target=#about><span>Home</span></a>
-                            </li>
-                            <li class=nav-item>
-                                <a class=nav-link href=/#experience data-target=#experience><span>Experience</span></a>
-                            </li>
-                            <li class=nav-item>
-                                <a class=nav-link href=/#accomplishments data-target=#accomplishments><span>Awards</span></a>
-                            </li>
-                            <li class=nav-item>
-                                <a class=nav-link href=/#publications data-target=#publications><span>Publications</span></a>
-                            </li>
-                            <li class=nav-item>
-                                <a class=nav-link href=/#contact data-target=#contact><span>Contact</span></a>
-                            </li>
-                        </ul>
+            <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                <li class="nav-item dropdown theme-dropdown">
+                    <a href=# class="nav-link js-theme-selector" data-toggle=dropdown aria-haspopup=true>
+                        <i class="fas fa-palette" aria-hidden=true></i>
+                    </a>
+                    <div class=dropdown-menu>
+                        <a href=# class="dropdown-item js-set-theme-light">
+                            <span>Light</span>
+                        </a>
+                        <a href=# class="dropdown-item js-set-theme-dark">
+                            <span>Dark</span>
+                        </a>
+                        <a href=# class="dropdown-item js-set-theme-auto">
+                            <span>Automatic</span>
+                        </a>
                     </div>
-<!--                    
-                    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-                        <li class="nav-item dropdown theme-dropdown">
-                            <a href=# class="nav-link js-theme-selector" data-toggle=dropdown aria-haspopup=true>
-                                <i class="fas fa-palette" aria-hidden=true></i>
-                            </a>
-                            <div class=dropdown-menu>
-                                <a href=# class="dropdown-item js-set-theme-light">
-                                    <span>Light</span>
-                                </a>
-                                <a href=# class="dropdown-item js-set-theme-dark">
-                                    <span>Dark</span>
-                                </a>
-                                <a href=# class="dropdown-item js-set-theme-auto">
-                                    <span>Automatic</span>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+                </li>
+            </ul>
 
-                </div>
-            </nav>
--->
         </section>
 
         <section id=mission class="home-section wg-blank">
@@ -195,20 +168,43 @@
                         <h1 class=mb-0>Biography</h1>
                     </div>
                     <div class=col-12>
-                        <p>I am a Postdoctoral Research Fellow in the School of Nursing at the University of British Columbia (UBC). My doctoral research explored the role of central sensitization and somatic activating KRAS mutations in endometriosis. Currently, my postdoctoral research is exploring knowledge needs on chronic pelvic pain of health care providers and developing an online resource about chronic pelvic pain addressing these needs. My broad research interests include endometriosis, chronic pelvic pain, central sensitization, knowledge translation, and medical education. For more information about my research, check out my publications page!</p>
+                        <p>I am a Postdoctoral Research Fellow in the School of Nursing at the University of British Columbia (UBC). My doctoral research explored the role of central sensitization and somatic activating <i>KRAS</i> mutations in endometriosis. Currently, my postdoctoral research is exploring knowledge needs on chronic pelvic pain of health care providers and developing an online resource about chronic pelvic pain addressing these needs. My broad research interests include endometriosis, chronic pelvic pain, central sensitization, knowledge translation, and medical education. For more information about my research, check out my publications page!</p>
                         <p><strong>Research Interest:</strong> Endometriosis research, Patient-oriented research, Women’s health education
                             </p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section id=values class="home=section wg-blank">
+            <div class=container>
+                <div class="row featurette">
+                    <div class="col-md-12 section-heading">
+                        <h1>Values</h1>
+                    </div>
+                    <div class="col-12 col-sm-4 pb-5 mx-auto">
+                        <div class=featurette-icon><i class="fas fa-hands"></i></div>
+                        <h3>Enthusiasm</h3>
+                    </div>
+                    <div class="col-12 col-sm-4 pb-5 mx-auto">
+                        <div class=featurette-icon><i class="fas fa-user-friends"></i></div>
+                        <h3>Collaboration</h3>
+                    </div>
+                    <div class="col-12 col-sm-4 pb-5 mx-auto">
+                        <div class=featurette-icon><i class="fas fa-question-circle"></i></div>
+                        <h3>Respect</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <section id=featured class="home-section wg-featured">
             <div class=home-section-bg>
             </div>
             <div class=container>
                 <div class="row justify-content-center">
                     <div class="section-heading col-12 mb-3 text-center">
-                        <h1 class=mb-0>Featured Presentations</h1>
+                        <h1 class=mb-0>Featured Presentation</h1>
                     </div>
                     <div class=col-12>
                         <div class=card-simple>
@@ -230,14 +226,7 @@
                                 <iframe src="//www.youtube.com/embed/FJHy9dUiPFs?width%3D640%26amp%3Bheight%3D360%26amp%3Btheme%3Ddark%26amp%3Bautoplay%3D0%26amp%3Bvq%3Dhd720%26amp%3Brel%3D0%26amp%3Bshowinfo%3D1%26amp%3Bmodestbranding%3D1%26amp%3Biv_load_policy%3D1%26amp%3Bcontrols%3D1%26amp%3Bautohide%3D2%26amp%3Bwmode%3Dopaque">
                                 </iframe>
                             </div>    
-                            
-<!--
-                            <a href=/publication/conference-paper />
-                            <div class=img-hover-zoom><img
-                                    src=/publication/conference-paper/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_312700_808x455_fill_q75_lanczos_smart1.jpg
-                                    class=article-banner alt="An example conference paper" loading=lazy></div>
-                            </a>
--->
+
                             <div class="section-subheading article-title mb-1 mt-3">
                                 <a href="https://www.grad.ubc.ca/campus-community/meet-our-students/orr-natasha" />PhDs Go Public – 2019 Research Talk Series</a>
                             </div>
@@ -246,458 +235,181 @@
                                     <p>As a UBC Public Scholar, Natasha is leading a project to create 3D animated videos on endometriosis and the causes of sexual pain. She wants to provide patients with accessible materials to support informed decision-making about their care. “I hope that my research will be able to define a framework for the treatment of sexual pain in women with endometriosis to provide the most accurate treatment plan.</p>
                                 </div>
                             </a>
-                            <div class=btn-links>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm"
-                                    href=http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf target=_blank
-                                    rel=noopener>
-                                    PDF
-                                </a>
-                                <a href=# class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-                                    data-filename=/publication/conference-paper/cite.bib>
-                                    Cite
-                                </a>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm" href=/# target=_blank
-                                    rel=noopener>
-                                    Code
-                                </a>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm" href=/# target=_blank
-                                    rel=noopener>
-                                    Dataset
-                                </a>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm" href=/# target=_blank
-                                    rel=noopener>
-                                    Poster
-                                </a>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm" href=/slides/example/
-                                    target=_blank>
-                                    Slides
-                                </a>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm" href=/# target=_blank
-                                    rel=noopener>
-                                    Video
-                                </a>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm" href=/# target=_blank
-                                    rel=noopener>
-                                    Source Document
-                                </a>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm" href=http://example.org
-                                    target=_blank rel=noopener>
-                                    Custom Link</a>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id=publications class="home-section wg-pages">
+        <section id=education class="home-section wg-experience">
             <div class=home-section-bg>
             </div>
             <div class=container>
                 <div class="row justify-content-center">
                     <div class="section-heading col-12 mb-3 text-center">
-                        <h1 class=mb-0>Recent Publications</h1>
+                        <h1 class=mb-0>Education</h1>
                     </div>
                     <div class=col-12>
-                        
-                        <div class=pub-list-item style=margin-bottom:1rem>
-                            <i class="far fa-file-alt pub-icon" aria-hidden=true></i>
-                            <span class="article-metadata li-cite-author">
-                                <span>MacLeod, R</span>, 
-                                <span>Parmar, G</span>, 
-                                <span>Wu, S</span>, 
-                                <span>Noga, H</span>, 
-                                <span>Albert, A</span>, 
-                                <span>Flannigan, R</span>, 
-                                <span>Brotto, L</span>, 
-                                <span>Orr, N</span>
-                                    <i class="author-notes fas fa-info-circle" data-toggle=tooltip
-                                    title="co-senior author"></i>,
-                                <span>Wahl, K</span>
-                                    <i class="author-notes fas fa-info-circle" data-toggle=tooltip
-                                    title="co-senior author"></i>,
-                                <span>Yong, P</span>
-                                    <i class="author-notes fas fa-info-circle" data-toggle=tooltip
-                                    title="co-senior author"></i>
-                            </span>
-                            (2023).
-                            <a href=/publication/journal-article />Acceptability, Reliability, and Validity of a Vaginal Insert for the Self-Assessment
-                            of Endometriosis-Associated Deep Dyspareunia: A Pilot Study</a>.
-                            <em>Journal of Sexual Medicine</em>.
-                            <p>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm"
-                                    href=http://arxiv.org/pdf/1512.04133v1 target=_blank rel=noopener>
-                                    PDF
-                                </a>
-                                <a href=# class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-                                    data-filename=/publication/journal-article/cite.bib>
-                                    Cite
-                                </a>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm" href=/slides/example/
-                                    target=_blank>
-                                    Slides
-                                </a>
-                            </p>
+                        <div class="row experience">
+                            <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                <div class="row h-50">
+                                    <div class=col>&nbsp;</div>
+                                    <div class=col>&nbsp;</div>
+                                </div>
+                                <div class=m-2>
+                                    <span class="badge badge-pill border exp-fill">&nbsp;</span>
+                                </div>
+                                <div class="row h-50">
+                                    <div class="col border-right">&nbsp;</div>
+                                    <div class=col>&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="col py-2">
+                                <div class=card>
+                                    <div class=card-body>
+                                        <div class="section-subheading card-title exp-title text-muted my-0">PhD
+                                            Reproductive and Developmental Sciences</div>
+                                        <div class="section-subheading card-title exp-company text-muted my-0">
+                                            University of British Columbia</div>
+                                        <div class="text-muted exp-meta">
+                                            May 2018 –
+                                            Aug 2022
+                                            <span class=middot-divider></span>
+                                            <span>VAncouver</span>
+                                        </div>
+                                        <div class=card-text>Thesis Title: Central Sensitization and Somatic Activating <i>KRAS</i> Mutations in Endometriosis-Associated Pain.</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class=pub-list-item style=margin-bottom:1rem>
-                            <i class="far fa-file-alt pub-icon" aria-hidden=true></i>
-                            <span class="article-metadata li-cite-author">
-                                <span>Orr, NL</span>, 
-                                <span>Albert, A</span>, 
-                                <span>Liu, YD</span>, 
-                                <span>Lum, A</span>, 
-                                <span>Hong, J</span>, 
-                                <span>Ionescu, CL</span>, 
-                                <span>Senz, J</span>, 
-                                <span>Nazeran, TM</span>, 
-                                <span>Lee, AF</span>, 
-                                <span>Noga, H</span>, 
-                                <span>Lawrenson, K</span>, 
-                                <span>Williams, C</span>, 
-                                <span>Allaire, C</span>, 
-                                <span>Bedaiwy, MA</span>, 
-                                <span>Anglesio, MS</span>, 
-                                <span>Yong, P</span>
-                            </span>
-                            (2023).
-                            <a href=/publication/journal-article />KRAS Mutation and Greater Burden of Disease in Endometriosis</a>.
-                            <em>Journal of Pathology: Clinical Research</em>.
-                            <p>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm"
-                                    href=http://arxiv.org/pdf/1512.04133v1 target=_blank rel=noopener>
-                                    PDF
-                                </a>
-                                <a href=# class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-                                    data-filename=/publication/journal-article/cite.bib>
-                                    Cite
-                                </a>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm" href=/slides/example/
-                                    target=_blank>
-                                    Slides
-                                </a>
-                            </p>
+                        <div class="row experience">
+                            <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                <div class="row h-50">
+                                    <div class="col border-right">&nbsp;</div>
+                                    <div class=col>&nbsp;</div>
+                                </div>
+                                <div class=m-2>
+                                    <span class="badge badge-pill border">&nbsp;</span>
+                                </div>
+                                <div class="row h-50">
+                                    <div class="col border-right">&nbsp;</div>
+                                    <div class=col>&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="col py-2">
+                                <div class=card>
+                                    <div class=card-body>
+                                        <div class="section-subheading card-title exp-title text-muted my-0">MSc
+                                            Reproductive and Development Sciences</div>
+                                        <div class="section-subheading card-title exp-company text-muted my-0">
+                                            University of British Columbia</div>
+                                        <div class="text-muted exp-meta">
+                                            Jun 2016 –
+                                            May 2018
+                                            <span class=middot-divider></span>
+                                            <span>Vancouver</span>
+                                        </div>
+                                        <div class=card-text>Thesis Title: Central Sensitization in Endometriosis-Associated Deep Dyspareunia.</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class=pub-list-item style=margin-bottom:1rem>
-                            <i class="far fa-file-alt pub-icon" aria-hidden=true></i>
-                            <span class="article-metadata li-cite-author">
-                                <span>Fonseca, MA</span>, 
-                                <span>Wright, KN</span>, 
-                                <span>Lin, X</span>,
-                                <span>Abbasi, F</span>, 
-                                <span>Haro, M</span>, 
-                                <span>Sun, J</span>, 
-                                <span>Hernandez, L</span>, 
-                                <span>Orr, NL</span>, 
-                                <span>Hong, J</span>, 
-                                <span>Choi-Kuaea, Y</span>, 
-                                <span>Maluf, HM</span>, 
-                                <span>Baizer, BL</span>, 
-                                <span>Cass, I</span>, 
-                                <span>Thuong, M</span>, 
-                                <span>Wang, Y</span>, 
-                                <span>Pisarska, MD</span>
-                                <span>Dinh, H</span>, 
-                                <span>El-Naggar, A</span>, 
-                                <span>Huntsman, D</span>, 
-                                <span>Anglesio, MS</span>, 
-                                <span>Goodman, MT</span>, 
-                                <span>Medeiros, F</span>, 
-                                <span>Siedhoff, M</span>, 
-                                <span>Lawrenson, K</span>
-                            </span>
-                            (2023).
-                            <a href=/publication/journal-article />
-                                Singlecell Transcriptomic Analysis of Endometriosis
-                            </a>.
-                            <em>Nature Genetics. 55: 255–267</em>.
-                            <p>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm"
-                                    href=http://arxiv.org/pdf/1512.04133v1 target=_blank rel=noopener>
-                                    PDF
-                                </a>
-                                <a href=# class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-                                    data-filename=/publication/journal-article/cite.bib>
-                                    Cite
-                                </a>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm" href=/slides/example/
-                                    target=_blank>
-                                    Slides
-                                </a>
-                            </p>
+                        <div class="row experience">
+                            <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                <div class="row h-50">
+                                    <div class="col border-right">&nbsp;</div>
+                                    <div class=col>&nbsp;</div>
+                                </div>
+                                <div class=m-2>
+                                    <span class="badge badge-pill border">&nbsp;</span>
+                                </div>
+                                <div class="row h-50">
+                                    <div class=col>&nbsp;</div>
+                                    <div class=col>&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="col py-2">
+                                <div class=card>
+                                    <div class=card-body>
+                                        <div class="section-subheading card-title exp-title text-muted my-0">Honours BSc
+                                            Life Sciences</div>
+                                        <div class="section-subheading card-title exp-company text-muted my-0">
+                                            Queen's University</div>
+                                        <div class="text-muted exp-meta">
+                                            Sep 2012 –
+                                            Jun 2016
+                                            <span class=middot-divider></span>
+                                            <span>Vancouver</span>
+                                        </div>
+                                        <div class=card-text>Specialization in XXX</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class=pub-list-item style=margin-bottom:1rem>
-                            <i class="far fa-file-alt pub-icon" aria-hidden=true></i>
-                            <span class="article-metadata li-cite-author">
-                                <span>Wu, S</span>, 
-                                <span>MacLeod, R</span>, 
-                                <span>Parmar, G</span>, 
-                                <span>Orr, NL</span>, 
-                                <span>Wahl, K</span>, 
-                                <span>Noga, H</span>, 
-                                <span>Albert, A</span>, 
-                                <span>Flannigan, R</span>, 
-                                <span>Brotto, L</span>, 
-                                <span>Yong, P</span>
-                            </span>
-                            (2023).
-                            <a href=/publication/journal-article />
-                                Ohnut vs Waitlist Control for the Self–Management of Endometriosis–Associated Deep Dyspareunia: A Pilot Randomized Controlled Trial Protocol
-                            </a>.
-                            <em>JMIR Research Protocols</em>.
-                            <p>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm"
-                                    href=http://arxiv.org/pdf/1512.04133v1 target=_blank rel=noopener>
-                                    PDF
-                                </a>
-                                <a href=# class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-                                    data-filename=/publication/journal-article/cite.bib>
-                                    Cite
-                                </a>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm" href=/slides/example/
-                                    target=_blank>
-                                    Slides
-                                </a>
-                            </p>
-                        </div>
-
-                        <div class=pub-list-item style=margin-bottom:1rem>
-                            <i class="far fa-file-alt pub-icon" aria-hidden=true></i>
-                            <span class="article-metadata li-cite-author">
-                                <span>Wahl, K</span>, 
-                                <span>Albert, A</span>, 
-                                <span>Randhawa, L</span>, 
-                                <span>Larente, M</span>, 
-                                <span>Lopez de Arbina, E</span>, 
-                                <span>Sutherland, J</span>, 
-                                <span>Imtiaz, S</span>, 
-                                <span>Orr, N</span>, 
-                                <span>Allaire, C</span>, 
-                                <span>Yong, P</span>
-                            </span>
-                            (2023).
-                            <a href=/publication/journal-article />ENDOCATION: A Cluster Randomized Controlled Trial of a Menstrual Health and Endometriosis Education Program for Middle and Secondary School Students</a>.
-                            <em>PLOS Medicine</em>.
-                            <p>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm"
-                                    href=http://arxiv.org/pdf/1512.04133v1 target=_blank rel=noopener>
-                                    PDF
-                                </a>
-                                <a href=# class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-                                    data-filename=/publication/journal-article/cite.bib>
-                                    Cite
-                                </a>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm" href=/slides/example/
-                                    target=_blank>
-                                    Slides
-                                </a>
-                            </p>
-                        </div>
-
-
 
                     </div>
                 </div>
             </div>
         </section>
-        <section id=talks class="home-section wg-pages">
+
+        <section id=employment class="home-section wg-experience">
             <div class=home-section-bg>
             </div>
             <div class=container>
                 <div class="row justify-content-center">
                     <div class="section-heading col-12 mb-3 text-center">
-                        <h1 class=mb-0>Presentations</h1>
+                        <h1 class=mb-0>Employment</h1>
                     </div>
-
                     <div class=col-12>
-                        <div class="media stream-item">
-                            <div class=media-body>
-                                <div class="section-subheading article-title mb-0 mt-0">
-                                    <a href="https://endometriosis.ca/14th-world-congress-on-endometriosis-wce2020/"/>14th World Congress on Endometriosis</a>
-                                </div>
-                                <a href="https://endometriosis.ca/14th-world-congress-on-endometriosis-wce2020/" class=summary-link>
-                                    <div class=article-style>
-                                        Poster Presentation: Somatic Cancer-Driver Mutations and Sexual Pain Phenotype in Endometriosis: A Pilot Study.
-                                    </div>
-                                </a>
-                                <div class="stream-meta article-metadata">
-                                    <div>
-                                        <span>
-                                            2021
-                                        </span>
-                                        <span class=middot-divider></span>
-                                        <span>Vancouver (Zoom)</span>
-                                    </div>
-                                </div>
-                                <div class=btn-links>
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href=/slides/example/
-                                        target=_blank>
-                                        Slides
-                                    </a>
-                                </div>
-                            </div>
-                            <div class=ml-3>
-                                <a href="https://endometriosis.ca/14th-world-congress-on-endometriosis-wce2020/"/>
-                                <img src=/img/14_congress_endo.jpg
-                                    alt="14 Congress on Endometriosis" loading=lazy>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class=col-12>
-                        <div class="media stream-item">
-                            <div class=media-body>
-                                <div class="section-subheading article-title mb-0 mt-0">
-                                    <a href="https://www.grad.ubc.ca/campus-community/meet-our-students/orr-natasha"/>Public Scholars Initiative PhD Go Public</a>
-                                </div>
-                                <a href="https://www.grad.ubc.ca/campus-community/meet-our-students/orr-natasha" class=summary-link>
-                                    <div class=article-style>
-                                        Oral Presentation: The Role of Central Sensitization in Endometriosis-associated Deep
-Dyspareunia.
-                                    </div>
-                                </a>
-                                <div class="stream-meta article-metadata">
-                                    <div>
-                                        <span>
-                                            2021
-                                        </span>
-                                        <span class=middot-divider></span>
-                                        <span>Vancouver (Zoom)</span>
-                                    </div>
-                                </div>
-                                <div class=btn-links>
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href=/slides/example/
-                                        target=_blank>
-                                        Slides
-                                    </a>
-                                </div>
-                            </div>
-                            <div class=ml-3>
-                                <a href="https://www.grad.ubc.ca/campus-community/meet-our-students/orr-natasha" />
-                                <img src=/img/public_scholars.jpg
-                                    alt="UBC Public Scholars Initiative" loading=lazy>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=col-12>
-                        <div class="media stream-item">
-                            <div class=media-body>
-                                <div class="section-subheading article-title mb-0 mt-0">
-                                    <a href="https://cansage.org/"/>Canadian Society for the Advancement of Gynecologic Excellence (CanSAGE)</a>
-                                </div>
-                                <a href="https://cansage.org/" class=summary-link>
-                                    <div class=article-style>
-                                        Oral Presentation: The Central Sensitization Inventory in Women with Endometriosis.
-                                    </div>
-                                </a>
-                                <div class="stream-meta article-metadata">
-                                    <div>
-                                        <span>
-                                            2019
-                                        </span>
-                                        <span class=middot-divider></span>
-                                        <span>Ottawa (Zoom)</span>
-                                    </div>
-                                </div>
-                                <div class=btn-links>
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href=/slides/example/
-                                        target=_blank>
-                                        Slides
-                                    </a>
-                                </div>
-                            </div>
-                            <div class=ml-3>
-                                <a href="https://cansage.org/" />
-                                <img src=/img/can_sage.png
-                                    alt="CanSage 2019 Conference" loading=lazy>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=col-12>
-                        <div class="media stream-item">
-                            <div class=media-body>
-                                <div class="section-subheading article-title mb-0 mt-0">
-                                    <a href="https://obgyn.ubc.ca/faculty-resources/professional-development/academic-day/"/>19th Annual Academic Day</a>
-                                </div>
-                                <a href="https://obgyn.ubc.ca/faculty-resources/professional-development/academic-day/" class=summary-link>
-                                    <div class=article-style>
-                                        Oral Presentation: Central Sensitization and Endometriosis-Associated Painful Sex.
-                                    </div>
-                                </a>
-                                <div class="stream-meta article-metadata">
-                                    <div>
-                                        <span>
-                                            2019
-                                        </span>
-                                        <span class=middot-divider></span>
-                                        <span>Vancouver (Zoom)</span>
-                                    </div>
-                                </div>
-                                <div class=btn-links>
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href=/slides/example/
-                                        target=_blank>
-                                        Slides
-                                    </a>
-                                </div>
-                            </div>
-                            <div class=ml-3>
-                                <a href="https://obgyn.ubc.ca/faculty-resources/professional-development/academic-day/" />
-                                <img src=/img/UBC.png
-                                    alt="ObGyn Annual Academic Day, UBC" loading=lazy>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=col-12>
-                        <div class="media stream-item">
-                            <div class=media-body>
-                                <div class="section-subheading article-title mb-0 mt-0">
-                                    <a href="https://endometriosis.ca/14th-world-congress-on-endometriosis-wce2020/"/>Canadian Pain Society's 40th Annual Scientific Meeting</a>
-                                </div>
-                                <a href="https://endometriosis.ca/14th-world-congress-on-endometriosis-wce2020/" class=summary-link>
-                                    <div class=article-style>
-                                        Oral Presentation (Symposium): Let's Talk About (Painful) Sex!
-                                    </div>
-                                </a>
-                                <div class="stream-meta article-metadata">
-                                    <div>
-                                        <span>
-                                            2019
-                                        </span>
-                                        <span class=middot-divider></span>
-                                        <span>Toronto</span>
-                                    </div>
-                                </div>
-                                <div class=btn-links>
-                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href=/slides/example/
-                                        target=_blank>
-                                        Slides
-                                    </a>
-                                </div>
-                            </div>
-                            <div class=ml-3>
-                                <a href="https://www.canadianpainsociety.ca/" />
-                                <img src=/img/cps_2019_conference.jpg
-                                    alt="Canadian Pain Society" loading=lazy>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
+                        <div class="row experience">
  
+                            <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                <div class="row h-50">
+                                    <div class=col>&nbsp;</div>
+                                    <div class=col>&nbsp;</div>
+                                </div>
+                                <div class=m-2>
+                                    <span class="badge badge-pill border exp-fill">&nbsp;</span>
+                                </div>
+                                <div class="row h-50">
+                                    <div class="col border-right">&nbsp;</div>
+                                    <div class=col>&nbsp;</div>
+                                </div>
+                            </div>
 
-
+                            <div class="col py-2">
+                                <div class=card>
+                                    <div class=card-body>
+                                        <div class="d-flex align-content-start">
+                                            <div class="mr-2 mb-2"><img src=/img/UBC.png width=56px
+                                                    height=56px alt=UBC></div>
+                                            <div>
+                                                <div class="section-subheading card-title exp-title text-muted my-0">
+                                                    Postdoctoral Researcher</div>
+                                                <div class="section-subheading card-title exp-title text-muted my-0">
+                                                    School of Nursing</div>
+                                                <div class="section-subheading card-title exp-company text-muted my-0">
+                                                    University of British Columbia</div>
+                                                <div class="text-muted exp-meta">
+                                                    Oct 1, 2023
+                                                    <span class=middot-divider></span>
+                                                    <span>Vancouver</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=card-text>
+                                            Research on women's heath education in medical school.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
                 </div>
             </div>
         </section>
+
         <section id=experience class="home-section wg-experience">
             <div class=home-section-bg>
             </div>
@@ -1068,117 +780,8 @@ Dyspareunia.
                 </div>
             </div>
         </section>
-        <section id=education class="home-section wg-experience">
-            <div class=home-section-bg>
-            </div>
-            <div class=container>
-                <div class="row justify-content-center">
-                    <div class="section-heading col-12 mb-3 text-center">
-                        <h1 class=mb-0>Education</h1>
-                    </div>
-                    <div class=col-12>
-                        <div class="row experience">
-                            <div class="col-auto text-center flex-column d-none d-sm-flex">
-                                <div class="row h-50">
-                                    <div class=col>&nbsp;</div>
-                                    <div class=col>&nbsp;</div>
-                                </div>
-                                <div class=m-2>
-                                    <span class="badge badge-pill border exp-fill">&nbsp;</span>
-                                </div>
-                                <div class="row h-50">
-                                    <div class="col border-right">&nbsp;</div>
-                                    <div class=col>&nbsp;</div>
-                                </div>
-                            </div>
-                            <div class="col py-2">
-                                <div class=card>
-                                    <div class=card-body>
-                                        <div class="section-subheading card-title exp-title text-muted my-0">PhD
-                                            Reproductive and Developmental Studies</div>
-                                        <div class="section-subheading card-title exp-company text-muted my-0">
-                                            University of British Columbia</div>
-                                        <div class="text-muted exp-meta">
-                                            May 2018 –
-                                            Aug 2022
-                                            <span class=middot-divider></span>
-                                            <span>VAncouver</span>
-                                        </div>
-                                        <div class=card-text>Thesis Title: Central Sensitization and Somatic Activating KRAS Mutations in Endometriosis-Associated Pain.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row experience">
-                            <div class="col-auto text-center flex-column d-none d-sm-flex">
-                                <div class="row h-50">
-                                    <div class="col border-right">&nbsp;</div>
-                                    <div class=col>&nbsp;</div>
-                                </div>
-                                <div class=m-2>
-                                    <span class="badge badge-pill border">&nbsp;</span>
-                                </div>
-                                <div class="row h-50">
-                                    <div class="col border-right">&nbsp;</div>
-                                    <div class=col>&nbsp;</div>
-                                </div>
-                            </div>
-                            <div class="col py-2">
-                                <div class=card>
-                                    <div class=card-body>
-                                        <div class="section-subheading card-title exp-title text-muted my-0">MSc
-                                            Reproductive and Development Sciences</div>
-                                        <div class="section-subheading card-title exp-company text-muted my-0">
-                                            University of British Columbia</div>
-                                        <div class="text-muted exp-meta">
-                                            Jun 2016 –
-                                            May 2018
-                                            <span class=middot-divider></span>
-                                            <span>Vancouver</span>
-                                        </div>
-                                        <div class=card-text>Thesis Title: Central Sensitization in Endometriosis-Associated Deep Dyspareunia.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row experience">
-                            <div class="col-auto text-center flex-column d-none d-sm-flex">
-                                <div class="row h-50">
-                                    <div class="col border-right">&nbsp;</div>
-                                    <div class=col>&nbsp;</div>
-                                </div>
-                                <div class=m-2>
-                                    <span class="badge badge-pill border">&nbsp;</span>
-                                </div>
-                                <div class="row h-50">
-                                    <div class=col>&nbsp;</div>
-                                    <div class=col>&nbsp;</div>
-                                </div>
-                            </div>
-                            <div class="col py-2">
-                                <div class=card>
-                                    <div class=card-body>
-                                        <div class="section-subheading card-title exp-title text-muted my-0">Honours BSc
-                                            Life Sciences</div>
-                                        <div class="section-subheading card-title exp-company text-muted my-0">
-                                            Queen's University</div>
-                                        <div class="text-muted exp-meta">
-                                            Sep 2012 –
-                                            Jun 2016
-                                            <span class=middot-divider></span>
-                                            <span>Vancouver</span>
-                                        </div>
-                                        <div class=card-text>Specialization in XXX</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id=accomplishments class="home-section wg-accomplishments">
+        <section id=recognitions class="home-section wg-accomplishments">
             <div class=home-section-bg>
             </div>
             <div class=container>
@@ -1213,70 +816,399 @@ Dyspareunia.
                 </div>
             </div>
         </section>
-        <section id=contact class="home-section wg-contact">
+
+        <section id=publications class="home-section wg-pages">
             <div class=home-section-bg>
             </div>
             <div class=container>
                 <div class="row justify-content-center">
                     <div class="section-heading col-12 mb-3 text-center">
-                        <h1 class=mb-0>Contact</h1>
+                        <h1 class=mb-0>Recent Publications</h1>
                     </div>
                     <div class=col-12>
-                        <div class=mb-3>
-                            <form method='post' name='contact'><input type='hidden' name='form-name' value='contact' />
-                                <div class="form-group form-inline">
-                                    <label class=sr-only for=inputName>Name</label>
-                                    <input type=text name=name class="form-control w-100" id=inputName placeholder=Name
-                                        required>
-                                </div>
-                                <div class="form-group form-inline">
-                                    <label class=sr-only for=inputEmail>Email</label>
-                                    <input type=email name=email class="form-control w-100" id=inputEmail
-                                        placeholder=Email required>
-                                </div>
-                                <div class=form-group>
-                                    <label class=sr-only for=inputMessage>Message</label>
-                                    <textarea name=message class=form-control id=inputMessage rows=5 placeholder=Message
-                                        required></textarea>
-                                </div>
-                                <div class=d-none>
-                                    <label>Do not fill this field unless you are a bot: <input name=_gotcha></label>
-                                </div>
-                                <button type=submit class="btn btn-primary px-3 py-2 w-100">Send</button>
-                            </form>
+                        
+                        <div class=pub-list-item style=margin-bottom:1rem>
+                            <i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+                            <span class="article-metadata li-cite-author">
+                                <span>MacLeod, R</span>, 
+                                <span>Parmar, G</span>, 
+                                <span>Wu, S</span>, 
+                                <span>Noga, H</span>, 
+                                <span>Albert, A</span>, 
+                                <span>Flannigan, R</span>, 
+                                <span>Brotto, L</span>, 
+                                <span>Orr, N</span>
+                                    <i class="author-notes fas fa-info-circle" data-toggle=tooltip
+                                    title="co-senior author"></i>,
+                                <span>Wahl, K</span>
+                                    <i class="author-notes fas fa-info-circle" data-toggle=tooltip
+                                    title="co-senior author"></i>,
+                                <span>Yong, P</span>
+                                    <i class="author-notes fas fa-info-circle" data-toggle=tooltip
+                                    title="co-senior author"></i>
+                            </span>
+                            (2023).
+                            <a href=/publication/journal-article />Acceptability, Reliability, and Validity of a Vaginal Insert for the Self-Assessment
+                            of Endometriosis-Associated Deep Dyspareunia: A Pilot Study</a>.
+                            <em>Journal of Sexual Medicine</em>.
+                            <p>
+                                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                                    href=http://arxiv.org/pdf/1512.04133v1 target=_blank rel=noopener>
+                                    PDF
+                                </a>
+                                <a href=# class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+                                    data-filename=/publication/journal-article/cite.bib>
+                                    Cite
+                                </a>
+
+                            </p>
                         </div>
-                        <ul class=fa-ul>
-                            <li>
-                                <i class="fa-li fas fa-envelope fa-2x" aria-hidden=true></i>
-                                <span id=person-email><a href=mailto:natasha.orr@cw.bc.ca>natasha.orr@cw.bc.ca</a></span>
-                            </li>
-                            <li>
-                                <i class="fa-li fas fa-phone fa-2x" aria-hidden=true></i>
-                                <span id=person-telephone><a href=tel:7789382877>778-938-2877</a></span>
-                            </li>
-                            <li>
-                                <i class="fa-li fas fa-calendar-check fa-2x" aria-hidden=true></i>
-                                <a href=https://calendly.com target=_blank rel=noopener>Book an appointment</a>
-                            </li>
-                            <li>
-                                <i class="fa-li fab fa-twitter fa-2x" aria-hidden=true></i>
-                                <a href=https://twitter.com/NatashaLeighOrr target=_blank rel=noopener>DM Me</a>
-                            </li>
-<!--
-                            <li>
-                                <i class="fa-li fab fa-skype fa-2x" aria-hidden=true></i>
-                                <a href=skype:echo123?call>Skype Me</a>
-                            </li>
--->                            
-                            <li>
-                                <i class="fa-li fas fa-video fa-2x" aria-hidden=true></i>
-                                <a href=https://zoom.com target=_blank rel=noopener>Zoom Me</a>
-                            </li>
-                        </ul>
+
+                        <div class=pub-list-item style=margin-bottom:1rem>
+                            <i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+                            <span class="article-metadata li-cite-author">
+                                <span>Orr, NL</span>, 
+                                <span>Albert, A</span>, 
+                                <span>Liu, YD</span>, 
+                                <span>Lum, A</span>, 
+                                <span>Hong, J</span>, 
+                                <span>Ionescu, CL</span>, 
+                                <span>Senz, J</span>, 
+                                <span>Nazeran, TM</span>, 
+                                <span>Lee, AF</span>, 
+                                <span>Noga, H</span>, 
+                                <span>Lawrenson, K</span>, 
+                                <span>Williams, C</span>, 
+                                <span>Allaire, C</span>, 
+                                <span>Bedaiwy, MA</span>, 
+                                <span>Anglesio, MS</span>, 
+                                <span>Yong, P</span>
+                            </span>
+                            (2023).
+                            <a href=/publication/journal-article />KRAS Mutation and Greater Burden of Disease in Endometriosis</a>.
+                            <em>Journal of Pathology: Clinical Research</em>.
+                            <p>
+                                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                                    href=http://arxiv.org/pdf/1512.04133v1 target=_blank rel=noopener>
+                                    PDF
+                                </a>
+                                <a href=# class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+                                    data-filename=/publication/journal-article/cite.bib>
+                                    Cite
+                                </a>
+
+                            </p>
+                        </div>
+
+                        <div class=pub-list-item style=margin-bottom:1rem>
+                            <i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+                            <span class="article-metadata li-cite-author">
+                                <span>Fonseca, MA</span>, 
+                                <span>Wright, KN</span>, 
+                                <span>Lin, X</span>,
+                                <span>Abbasi, F</span>, 
+                                <span>Haro, M</span>, 
+                                <span>Sun, J</span>, 
+                                <span>Hernandez, L</span>, 
+                                <span>Orr, NL</span>, 
+                                <span>Hong, J</span>, 
+                                <span>Choi-Kuaea, Y</span>, 
+                                <span>Maluf, HM</span>, 
+                                <span>Baizer, BL</span>, 
+                                <span>Cass, I</span>, 
+                                <span>Thuong, M</span>, 
+                                <span>Wang, Y</span>, 
+                                <span>Pisarska, MD</span>
+                                <span>Dinh, H</span>, 
+                                <span>El-Naggar, A</span>, 
+                                <span>Huntsman, D</span>, 
+                                <span>Anglesio, MS</span>, 
+                                <span>Goodman, MT</span>, 
+                                <span>Medeiros, F</span>, 
+                                <span>Siedhoff, M</span>, 
+                                <span>Lawrenson, K</span>
+                            </span>
+                            (2023).
+                            <a href=/publication/journal-article />
+                                Singlecell Transcriptomic Analysis of Endometriosis
+                            </a>.
+                            <em>Nature Genetics. 55: 255–267</em>.
+                            <p>
+                                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                                    href=http://arxiv.org/pdf/1512.04133v1 target=_blank rel=noopener>
+                                    PDF
+                                </a>
+                                <a href=# class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+                                    data-filename=/publication/journal-article/cite.bib>
+                                    Cite
+                                </a>
+
+                            </p>
+                        </div>
+
+                        <div class=pub-list-item style=margin-bottom:1rem>
+                            <i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+                            <span class="article-metadata li-cite-author">
+                                <span>Wu, S</span>, 
+                                <span>MacLeod, R</span>, 
+                                <span>Parmar, G</span>, 
+                                <span>Orr, NL</span>, 
+                                <span>Wahl, K</span>, 
+                                <span>Noga, H</span>, 
+                                <span>Albert, A</span>, 
+                                <span>Flannigan, R</span>, 
+                                <span>Brotto, L</span>, 
+                                <span>Yong, P</span>
+                            </span>
+                            (2023).
+                            <a href=/publication/journal-article />
+                                Ohnut vs Waitlist Control for the Self–Management of Endometriosis–Associated Deep Dyspareunia: A Pilot Randomized Controlled Trial Protocol
+                            </a>.
+                            <em>JMIR Research Protocols</em>.
+                            <p>
+                                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                                    href=http://arxiv.org/pdf/1512.04133v1 target=_blank rel=noopener>
+                                    PDF
+                                </a>
+                                <a href=# class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+                                    data-filename=/publication/journal-article/cite.bib>
+                                    Cite
+                                </a>
+
+                            </p>
+                        </div>
+
+                        <div class=pub-list-item style=margin-bottom:1rem>
+                            <i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+                            <span class="article-metadata li-cite-author">
+                                <span>Wahl, K</span>, 
+                                <span>Albert, A</span>, 
+                                <span>Randhawa, L</span>, 
+                                <span>Larente, M</span>, 
+                                <span>Lopez de Arbina, E</span>, 
+                                <span>Sutherland, J</span>, 
+                                <span>Imtiaz, S</span>, 
+                                <span>Orr, N</span>, 
+                                <span>Allaire, C</span>, 
+                                <span>Yong, P</span>
+                            </span>
+                            (2023).
+                            <a href=/publication/journal-article />ENDOCATION: A Cluster Randomized Controlled Trial of a Menstrual Health and Endometriosis Education Program for Middle and Secondary School Students</a>.
+                            <em>PLOS Medicine</em>.
+                            <p>
+                                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                                    href=http://arxiv.org/pdf/1512.04133v1 target=_blank rel=noopener>
+                                    PDF
+                                </a>
+                                <a href=# class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+                                    data-filename=/publication/journal-article/cite.bib>
+                                    Cite
+                                </a>
+
+                            </p>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
         </section>
+
+        <section id=talks class="home-section wg-pages">
+            <div class=home-section-bg>
+            </div>
+            <div class=container>
+                <div class="row justify-content-center">
+                    <div class="section-heading col-12 mb-3 text-center">
+                        <h1 class=mb-0>Presentations</h1>
+                    </div>
+
+                    <div class=col-12>
+                        <div class="media stream-item">
+                            <div class=media-body>
+                                <div class="section-subheading article-title mb-0 mt-0">
+                                    <a href="https://endometriosis.ca/14th-world-congress-on-endometriosis-wce2020/"/>14th World Congress on Endometriosis</a>
+                                </div>
+                                <a href="https://endometriosis.ca/14th-world-congress-on-endometriosis-wce2020/" class=summary-link>
+                                    <div class=article-style>
+                                        Poster Presentation: Somatic Cancer-Driver Mutations and Sexual Pain Phenotype in Endometriosis: A Pilot Study.
+                                    </div>
+                                </a>
+                                <div class="stream-meta article-metadata">
+                                    <div>
+                                        <span>
+                                            2021
+                                        </span>
+                                        <span class=middot-divider></span>
+                                        <span>Vancouver (Zoom)</span>
+                                    </div>
+                                </div>
+                                <div class=btn-links>
+
+                                </div>
+                            </div>
+                            <div class=ml-3>
+                                <a href="https://endometriosis.ca/14th-world-congress-on-endometriosis-wce2020/"/>
+                                <img src=/img/14_congress_endo.jpg
+                                    alt="14 Congress on Endometriosis" loading=lazy>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=col-12>
+                        <div class="media stream-item">
+                            <div class=media-body>
+                                <div class="section-subheading article-title mb-0 mt-0">
+                                    <a href="https://www.grad.ubc.ca/campus-community/meet-our-students/orr-natasha"/>Public Scholars Initiative PhD Go Public</a>
+                                </div>
+                                <a href="https://www.grad.ubc.ca/campus-community/meet-our-students/orr-natasha" class=summary-link>
+                                    <div class=article-style>
+                                        Oral Presentation: The Role of Central Sensitization in Endometriosis-associated Deep
+Dyspareunia.
+                                    </div>
+                                </a>
+                                <div class="stream-meta article-metadata">
+                                    <div>
+                                        <span>
+                                            2021
+                                        </span>
+                                        <span class=middot-divider></span>
+                                        <span>Vancouver (Zoom)</span>
+                                    </div>
+                                </div>
+                                <div class=btn-links>
+                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href=/slides/example/
+                                        target=_blank>
+                                        Slides
+                                    </a>
+                                </div>
+                            </div>
+                            <div class=ml-3>
+                                <a href="https://www.grad.ubc.ca/campus-community/meet-our-students/orr-natasha" />
+                                <img src=/img/public_scholars.jpg
+                                    alt="UBC Public Scholars Initiative" loading=lazy>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=col-12>
+                        <div class="media stream-item">
+                            <div class=media-body>
+                                <div class="section-subheading article-title mb-0 mt-0">
+                                    <a href="https://cansage.org/"/>Canadian Society for the Advancement of Gynecologic Excellence (CanSAGE)</a>
+                                </div>
+                                <a href="https://cansage.org/" class=summary-link>
+                                    <div class=article-style>
+                                        Oral Presentation: The Central Sensitization Inventory in Women with Endometriosis.
+                                    </div>
+                                </a>
+                                <div class="stream-meta article-metadata">
+                                    <div>
+                                        <span>
+                                            2019
+                                        </span>
+                                        <span class=middot-divider></span>
+                                        <span>Ottawa (Zoom)</span>
+                                    </div>
+                                </div>
+                                <div class=btn-links>
+                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href=/slides/example/
+                                        target=_blank>
+                                        Slides
+                                    </a>
+                                </div>
+                            </div>
+                            <div class=ml-3>
+                                <a href="https://cansage.org/" />
+                                <img src=/img/can_sage.png
+                                    alt="CanSage 2019 Conference" loading=lazy>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=col-12>
+                        <div class="media stream-item">
+                            <div class=media-body>
+                                <div class="section-subheading article-title mb-0 mt-0">
+                                    <a href="https://obgyn.ubc.ca/faculty-resources/professional-development/academic-day/"/>19th Annual Academic Day</a>
+                                </div>
+                                <a href="https://obgyn.ubc.ca/faculty-resources/professional-development/academic-day/" class=summary-link>
+                                    <div class=article-style>
+                                        Oral Presentation: Central Sensitization and Endometriosis-Associated Painful Sex.
+                                    </div>
+                                </a>
+                                <div class="stream-meta article-metadata">
+                                    <div>
+                                        <span>
+                                            2019
+                                        </span>
+                                        <span class=middot-divider></span>
+                                        <span>Vancouver (Zoom)</span>
+                                    </div>
+                                </div>
+                                <div class=btn-links>
+                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href=/slides/example/
+                                        target=_blank>
+                                        Slides
+                                    </a>
+                                </div>
+                            </div>
+                            <div class=ml-3>
+                                <a href="https://obgyn.ubc.ca/faculty-resources/professional-development/academic-day/" />
+                                <img src=/img/UBC.png
+                                    alt="ObGyn Annual Academic Day, UBC" loading=lazy>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=col-12>
+                        <div class="media stream-item">
+                            <div class=media-body>
+                                <div class="section-subheading article-title mb-0 mt-0">
+                                    <a href="https://endometriosis.ca/14th-world-congress-on-endometriosis-wce2020/"/>Canadian Pain Society's 40th Annual Scientific Meeting</a>
+                                </div>
+                                <a href="https://endometriosis.ca/14th-world-congress-on-endometriosis-wce2020/" class=summary-link>
+                                    <div class=article-style>
+                                        Oral Presentation (Symposium): Let's Talk About (Painful) Sex!
+                                    </div>
+                                </a>
+                                <div class="stream-meta article-metadata">
+                                    <div>
+                                        <span>
+                                            2019
+                                        </span>
+                                        <span class=middot-divider></span>
+                                        <span>Toronto</span>
+                                    </div>
+                                </div>
+                                <div class=btn-links>
+                                    <a class="btn btn-outline-primary btn-page-header btn-sm" href=/slides/example/
+                                        target=_blank>
+                                        Slides
+                                    </a>
+                                </div>
+                            </div>
+                            <div class=ml-3>
+                                <a href="https://www.canadianpainsociety.ca/" />
+                                <img src=/img/cps_2019_conference.jpg
+                                    alt="Canadian Pain Society" loading=lazy>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+ 
+
+
+                </div>
+            </div>
+        </section>
+
     </div>
     <div class=page-footer>
         <div class=container>
