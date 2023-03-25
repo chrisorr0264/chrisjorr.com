@@ -11772,7 +11772,7 @@ html[dir=rtl] body {
 }
 
 .home-section:nth-of-type(even) {
-    background: #fdfbe4
+    background: #9ebabb
 }
 
 .dark .home-section {
@@ -11865,8 +11865,8 @@ html[dir=rtl] body {
 }
 
 .avatar {
-    width: 270px;
-    height: 270px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto;
     object-fit: cover;
     object-position: 100% 20%
@@ -12139,7 +12139,7 @@ a.hero-cta-alt:active,a.hero-cta-alt:focus,a.hero-cta-alt:hover {
 
 .people-widget .avatar {
     width: 80%;
-    max-width: 240px;
+    max-width: 250px;
     height: auto
 }
 
