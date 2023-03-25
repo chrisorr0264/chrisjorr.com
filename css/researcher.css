@@ -11869,6 +11869,7 @@ html[dir=rtl] body {
     height: 270px;
     margin: 0 auto;
     object-fit: cover
+    object-position: 100% 0%;
 }
 
 @media(max-width: 767.98px) {
