@@ -12139,7 +12139,7 @@ a.hero-cta-alt:active,a.hero-cta-alt:focus,a.hero-cta-alt:hover {
 
 .people-widget .avatar {
     width: 80%;
-    max-width: 150px;
+    max-width: 240px;
     height: auto
 }
 
@@ -12394,7 +12394,7 @@ div.chart {
 
 .avatar {
     width: 240px;
-    height: 200px
+    height: 240px
 }
 
 .portrait-title h2 {
