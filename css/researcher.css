@@ -3930,7 +3930,8 @@ input[type=submit].btn-block,input[type=reset].btn-block,input[type=button].btn-
     flex-wrap: wrap;
     padding-left: 0;
     margin-bottom: 0;
-    list-style: none
+    list-style: none;
+    background: #804de5
 }
 
 .nav-link {
@@ -11686,7 +11687,7 @@ html[dir=rtl] body {
 }
 
 .home-section {
-    background: #fdfbe4;
+    background: #f2e4fd;
     position: relative;
     padding: 110px 0;
     z-index: 0
