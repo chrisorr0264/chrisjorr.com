@@ -9986,7 +9986,7 @@ h4,h5,h6 {
 }
 
 a,h3.article-title a:hover {
-    color: #dd2c00;
+    color: #fff;
     text-decoration: none;
     transition: color .6s ease
 }
