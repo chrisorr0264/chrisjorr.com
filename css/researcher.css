@@ -11868,8 +11868,8 @@ html[dir=rtl] body {
     width: 270px;
     height: 270px;
     margin: 0 auto;
-    object-fit: cover
-    object-position: 100% 0%;
+    object-fit: cover;
+    object-position: 100% 0%
 }
 
 @media(max-width: 767.98px) {
@@ -12394,8 +12394,7 @@ div.chart {
 
 .avatar {
     width: 200px;
-    height: 200px;
-    object-position: 100% 10%
+    height: 200px
 }
 
 .portrait-title h2 {
