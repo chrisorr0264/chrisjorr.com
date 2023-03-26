@@ -11869,7 +11869,6 @@ html[dir=rtl] body {
     height: 250px;
     margin: 0 auto;
     object-fit: cover;
-    object-position: 100% 20%
 }
 
 @media(max-width: 767.98px) {
@@ -11883,8 +11882,8 @@ html[dir=rtl] body {
     border-radius: 50%;
     border: 5px;
     border-color: #fff;
-    padding: 3px;
-    margin:5px
+    border-style: solid;
+    padding: 3px
 }
 
 .avatar-square {
