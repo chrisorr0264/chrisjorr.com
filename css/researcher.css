@@ -11880,7 +11880,11 @@ html[dir=rtl] body {
 }
 
 .avatar-circle {
-    border-radius: 50%
+    border-radius: 50%;
+    border: 5px;
+    border-color: #fff;
+    padding: 3px;
+    margin:5px
 }
 
 .avatar-square {
