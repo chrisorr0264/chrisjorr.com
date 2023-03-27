@@ -89,6 +89,37 @@
                 margin-right: 0;
                 margin-bottom: 20px;
 		    }
+
+            h3 {
+                font-size: 18px;
+                color: #000;
+                text-align: left;
+                position: relative;
+                padding-left: 30px;
+                i {
+                    position: absolute;
+                    left: 0;
+                    top: -0.1em;
+                    color: $brand-primary;
+                    font-size: 22px!important;
+                }
+            }
+            
+            p {
+                text-align: left;
+                color :#898989;
+                font-size: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            &.changed {
+                bottom: -7em;
+                @media screen and (max-width: $screen-sm) {
+                    bottom: 0;
+                }
+            }
         }
         </style>
 
