@@ -17,33 +17,6 @@
 
 
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
-        
-        <script>
-        
-            $(function() {
-        
-        
-           var publications = [];
-        
-           $.getJSON('/js/publications.json', function(data) {
-               $.each(data.pub, function(i, f) {
-                  var tblRow = "<tr>" + "<td>" + f.article + "</td>" +
-                   "<td>" + f.year + "</td>" + "<td>" + f.journal + "</td>"  + "</tr>"
-                   $(tblRow).appendTo("#userdata tbody");
-             });
-        
-           });
-        
-        });
-        </script>
-
-        
-
-        
-
-
-
 
 </head>
 
@@ -51,6 +24,34 @@
     <script src=/js/researcher_theme.js></script>
 
 
+
+    <p id="demo"></p>
+
+    <script>
+    const xmlhttp = new XMLHttpRequest();
+    xmlhttp.onload = function() {
+      const myObj = JSON.parse(this.responseText);
+      let a = "";
+      
+    for (let i = 0; i < myObj.pubs[0].authors.length; i++) {
+      a += myObj.pubs[0].author[i].name + "<br>";
+      }
+      
+      document.getElementById("demo").innerHTML = a
+    }
+    xmlhttp.open("GET", "/js/publications.json");
+    xmlhttp.send();
+    
+    
+    </script>
+
+
+
+
+
+
+
+<!--
     <div class="wrapper">
         <div class="profile">
             <table id= "userdata" border="2">
@@ -69,7 +70,7 @@
     </div>
 
 
-<!--
+
                         <div class=pub-list-item style=margin-bottom:1rem>
                             <i class="far fa-file-alt pub-icon" aria-hidden=true></i>
                             <span class="article-metadata li-cite-author">
