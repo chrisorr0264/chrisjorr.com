@@ -28,7 +28,7 @@
       <header>
         <div class=container>
 
-                <div class="section-heading col-12 mb-3 text-center">
+                <div class="section-heading col-12 mb-3 text-center" style="padding-top:30px">
                     <h1 class=mb-0>Recent Publications</h1>
                 </div>
 
@@ -55,18 +55,22 @@
 
     function populateArticles(obj) {
       const section = document.querySelector('section');
-      const authors = obj.pubs[0].authors;
+      
+        for (const pub of pubs) {
+            const myArticle = document.createElement('div class=pub-list-item style=margin-bottom:1rem');
+            myArticle.appendChild('i class="far fa-file-alt pub-icon" aria-hidden=true');
+            myArticle.appendChild('span class="article-metadata li-cit-author"');
 
-      for (const author of authors) {
-        const myArticle = document.createElement('article');
-        const myH2 = document.createElement('h2');
-
-        myH2.textContent = author.name;
-  
-        myArticle.appendChild(myH2);
-
-        section.appendChild(myArticle);
-      }
+                for(const author of pub.authors){
+            
+                    const mySpan = document.createElement('span');
+                    mySpan.textContent = author.name;
+                    myArticle.appendChild(mySpan);
+                }
+            myArticle.appendChild(pub.year);
+            myArticle.appendChild(pub.article);
+            section.appendChild(myArticle);
+        }
     }
 
     populate();
