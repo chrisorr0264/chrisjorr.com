@@ -1,27 +1,7 @@
 <!doctype html>
-<html lang=en-us>
 
 <head>
-    <meta charset=utf-8>
-    <meta name=viewport content="width=device-width,initial-scale=1">
-    <meta http-equiv=x-ua-compatible content="IE=edge">
 
-    <meta name=generator content="Researcher">
-    <meta name=author content="Dr. Natasha Orr">
-    <meta name=description content="Endometriosis Postdoctoral Researcher">
-    <link rel=alternate hreflang=en-us href=https://natashaorr.com />  
-    <link rel=alternate href=/index.xml type=application/rss+xml title="Dr. Natasha Orr">
-    <link rel=canonical href=https://natashaorr.com />
-
-    <meta property="og:site_name" content="Dr. Natasha Orr">
-    <meta property="og:url" content="https://natashaorr.com/">
-    <meta property="og:title" content="Dr. Natasha Orr">
-    <meta property="og:description" content="Endometriosis Post Doc Researcher">
-
-    <meta name=theme-color content="#dd2c00">
-
-    <script
-        type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","url":"https://natashaorr.com"}</script>
     <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -36,8 +16,6 @@
     <link rel=stylesheet href=/css/researcher.css>
 
 
-    <title>Dr. Natasha Orr</title>
-    <link rel="icon" type="image/icon" href="/img/no.png">
 </head>
 
 <body id=top data-spy=scroll data-target=#navbar-main class="page-wrapper no-navbar">
@@ -61,7 +39,7 @@
                               const myObj = JSON.parse(this.responseText);
                               document.getElementById("demo").innerHTML = myObj.name;
                             }
-                            xmlhttp.open("GET", "publications.txt");
+                            xmlhttp.open("GET", "/js/publications.json");
                             xmlhttp.send();
                         </script>
 
