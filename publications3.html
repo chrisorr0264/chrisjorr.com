@@ -52,15 +52,10 @@
       for (const author of authors) {
         const myArticle = document.createElement('article');
         const myH2 = document.createElement('h2');
-        const myPara1 = document.createElement('p');
-
 
         myH2.textContent = author.name;
-        myPara1.textContent = `Title: ${author.title}`;
-
-
+  
         myArticle.appendChild(myH2);
-        myArticle.appendChild(myPara1);
 
         section.appendChild(myArticle);
       }
