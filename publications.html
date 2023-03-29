@@ -31,10 +31,11 @@
     const xmlhttp = new XMLHttpRequest();
     xmlhttp.onload = function() {
       const myObj = JSON.parse(this.responseText);
+      let b = myObj.pubs[0];
       let a = "";
       
-    for (let i = 0; i < myObj.pubs[0].authors.length; i++) {
-      a += myObj.pubs[0].author[i].name + "<br>";
+    for (let i = 0; i < b.authors.length; i++) {
+      a += b.authors[i].name + "<br>";
       }
       
       document.getElementById("demo").innerHTML = a
