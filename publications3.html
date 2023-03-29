@@ -65,8 +65,14 @@
                     mySpan.textContent = author.name;
                     myArticle.appendChild(mySpan);
                 }
-            myArticle.appendChild(pub.year);
-            myArticle.appendChild(pub.article);
+            const myH3 = document.createElement('h3');
+            myH3.textContent = pub.year;
+            myArticle.appendChild(myH3);
+
+            const myH3 = document.createElement('h3');
+            myH3.textContent = pub.article;
+            myArticle.appendChild(myH3);
+            
             section.appendChild(myArticle);
         }
     }
