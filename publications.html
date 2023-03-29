@@ -35,16 +35,20 @@
 
                         <script>
                             const xmlhttp = new XMLHttpRequest();
+                            let i = 0;
+                            let text = "";
+
                             xmlhttp.onload = function() {
                               const myObj = JSON.parse(this.responseText);
-                              document.getElementById("demo").innerHTML = myObj.pets[0].animal;
+                              while(authors[i]){
+                                text += authors[i].name + "<br";
+                                i++
+                              }
+                              document.getElementById("demo").innerHTML = text;
                             }
                             xmlhttp.open("GET", "/js/publications.json");
                             xmlhttp.send();
                         </script>
-
-
-
 
 
 <!--

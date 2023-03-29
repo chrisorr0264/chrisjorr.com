@@ -1,31 +1,44 @@
 [
     {
-    "name":"John",
-    "age":31,
-    "pets":[
-        { "animal":"dog", "name":"Fido" },
-        { "animal":"cat", "name":"Felix" },
-        { "animal":"hamster", "name":"Lightning" }
-    ]
-    },
+        "article":"Acceptability, Reliability, and Validity of a Vaginal Insert for the Self-Assessment of Endometriosis-Associated Deep Dyspareunia: A Pilot Study",
+        "authors":[
+            {"name":"MacLeod, R", "title":""},
+            {"name":"Parmar, G", "title":""},
+            {"name":"Wu, S", "title":""},
+            {"name":"Noga, H", "title":""},
+            {"name":"Albert, A", "title":""},
+            {"name":"Flannigan, R", "title":""},
+            {"name":"Brotto, L", "title":""},
+            {"name":"Orr, N", "title":"co-senior author"},
+            {"name":"Wahl, K", "title":"co-senior author"},
+            {"name":"Yong, P", "title":"co-senior author"}
+        ],
+        "year":"2023",
+        "journal":"Journal of Sexual Medicine",
+        "cite_link":"https://scholar.google.com/citations?hl=en&user=i8-4k_AAAAAJ"
+        },
 
     {
-    "article":"Acceptability, Reliability, and Validity of a Vaginal Insert for the Self-Assessment of Endometriosis-Associated Deep Dyspareunia: A Pilot Study",
+    "article":"KRAS Mutation and Greater Burden of Disease in Endometriosis",
     "authors":[
-        {"name":"MacLeod, R", "title":""},
-        {"name":"Parmar, G", "title":""},
-        {"name":"Wu, S", "title":""},
-        {"name":"Noga, H", "title":""},
+        {"name":"Orr, NL", "title":""},
         {"name":"Albert, A", "title":""},
-        {"name":"Flannigan, R", "title":""},
-        {"name":"Brotto, L", "title":""},
-        {"name":"Orr, N", "title":"co-senior author"},
-        {"name":"Wahl, K", "title":"co-senior author"},
-        {"name":"Yong, P", "title":"co-senior author"}
+        {"name":"Liu, YD", "title":""},
+        {"name":"Lum, A", "title":""},
+        {"name":"Hong, J", "title":""},
+        {"name":"Ionescu, CL", "title":""},
+        {"name":"Nazeran, TM", "title":""},
+        {"name":"Lee, AF", "title":""},
+        {"name":"Noga, H", "title":""},
+        {"name":"Lawrenson, K", "title":""},
+        {"name":"Williams, C", "title":""},        
+        {"name":"Allaire, C", "title":""},        
+        {"name":"Bedaiwy, MA", "title":""},    
+        {"name":"Anglesio, MS", "title":""},    
+        {"name":"Yong, P", "title":""}
     ],
     "year":"2023",
-    "journal":"Journal of Sexual Medicine",
+    "journal":"Journal of Pathology: Clinical Research",
     "cite_link":"https://scholar.google.com/citations?hl=en&user=i8-4k_AAAAAJ"
     }
 ]
-
