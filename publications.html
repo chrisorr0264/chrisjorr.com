@@ -16,39 +16,57 @@
     <link rel=stylesheet href=/css/researcher.css>
 
 
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+        
+        <script>
+        
+            $(function() {
+        
+        
+           var publications = [];
+        
+           $.getJSON('/js/publications.json', function(data) {
+               $.each(data.pub, function(i, f) {
+                  var tblRow = "<tr>" + "<td>" + f.article + "</td>" +
+                   "<td>" + f.year + "</td>" + "<td>" + f.journal + "</td>"  + "</tr>"
+                   $(tblRow).appendTo("#userdata tbody");
+             });
+        
+           });
+        
+        });
+        </script>
+
+        
+
+        
+
+
+
+
 </head>
 
 <body id=top data-spy=scroll data-target=#navbar-main class="page-wrapper no-navbar">
     <script src=/js/researcher_theme.js></script>
 
-    <div class=page-body>
-        <section id=publications class="home-section wg-pages" style="padding-top:30px">
-            <div class=container>
-                <div class="row justify-content-center">
-                    <div class="section-heading col-12 mb-3 text-center">
-                        <h1 class=mb-0>Publications</h1>
-                    </div>
-                    <div class=col-12>
- 
-                        <p id="demo"></p>
 
-
-                        <script>
-                            const xmlhttp = new XMLHttpRequest();
-                            let i = 0;
-                            let text = "";
-
-                            xmlhttp.onload = function() {
-                              const myObj = JSON.parse(this.responseText);
-                              while(authors[i]){
-                                text += authors[i].name + "<br";
-                                i++
-                              }
-                              document.getElementById("demo").innerHTML = text;
-                            }
-                            xmlhttp.open("GET", "/js/publications.json");
-                            xmlhttp.send();
-                        </script>
+    <div class="wrapper">
+        <div class="profile">
+            <table id= "userdata" border="2">
+            <thead>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email Address</th>
+                    <th>City</th>
+                </thead>
+                <tbody>
+        
+                </tbody>
+            </table>
+        
+        </div>
+    </div>
 
 
 <!--
