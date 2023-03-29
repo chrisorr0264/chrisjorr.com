@@ -3,6 +3,19 @@
   <head>
     <meta charset="utf-8">
 
+    <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css
+        integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg=="
+        crossorigin=anonymous media=print onload="this.media='all'">
+    <link rel=preload as=style
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather&family=Roboto+Mono&display=swap">
+    <link rel=stylesheet
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather&family=Roboto+Mono&display=swap"
+        media=print onload="this.media='all'">
+    <link rel=stylesheet href=/css/researcher.css>
+
     <title>Publications</title>
 <!-- 
     <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
@@ -10,13 +23,18 @@
 -->
   </head>
 
-  <body>
+  <body id=top class="page-wrapper no-navbar">
 
       <header>
+        <div class=container>
+
+                <div class="section-heading col-12 mb-3 text-center">
+                    <h1 class=mb-0>Recent Publications</h1>
+                </div>
 
       </header>
 
-      <section>
+      <section id=publications class="home-section wg-pages">
 
       </section>
 
@@ -30,23 +48,12 @@
       const response = await fetch(request);
       const pubs = await response.json();
 
-      populateHeader(pubs);
-      populateHeroes(pubs);
+
+      populateArticles(pubs);
 
     }
 
-    function populateHeader(obj) {
-      const header = document.querySelector('header');
-      const myH1 = document.createElement('h1');
-      myH1.textContent = obj.pubs[0].article;
-      header.appendChild(myH1);
-
-      const myPara = document.createElement('p');
-      myPara.textContent = `Journal: ${obj.pubs[0].journal} // Published: ${obj.pubs[0].year}`;
-      header.appendChild(myPara);
-    }
-
-    function populateHeroes(obj) {
+    function populateArticles(obj) {
       const section = document.querySelector('section');
       const authors = obj.pubs[0].authors;
 
@@ -67,3 +74,45 @@
     </script>
   </body>
 </html>
+
+
+<!--
+
+    
+                        <div class=pub-list-item style=margin-bottom:1rem>
+                            <i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+                            <span class="article-metadata li-cite-author">
+                                <span>MacLeod, R</span>, 
+                                <span>Parmar, G</span>, 
+                                <span>Wu, S</span>, 
+                                <span>Noga, H</span>, 
+                                <span>Albert, A</span>, 
+                                <span>Flannigan, R</span>, 
+                                <span>Brotto, L</span>, 
+                                <span>Orr, N</span>
+                                    <i class="author-notes fas fa-info-circle" data-toggle=tooltip
+                                    title="co-senior author"></i>,
+                                <span>Wahl, K</span>
+                                    <i class="author-notes fas fa-info-circle" data-toggle=tooltip
+                                    title="co-senior author"></i>,
+                                <span>Yong, P</span>
+                                    <i class="author-notes fas fa-info-circle" data-toggle=tooltip
+                                    title="co-senior author"></i>
+                            </span>
+                            (2023).
+                            <a href=/publication/journal-article />Acceptability, Reliability, and Validity of a Vaginal Insert for the Self-Assessment
+                            of Endometriosis-Associated Deep Dyspareunia: A Pilot Study</a>.
+                            <em>Journal of Sexual Medicine</em>.
+                            <p>
+                                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                                    href=http://arxiv.org/pdf/1512.04133v1 target=_blank rel=noopener>
+                                    PDF
+                                </a>
+                                <a href=# class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+                                    data-filename=/publication/journal-article/cite.bib>
+                                    Cite
+                                </a>
+
+                            </p>
+                        </div>
+-->
