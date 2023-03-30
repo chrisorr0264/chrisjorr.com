@@ -79,8 +79,8 @@
                 for(const author of pub.authors){
             
                     const mySpan = document.createElement('span');
-                    const boldName = author.name;
-                    if (boldName.toString.includes("Orr")){
+                    const boldName = author.name(toString);
+                    if (boldName.includes("Orr")){
                         boldName = "<b>" + author.name + "</b>"
                     }
                     
