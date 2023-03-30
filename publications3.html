@@ -83,12 +83,17 @@
                     mySpan.textContent = author.name + "; ";
                     myArticle.appendChild(mySpan);
                 }
-            const myH3 = document.createElement('h3');
-            myH3.textContent = pub.year;
-            myArticle.appendChild(myH3);
+            const myYear = document.createElement('a');
+            myYear.textContent = " (" + pub.year + ").";
+            myArticle.appendChild(myYear);
+
+            const myPub = document.createElement('a');
+            myPub.href = cite_link;
+            myPub.innerText = pub.article;
+            myArticle.appendChild(myPub);
 
             const myNewEm = document.createElement('em');
-            myNewEm.textContent = pub.article;
+            myNewEm.textContent = pub.journal;
             myArticle.appendChild(myNewEm);
 
             section.appendChild(myArticle);
