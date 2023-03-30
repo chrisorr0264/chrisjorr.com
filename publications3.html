@@ -96,7 +96,7 @@
             myArticle.appendChild(myNewEm);
 
             const myPara = document.createElement('p');
-            const myCite = myPara.createElement('a');
+            const myCite = myPara.appendChild(document.createElement('a'));
             myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm", "js-cite-modal");
             myCite.download = "/publication/journal-article/cite.bib";
             myCite.href = '#';
