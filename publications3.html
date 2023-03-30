@@ -79,7 +79,12 @@
                 for(const author of pub.authors){
             
                     const mySpan = document.createElement('span');
-                    mySpan.textContent = author.name + "; ";
+                    const boldName = author.name;
+                    if (boldName.includes("Orr")){
+                        boldName = "<b>" + author.name + "</b>"
+                    }
+                    
+                    mySpan.textContent = boldName;
                     myArticle.appendChild(mySpan);
                 }
             const myYear = document.createElement('a');
