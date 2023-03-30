@@ -97,9 +97,9 @@
 
             const myPara = document.createElement('p');
             const myCite = myPara.appendChild(document.createElement('a'));
-            myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm", "js-cite-modal");
-            myCite.download = "/publication/journal-article/cite.bib";
             myCite.href = '#';
+            myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm", "js-cite-modal");
+            myCite.dataset = "/publication/journal-article/cite.bib";
             myCite.innerText = "Cite";
             myPara.appendChild(myCite);
             myArticle.appendChild(myPara);
