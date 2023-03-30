@@ -81,10 +81,14 @@
                     const mySpan = document.createElement('span');
                     var boldName = author.name;
                     if (boldName.includes("Orr")){
-                        boldName = "<b>" + author.name + "</b>"
+                        const myBold = document.createElement('b');
+                        myBold.textContent = author.name;
+                        myArticle.appendChild(myBold);
+                    } else {
+                        mySpan.textContent = author.name;
                     }
                     
-                    mySpan.textContent = boldName;
+
                     myArticle.appendChild(mySpan);
                 }
             const myYear = document.createElement('a');
