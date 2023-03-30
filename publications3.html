@@ -34,7 +34,15 @@
 
       </header>
 
-      <section id=publications class="home-section wg-pages">
+      <section id=publications class="home-section wg-pages" style="padding-top:30px">
+        <div class="col-12">
+
+            <div id="pubCards">
+
+
+            </div>
+
+        </div>
 
       </section>
 
@@ -54,24 +62,33 @@
     }
 
     function populateArticles(obj) {
-      const section = document.querySelector('section');
+      const section = document.querySelector("#pubCards");
       
         for (const pub of obj.pubs) {
             const myArticle = document.createElement('div');
+            myArticle.classList.add("pub-list-item");
+            
+            const myI = document.createElement('i');
+            myI.classList.add("far fa-file-alt pub-icon");
+            myArticle.appendChild(myI);
+
+            const mySpanClass = document.createElement('span');
+            mySpanClass.classList.add("article-metadata", "li-cite-author");
+            myArticle.appendChild(mySpanClass);
 
                 for(const author of pub.authors){
             
                     const mySpan = document.createElement('span');
-                    mySpan.textContent = author.name;
+                    mySpan.textContent = author.name + "; ";
                     myArticle.appendChild(mySpan);
                 }
             const myH3 = document.createElement('h3');
             myH3.textContent = pub.year;
             myArticle.appendChild(myH3);
 
-            const mynewH3 = document.createElement('h3');
-            mynewH3.textContent = pub.article;
-            myArticle.appendChild(mynewH3);
+            const myNewEm = document.createElement('em');
+            myNewEm.textContent = pub.article;
+            myArticle.appendChild(myNewEm);
 
             section.appendChild(myArticle);
         }
