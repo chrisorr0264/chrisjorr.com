@@ -1,6 +1,7 @@
-<!doctype html>
-
-<head>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
 
     <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
@@ -17,61 +18,166 @@
 
 
 
-
-</head>
-
-<body id=top data-spy=scroll data-target=#navbar-main class="page-wrapper no-navbar">
-    <script src=/js/researcher_theme.js></script>
-
-
-
-    <p id="demo"></p>
-
-    <script>
-    const xmlhttp = new XMLHttpRequest();
-    xmlhttp.onload = function() {
-      const myObj = JSON.parse(this.responseText);
-      let b = myObj.pubs[0];
-      let a = "";
-      
-    for (let i = 0; i < b.authors.length; i++) {
-      a += b.authors[i].name + "<br>" + "<br>";
-      }
-      
-      document.getElementById("demo").innerHTML = a
-    }
-    xmlhttp.open("GET", "/js/publications.json");
-    xmlhttp.send();
+    <title>Publications</title>
+    <link rel="icon" type="image/icon" href="/img/no.png">
     
-    
-    </script>
+  </head>
+
+  <body id=top class="page-wrapper no-navbar">
+
+    <script src=/js/researcher.js></script>
+    <script src=/js/researcher2.js></script>  
+
+    <span class="js-widget-page d-none"></span>
 
 
+    <section id=publications class="home-section wg-pages" style="padding-top:30px">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="section-heading col-12 mb-3 text-center">
+                    <h1 class=mb-0>Recent Publications</h1>
+                </div>
+
+                <div class="col-12">
+
+                    <div id="pubCards">
 
 
+                    </div>
 
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-<!--
-    <div class="wrapper">
-        <div class="profile">
-            <table id= "userdata" border="2">
-            <thead>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email Address</th>
-                    <th>City</th>
-                </thead>
-                <tbody>
-        
-                </tbody>
-            </table>
-        
+    <div class=page-footer>
+        <div class=container>
+            <footer class=site-footer>
+                <p class=powered-by>
+                    Published by Dr. Natasha Orr.
+                </p>
+            </footer>
         </div>
     </div>
 
+    <div id=modal class="modal fade" role=dialog>
+        <div class=modal-dialog>
+            <div class=modal-content>
+                <div class=modal-header>
+                    <h5 class=modal-title>Cite</h5>
+                    <button type=button class=close data-dismiss=modal aria-label=Close>
+                        <span aria-hidden=true>&#215;</span>
+                    </button>
+                </div>
+            <div class=modal-body>
+                <pre><code class="tex hljs"></code></pre>
+            </div>
+            <div class=modal-footer>
+                <a class="btn btn-outline-primary my-1 js-copy-cite" href=# target=_blank>
+                    <i class="fas fa-copy"></i> Copy
+                </a>
+                <a class="btn btn-outline-primary my-1 js-download-cite" href=# target=_blank>
+                    <i class="fas fa-download"></i> Download
+                </a>
+                <div id=modal-error></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        async function populate() {
+
+        const requestURL = 'https://chrisjorr.com/js/json/publications.json';
+        const request = new Request(requestURL);
+
+        const response = await fetch(request);
+        const pubs = await response.json();
 
 
+        populateArticles(pubs);
+
+        }
+
+        function populateArticles(obj) {
+        const section = document.querySelector("#pubCards");
+        
+            for (const pub of obj.pubs) {
+                const myArticle = document.createElement('div');
+                myArticle.classList.add("pub-list-item");
+                
+                const myI = document.createElement('i');
+                myI.classList.add("far", "fa-file-alt", "pub-icon");
+                myArticle.appendChild(myI);
+
+                const mySpanClass = document.createElement('span');
+                mySpanClass.classList.add("article-metadata", "li-cite-author");
+                myArticle.appendChild(mySpanClass);
+
+                    var count = 0;
+                    const maxCount = pub.authors.length;
+                
+                    for(const author of pub.authors){
+                        
+                        count++;
+                        const mySpan = document.createElement('span');
+                        var boldName = author.name;
+
+                        if(count == maxCount){
+                            boldName = boldName + ".";
+                        } else {
+                            boldName = boldName + "; ";
+                        }
+                        if (boldName.includes("Orr")){
+                            const myBold = document.createElement('b');
+                            myBold.textContent = boldName;
+                            myArticle.appendChild(myBold);
+                        } else {
+                            mySpan.textContent = boldName;
+                        }
+                        
+
+                        myArticle.appendChild(mySpan);
+                    }
+                const myYear = document.createElement('a');
+                myYear.textContent = " (" + pub.year + "). ";
+                myArticle.appendChild(myYear);
+
+                const myPub = document.createElement('a');
+                myPub.href = pub.article_link;
+                myPub.innerText = pub.article + " ";
+                myArticle.appendChild(myPub);
+
+                const myNewEm = document.createElement('em');
+                myNewEm.textContent = pub.journal;
+                myArticle.appendChild(myNewEm);
+
+                const myPara = document.createElement('p');
+                const myCite = myPara.appendChild(document.createElement('a'));
+                myCite.href = '#';
+                myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm", "js-cite-modal");
+                myCite.setAttribute("data-filename",pub.cite_link);
+                myCite.innerText = "Cite";
+                myPara.appendChild(myCite);
+                myArticle.appendChild(myPara);
+
+                section.appendChild(myArticle);
+            }
+        }
+
+        populate();
+
+    </script>
+
+  </body>
+</html>
+
+
+<!--
+
+    
                         <div class=pub-list-item style=margin-bottom:1rem>
                             <i class="far fa-file-alt pub-icon" aria-hidden=true></i>
                             <span class="article-metadata li-cite-author">
@@ -109,26 +215,3 @@
                             </p>
                         </div>
 -->
-
-
-
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </div>
-    <div class=page-footer>
-        <div class=container>
-            <footer class=site-footer>
-                <p class=powered-by>
-                    Published by Dr. Natasha Orr.
-                </p>
-            </footer>
-        </div>
-    </div>
-
-</body>
-
-</html>
