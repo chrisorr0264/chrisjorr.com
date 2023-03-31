@@ -43,5 +43,23 @@
         "journal":"Journal of Pathology: Clinical Research",
         "cite_link":"https://scholar.google.com/citations?hl=en&user=i8-4k_AAAAAJ"
         }
+
+        {
+        "article":"Deep dyspareunia in endometriosis: role of the bladder and pelvic floor",
+        "authors":[
+            {"name":"Orr, NL", "title":""},
+            {"name":"Noga, H", "title":""},
+            {"name":"Williams, C", "title":""},
+            {"name":"Allaire, C", "title":""}, 
+            {"name":"Bedaiwy, MA", "title":""}, 
+		{"name":"Lisonkova, S", "title":""},
+            {"name":"Smith, KB", "title":""},
+            {"name":"Yong, P", "title":""}
+        ],
+        "year":"2018",
+        "journal":"Journal of Sexual Medicine",
+        "cite_link":"https://www.sciencedirect.com/science/article/abs/pii/S1743609518310531"
+        }
+
     ]
 }
