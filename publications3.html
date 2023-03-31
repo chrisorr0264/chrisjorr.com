@@ -31,143 +31,143 @@
     <span class="js-widget-page d-none"></span>
 
 
-        <section id=publications class="home-section wg-pages" style="padding-top:30px">
+    <section id=publications class="home-section wg-pages" style="padding-top:30px">
 
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="section-heading col-12 mb-3 text-center">
-                        <h1 class=mb-0>Recent Publications</h1>
-                    </div>
-
-                    <div class="col-12">
-
-                        <div id="pubCards">
-
-
-                        </div>
-
-                    </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="section-heading col-12 mb-3 text-center">
+                    <h1 class=mb-0>Recent Publications</h1>
                 </div>
-            </div>
-        </section>
 
-        <div class=page-footer>
-            <div class=container>
-                <footer class=site-footer>
-                    <p class=powered-by>
-                        Published by Dr. Natasha Orr.
-                    </p>
-                </footer>
-            </div>
-        </div>
+                <div class="col-12">
 
-        <div id=modal class="modal fade" role=dialog>
-            <div class=modal-dialog>
-                <div class=modal-content>
-                    <div class=modal-header>
-                        <h5 class=modal-title>Cite</h5>
-                        <button type=button class=close data-dismiss=modal aria-label=Close>
-                            <span aria-hidden=true>&#215;</span>
-                        </button>
+                    <div id="pubCards">
+
+
                     </div>
-                <div class=modal-body>
-                    <pre><code class="tex hljs"></code></pre>
-                </div>
-                <div class=modal-footer>
-                    <a class="btn btn-outline-primary my-1 js-copy-cite" href=# target=_blank>
-                        <i class="fas fa-copy"></i> Copy
-                    </a>
-                    <a class="btn btn-outline-primary my-1 js-download-cite" href=# target=_blank>
-                        <i class="fas fa-download"></i> Download
-                    </a>
-                    <div id=modal-error></div>
-                    </div>
+
                 </div>
             </div>
         </div>
+    </section>
+
+    <div class=page-footer>
+        <div class=container>
+            <footer class=site-footer>
+                <p class=powered-by>
+                    Published by Dr. Natasha Orr.
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <div id=modal class="modal fade" role=dialog>
+        <div class=modal-dialog>
+            <div class=modal-content>
+                <div class=modal-header>
+                    <h5 class=modal-title>Cite</h5>
+                    <button type=button class=close data-dismiss=modal aria-label=Close>
+                        <span aria-hidden=true>&#215;</span>
+                    </button>
+                </div>
+            <div class=modal-body>
+                <pre><code class="tex hljs"></code></pre>
+            </div>
+            <div class=modal-footer>
+                <a class="btn btn-outline-primary my-1 js-copy-cite" href=# target=_blank>
+                    <i class="fas fa-copy"></i> Copy
+                </a>
+                <a class="btn btn-outline-primary my-1 js-download-cite" href=# target=_blank>
+                    <i class="fas fa-download"></i> Download
+                </a>
+                <div id=modal-error></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
 
-    async function populate() {
+        async function populate() {
 
-      const requestURL = 'https://chrisjorr.com/js/publications.json';
-      const request = new Request(requestURL);
+        const requestURL = 'https://chrisjorr.com/js/publications.json';
+        const request = new Request(requestURL);
 
-      const response = await fetch(request);
-      const pubs = await response.json();
+        const response = await fetch(request);
+        const pubs = await response.json();
 
 
-      populateArticles(pubs);
+        populateArticles(pubs);
 
-    }
-
-    function populateArticles(obj) {
-      const section = document.querySelector("#pubCards");
-      
-        for (const pub of obj.pubs) {
-            const myArticle = document.createElement('div');
-            myArticle.classList.add("pub-list-item");
-            
-            const myI = document.createElement('i');
-            myI.classList.add("far", "fa-file-alt", "pub-icon");
-            myArticle.appendChild(myI);
-
-            const mySpanClass = document.createElement('span');
-            mySpanClass.classList.add("article-metadata", "li-cite-author");
-            myArticle.appendChild(mySpanClass);
-
-                var count = 0;
-                const maxCount = pub.authors.length;
-            
-                for(const author of pub.authors){
-                    
-                    count++;
-                    const mySpan = document.createElement('span');
-                    var boldName = author.name;
-
-                    if(count == maxCount){
-                        boldName = boldName + ".";
-                    } else {
-                        boldName = boldName + "; ";
-                    }
-                    if (boldName.includes("Orr")){
-                        const myBold = document.createElement('b');
-                        myBold.textContent = boldName;
-                        myArticle.appendChild(myBold);
-                    } else {
-                        mySpan.textContent = boldName;
-                    }
-                    
-
-                    myArticle.appendChild(mySpan);
-                }
-            const myYear = document.createElement('a');
-            myYear.textContent = " (" + pub.year + "). ";
-            myArticle.appendChild(myYear);
-
-            const myPub = document.createElement('a');
-            myPub.href = pub.article_link;
-            myPub.innerText = pub.article + " ";
-            myArticle.appendChild(myPub);
-
-            const myNewEm = document.createElement('em');
-            myNewEm.textContent = pub.journal;
-            myArticle.appendChild(myNewEm);
-
-            const myPara = document.createElement('p');
-            const myCite = myPara.appendChild(document.createElement('a'));
-            myCite.href = '#';
-            myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm", "js-cite-modal");
-            myCite.setAttribute("data-filename",pub.cite_link);
-            myCite.innerText = "Cite";
-            myPara.appendChild(myCite);
-            myArticle.appendChild(myPara);
-
-            section.appendChild(myArticle);
         }
-    }
 
-    populate();
+        function populateArticles(obj) {
+        const section = document.querySelector("#pubCards");
+        
+            for (const pub of obj.pubs) {
+                const myArticle = document.createElement('div');
+                myArticle.classList.add("pub-list-item");
+                
+                const myI = document.createElement('i');
+                myI.classList.add("far", "fa-file-alt", "pub-icon");
+                myArticle.appendChild(myI);
+
+                const mySpanClass = document.createElement('span');
+                mySpanClass.classList.add("article-metadata", "li-cite-author");
+                myArticle.appendChild(mySpanClass);
+
+                    var count = 0;
+                    const maxCount = pub.authors.length;
+                
+                    for(const author of pub.authors){
+                        
+                        count++;
+                        const mySpan = document.createElement('span');
+                        var boldName = author.name;
+
+                        if(count == maxCount){
+                            boldName = boldName + ".";
+                        } else {
+                            boldName = boldName + "; ";
+                        }
+                        if (boldName.includes("Orr")){
+                            const myBold = document.createElement('b');
+                            myBold.textContent = boldName;
+                            myArticle.appendChild(myBold);
+                        } else {
+                            mySpan.textContent = boldName;
+                        }
+                        
+
+                        myArticle.appendChild(mySpan);
+                    }
+                const myYear = document.createElement('a');
+                myYear.textContent = " (" + pub.year + "). ";
+                myArticle.appendChild(myYear);
+
+                const myPub = document.createElement('a');
+                myPub.href = pub.article_link;
+                myPub.innerText = pub.article + " ";
+                myArticle.appendChild(myPub);
+
+                const myNewEm = document.createElement('em');
+                myNewEm.textContent = pub.journal;
+                myArticle.appendChild(myNewEm);
+
+                const myPara = document.createElement('p');
+                const myCite = myPara.appendChild(document.createElement('a'));
+                myCite.href = '#';
+                myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm", "js-cite-modal");
+                myCite.setAttribute("data-filename",pub.cite_link);
+                myCite.innerText = "Cite";
+                myPara.appendChild(myCite);
+                myArticle.appendChild(myPara);
+
+                section.appendChild(myArticle);
+            }
+        }
+
+        populate();
 
     </script>
 
