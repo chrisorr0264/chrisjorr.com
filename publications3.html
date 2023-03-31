@@ -116,16 +116,26 @@
             mySpanClass.classList.add("article-metadata", "li-cite-author");
             myArticle.appendChild(mySpanClass);
 
-                for(const author of pub.authors){
+                var count = 0;
+                const maxCount = pub.authors.length;
             
+                for(const author of pub.authors){
+                    
+                    count++;
                     const mySpan = document.createElement('span');
                     var boldName = author.name;
+
+                    if(count == maxCount){
+                        boldName = boldName + ".";
+                    } else {
+                        boldName = boldName + "; ";
+                    }
                     if (boldName.includes("Orr")){
                         const myBold = document.createElement('b');
-                        myBold.textContent = author.name + "; ";
+                        myBold.textContent = boldName;
                         myArticle.appendChild(myBold);
                     } else {
-                        mySpan.textContent = author.name + "; ";
+                        mySpan.textContent = boldName;
                     }
                     
 
@@ -136,7 +146,7 @@
             myArticle.appendChild(myYear);
 
             const myPub = document.createElement('a');
-            myPub.href = pub.cite_link;
+            myPub.href = pub.article_link;
             myPub.innerText = pub.article + " ";
             myArticle.appendChild(myPub);
 
@@ -148,7 +158,7 @@
             const myCite = myPara.appendChild(document.createElement('a'));
             myCite.href = '#';
             myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm", "js-cite-modal");
-            myCite.setAttribute("data-filename",'/publication/journal-article/cite.bib');
+            myCite.setAttribute("data-filename",pub.cite_link);
             myCite.innerText = "Cite";
             myPara.appendChild(myCite);
             myArticle.appendChild(myPara);
