@@ -2,67 +2,366 @@
 
     [
         {
-            "article":"Acceptability, Reliability, and Validity of a Vaginal Insert for the Self-Assessment of Endometriosis-Associated Deep Dyspareunia: A Pilot Study",
+            "article":"Association  of Central Sensitization Inventory Scores with Pain Outcomes After Endometriosis Surgery",
             "authors":[
+                {"name":"Orr, NL", "title":""},
+                {"name":"Huang, AJ", "title":""},
+                {"name":"Liu, YD", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Bedaiwy, MA", "title":""}, 
+                {"name":"Williams, C", "title":""},
+                {"name":"Allaire, C", "title":""}, 
+                {"name":"Yong, PJ", "title":""}
+            ],
+            "year":"2023",
+            "journal":"JAMA Network Open",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/36848090/",
+            "cite_link":"/publication/journal-article/cite1.bib",
+            "show" : "main"
+        },
+
+        {
+            "article":"KRAS  Mutation and Greater Burden of Disease in Endometriosis",
+            "authors":[
+                {"name":"Orr, NL", "title":""},
+                {"name":"Albert, A", "title":""},
+                {"name":"Liu, YD", "title":""},
+                {"name":"Lum, A", "title":""},
+                {"name":"Hong, J", "title":""},
+                {"name":"Ionescu, CL", "title":""},
+                {"name":"Senz, J", "title":""},
+                {"name":"Nazeran, TM", "title":""},
+                {"name":"Lee, AF", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Lawrenson, K", "title":""},
+                {"name":"Williams, C", "title":""},        
+                {"name":"Allaire, C", "title":""},        
+                {"name":"Bedaiwy, MA", "title":""},    
+                {"name":"Anglesio, MS", "title":""},    
+                {"name":"Yong, PJ", "title":""}
+            ],
+            "year":"2023",
+            "journal":"Journal of Pathology: Clinical Research",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/36977195/",
+            "cite_link":"/publication/journal-article/cite2.bib",
+            "show" : "main"
+        },
+        
+        {
+            "article":"Central  Sensitization Inventory in Endometriosis",
+            "authors":[
+                {"name":"Orr, NL", "title":""},
+                {"name":"Wahl, KJ", "title":""},
+                {"name":"Lisonek, M", "title":""},
+                {"name":"Joannou, A", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Albert, A", "title":""},
+                {"name":"Bedaiwy, MA", "title":""}, 
+                {"name":"Williams, C", "title":""},
+                {"name":"Allaire, C", "title":""}, 
+                {"name":"Yong, PJ", "title":""}
+            ],
+            "year":"2022",
+            "journal":"PAIN",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/34030173/",
+            "cite_link":"/publication/journal-article/cite3.bib",
+            "show" : "main"
+        },
+
+        {
+            "article":"Single-cell Transcriptomic Analysis of Endometriosis",
+            "authors":[
+                {"name":"Fonseca, MA", "title":""},
+                {"name":"Wright, KN", "title":""},
+                {"name":"Lin, X", "title":""},
+                {"name":"Abbasi, F", "title":""},
+                {"name":"Haro, M", "title":""},
+                {"name":"Sun, J", "title":""},
+                {"name":"Hernandez, L", "title":""},
+                {"name":"Orr, NL", "title":""},
+                {"name":"Hong, J", "title":""},
+                {"name":"Choi-Kuaea, Y", "title":""},
+                {"name":"Maluf, HM", "title":""},
+                {"name":"Balzer, BL", "title":""},
+                {"name":"Cass, I", "title":""},
+                {"name":"Truong, M", "title":""},
+                {"name":"Wang, Y", "title":""},
+                {"name":"Pisarska, MD", "title":""},
+                {"name":"Dinh, H", "title":""},
+                {"name":"El-Naggar, A", "title":""},
+                {"name":"Huntsman, D", "title":""},
+                {"name":"Anglesio, MS", "title":""},
+                {"name":"Goodman, MT", "title":""},
+                {"name":"Medeiros, F", "title":""},
+                {"name":"Siedhoff, M", "title":""},
+                {"name":"Lawrenson, K", "title":""}
+            ],
+            "year":"2023",
+            "journal":"Nature Genetics",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/36624343/",
+            "cite_link":"/publication/journal-article/cite4.bib",
+            "show" : "yes"
+        },
+
+        {
+            "article":"Ohnut Versus  a Waitlist Control for the Self-management of Endometriosis-Associated Deep Dyspareunia: Protocol for a Pilot Randomized Controlled Trial",
+            "authors":[
+                {"name":"Zhang, S", "title":""},
                 {"name":"MacLeod, R", "title":""},
                 {"name":"Parmar, G", "title":""},
-                {"name":"Wu, S", "title":""},
+                {"name":"Orr, NL", "title":""},
+                {"name":"Wahl, KJ", "title":""},
                 {"name":"Noga, H", "title":""},
                 {"name":"Albert, A", "title":""},
                 {"name":"Flannigan, R", "title":""},
                 {"name":"Brotto, L", "title":""},
-                {"name":"Orr, N", "title":"co-senior author"},
-                {"name":"Wahl, K", "title":"co-senior author"},
-                {"name":"Yong, P", "title":"co-senior author"}
+                {"name":"Yong, P", "title":""}
             ],
             "year":"2023",
-            "journal":"Journal of Sexual Medicine",
-            "article_link":"https://scholar.google.com/citations?hl=en&user=i8-4k_AAAAAJ",
-            "cite_link":"/publication/journal-article/cite1.bib"
-            },
-
-        {
-        "article":"KRAS Mutation and Greater Burden of Disease in Endometriosis",
-        "authors":[
-            {"name":"Orr, NL", "title":""},
-            {"name":"Albert, A", "title":""},
-            {"name":"Liu, YD", "title":""},
-            {"name":"Lum, A", "title":""},
-            {"name":"Hong, J", "title":""},
-            {"name":"Ionescu, CL", "title":""},
-            {"name":"Nazeran, TM", "title":""},
-            {"name":"Lee, AF", "title":""},
-            {"name":"Noga, H", "title":""},
-            {"name":"Lawrenson, K", "title":""},
-            {"name":"Williams, C", "title":""},        
-            {"name":"Allaire, C", "title":""},        
-            {"name":"Bedaiwy, MA", "title":""},    
-            {"name":"Anglesio, MS", "title":""},    
-            {"name":"Yong, P", "title":""}
-        ],
-        "year":"2023",
-        "journal":"Journal of Pathology: Clinical Research",
-        "article_link":"https://scholar.google.com/citations?hl=en&user=i8-4k_AAAAAJ",
-        "cite_link":"/publication/journal-article/cite2.bib"
+            "journal":"JMIR Research Protocols",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/36972117/",
+            "cite_link":"/publication/journal-article/cite5.bib",
+            "show" : "main"
         },
 
         {
-        "article":"Deep dyspareunia in endometriosis: role of the bladder and pelvic floor",
-        "authors":[
-            {"name":"Orr, NL", "title":""},
-            {"name":"Noga, H", "title":""},
-            {"name":"Williams, C", "title":""},
-            {"name":"Allaire, C", "title":""}, 
-            {"name":"Bedaiwy, MA", "title":""}, 
-		{"name":"Lisonkova, S", "title":""},
-            {"name":"Smith, KB", "title":""},
-            {"name":"Yong, P", "title":""}
-        ],
-        "year":"2018",
-        "journal":"Journal of Sexual Medicine",
-        "article_link":"https://www.sciencedirect.com/science/article/abs/pii/S1743609518310531",
-        "cite_link":"/publication/journal-article/cite3.bib"
-        }
+            "article":"Endometriosis in Canada: It Is Time for Collaboration to Advance Patient-Oriented, Evidence-Based Policy, Care, and Research",
+            "authors":[
+                {"name":"Wahl, KJ", "title":""},
+                {"name":"Yong, PJ", "title":""},
+                {"name":"Bridge Cook, P", "title":""},
+                {"name":"Allaire, C", "title":""}, 
+                {"name":"EndoAct Canada", "title":"I am a member of EndoAct Canada"} 
+            ],
+            "year":"2021",
+            "journal":"Journal of Obstetrics and Gynecology Canada",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/32753352/",
+            "cite_link":"/publication/journal-article/cite6.bib",
+            "show" : "yes"                              
+        },
 
+        {
+            "article":"Deep Dyspareunia: Review of Pathophysiology and Proposed Future Research Priorities",
+            "authors":[
+                {"name":"Orr, NL", "title":"Co-first author"},
+                {"name":"Wahl, KJ", "title":"Co-first author"},
+                {"name":"Joannou, A", "title":""},
+                {"name":"Hartmann, D", "title":""}, 
+                {"name":"Valle, L", "title":""}, 
+                {"name":"Yong, PJ", "title":""},
+            {"name":"ISSWSH Special Interest Group on Sexual Pain", "title":""}
+            ],
+            "year":"2020",
+            "journal":"Sexual Medicine Reviews",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/30928249/",
+            "cite_link":"/publication/journal-article/cite7.bib",
+            "show" : "yes"      
+        },
+
+        {
+            "article":"A Quantitative Analysis of Sleep Quality in Women with Endometriosis",
+            "authors":[
+                {"name":"Arion, K", "title":""},
+                {"name":"Orr, NL", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Allaire, C", "title":""},
+                {"name":"Williams, C", "title":""}, 
+                {"name":"Bedaiwy, MA", "title":""}, 
+                {"name":"Yong, PJ", "title":""}
+            ],
+            "year":"2020",
+            "journal":"Journal of Women's Health",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/32176592/",
+            "cite_link":"/publication/journal-article/cite8.bib",
+            "show" : "yes"      
+        },
+
+        {
+            "article":"Endometriosis and Negative Perception of the Medical Profession",
+            "authors":[
+                {"name":"Ng, N", "title":""},
+                {"name":"Wahl, KJ", "title":""},
+                {"name":"Orr, NL", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Williams, C", "title":""}, 
+                {"name":"Allaire, C", "title":""},
+                {"name":"Bedaiwy, MA", "title":""}, 
+                {"name":"Yong, PJ", "title":""}
+            ],
+            "year":"2020",
+            "journal":"Journal of Obstetrics and Gynecology Canada",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/31864912/",
+            "cite_link":"/publication/journal-article/cite9.bib",
+            "show" : "yes"     
+        },
+
+        {
+            "article":"Deep Dyspareunia, Superficial Dyspareunia, and Infertility Concerns Among Women with Endometriosis: A Cross-Sectional Study",
+            "authors":[
+                {"name":"Wahl, KJ", "title":""},
+                {"name":"Orr, NL", "title":""},
+                {"name":"Lisonek, M", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Bedaiwy, MA", "title":""}, 
+                {"name":"Williams, C", "title":""}, 
+                {"name":"Allaire, C", "title":""},
+                {"name":"Albert, A", "title":""}, 
+                {"name":"Smith, KB", "title":""}, 
+                {"name":"Cox, S", "title":""}, 
+                {"name":"Yong, PJ", "title":""}
+            ],
+            "year":"2020",
+            "journal":"Sexual Medicine",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/32061579/",
+            "cite_link":"/publication/journal-article/cite10.bib",
+            "show" : "yes"     
+        },
+
+        {
+            "article":"Phenotyping Sexual Pain in Endometriosis using the Central Sensitization Inventory",
+            "authors":[
+                {"name":"Orr, NL", "title":""},
+                {"name":"Wahl, KJ", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Allaire, C", "title":""},
+                {"name":"Williams, C", "title":""}, 
+                {"name":"Bedaiwy, MA", "title":""}, 
+                {"name":"Albert, A", "title":""}, 
+                {"name":"Smith, KB", "title":""}, 
+                {"name":"Yong, PJ", "title":""}
+            ],
+            "year":"2020",
+            "journal":"Journal of Sexual Medicine",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/31983669/",
+            "cite_link":"/publication/journal-article/cite11.bib",
+            "show" : "yes"   
+        },
+
+        {
+            "article":"Plasminogen Activator Inhibitor-1 (PAI-1) Expression in Endometriosis",
+            "authors":[
+                {"name":"Alotaibi, F", "title":""},
+                {"name":"Peng, B", "title":""},
+                {"name":"Klausen, C", "title":""},
+                {"name":"Lee, A", "title":""},
+                {"name":"Abdelkareem, A", "title":""},
+                {"name":"Orr, NL", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Robinson, W", "title":""},
+                {"name":"Bedaiwy, MA", "title":""}, 
+                {"name":"Yong, PJ", "title":""}
+            ],
+            "year":"2019",
+            "journal":"PLOS ONE",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/31315131/",
+            "cite_link":"/publication/journal-article/cite12.bib",
+            "show" : "yes"  
+        },
+
+        {
+            "article":"Iatrogenic Endometriosis Harbors Somatic Cancer-Driver Mutations",
+            "authors":[
+                {"name":"Lac, V", "title":""},
+                {"name":"Verhoef, L", "title":""},
+                {"name":"Aguirre-Hernandez, R", "title":""},
+                {"name":"Nazeran, TM", "title":""},
+                {"name":"Tessier-Cloutier, B", "title":""},
+                {"name":"Praetorius, T", "title":""},
+                {"name":"Orr, NL", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Lum, A", "title":""},
+                {"name":"Khattra, J", "title":""}, 
+                {"name":"Prentice, LM", "title":""}, 
+                {"name":"Co, D", "title":""}, 
+                {"name":"Koebel, M", "title":""}, 
+                {"name":"Mijatovic, V", "title":""}, 
+                {"name":"Lee, AF", "title":""}, 
+                {"name":"Pasternak, J", "title":""}, 
+                {"name":"Bleeker, MC", "title":""}, 
+                {"name":"Kraemer, B", "title":""}, 
+                {"name":"Brucker, SY", "title":""}, 
+                {"name":"Kommoss, F", "title":""}, 
+                {"name":"Kommoss, S", "title":""}, 
+                {"name":"Horlings, HM", "title":""}, 
+                {"name":"Yong, PJ", "title":""},
+                {"name":"Huntsman, DG", "title":""}, 
+                {"name":"Anglesio, MS", "title":""} 
+            ],
+            "year":"2018",
+            "journal":"Human Reproduction",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/30428062/",
+            "cite_link":"/publication/journal-article/cite13.bib",
+            "show" : "yes"  
+        },
+
+        {
+            "article":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
+            "authors":[
+                {"name":"Orr, NL", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Smith, KB", "title":""},
+                {"name":"Lisonkova, S", "title":""},
+                {"name":"Williams, C", "title":""},
+                {"name":"Allaire, C", "title":""}, 
+                {"name":"Bedaiwy, MA", "title":""}, 
+                {"name":"Yong, P", "title":""}
+            ],
+            "year":"2018",
+            "journal":"Journal of Sexual Medicine",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/30078464/",
+            "cite_link":"/publication/journal-article/cite14.bib",
+            "show" : "yes" 
+        },
+
+        {
+            "article":"Cancer-Associated Mutations in Endometriosis without Cancer",
+            "authors":[
+                {"name":"Anglesio, MS", "title":""},
+                {"name":"Papadopoulos, N", "title":""},
+                {"name":"Ayhan, A", "title":""},
+                {"name":"Nazeran, TM", "title":""},
+                {"name":"Noe, M", "title":""},
+                {"name":"Horlings, HM", "title":""},
+                {"name":"Lum, A", "title":""},
+                {"name":"Jones, S", "title":""},
+                {"name":"Senz, J", "title":""},
+                {"name":"Sexkin, T", "title":""},
+                {"name":"Ho, J", "title":""},
+                {"name":"Wu, R", "title":""},
+                {"name":"Lac, V", "title":""},
+                {"name":"Ogawa, H", "title":""},
+                {"name":"Tessier-Cloutier, B", "title":""},
+                {"name":"Alhassan, R", "title":""},
+                {"name":"Wang, A", "title":""},
+                {"name":"Wang, Y", "title":""},
+                {"name":"Cohen, J", "title":""},
+                {"name":"Wong, F", "title":""},
+                {"name":"Hasanovic, A", "title":""},
+                {"name":"Orr, NL", "title":""},
+                {"name":"Zhang, M", "title":""},
+                {"name":"Popoli, M", "title":""},
+                {"name":"McMahon, W", "title":""},
+                {"name":"Wood, L", "title":""},
+                {"name":"Mattox, A", "title":""},
+                {"name":"Allaire, C", "title":""},
+                {"name":"Segars, J", "title":""},
+                {"name":"Williams, C", "title":""},
+                {"name":"Tomasetti, C", "title":""},
+                {"name":"Boyd, N", "title":""},
+                {"name":"Kinzler, K", "title":""},
+                {"name":"Gilks, C", "title":""},
+                {"name":"Diaz, L", "title":""},
+                {"name":"Wang, T", "title":""},
+                {"name":"Vogelstein, B", "title":""},
+                {"name":"Yong, PJ", "title":""},
+                {"name":"Huntsman, D", "title":""},
+                {"name":"Shih, I", "title":""}      
+            ],
+            "year":"2017",
+            "journal":"New England Journal of Medicine",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/28489996/",
+            "cite_link":"/publication/journal-article/cite14.bib",
+            "show" : "yes" 
+        }
     ]
 }

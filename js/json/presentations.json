@@ -18,54 +18,9 @@
             "year":"2023",
             "journal":"Journal of Sexual Medicine",
             "article_link":"https://scholar.google.com/citations?hl=en&user=i8-4k_AAAAAJ",
-            "cite_link":"/publication/journal-article/cite1.bib",
-            "show" : "no"
-            },
+            "cite_link":"/publication/journal-article/cite1.bib"
+            }
 
-        {
-        "article":"KRAS Mutation and Greater Burden of Disease in Endometriosis",
-        "authors":[
-            {"name":"Orr, NL", "title":""},
-            {"name":"Albert, A", "title":""},
-            {"name":"Liu, YD", "title":""},
-            {"name":"Lum, A", "title":""},
-            {"name":"Hong, J", "title":""},
-            {"name":"Ionescu, CL", "title":""},
-            {"name":"Nazeran, TM", "title":""},
-            {"name":"Lee, AF", "title":""},
-            {"name":"Noga, H", "title":""},
-            {"name":"Lawrenson, K", "title":""},
-            {"name":"Williams, C", "title":""},        
-            {"name":"Allaire, C", "title":""},        
-            {"name":"Bedaiwy, MA", "title":""},    
-            {"name":"Anglesio, MS", "title":""},    
-            {"name":"Yong, P", "title":""}
-        ],
-        "year":"2023",
-        "journal":"Journal of Pathology: Clinical Research",
-        "article_link":"https://scholar.google.com/citations?hl=en&user=i8-4k_AAAAAJ",
-        "cite_link":"/publication/journal-article/cite2.bib",
-        "show" : "yes"
-        },
-
-        {
-        "article":"Deep dyspareunia in endometriosis: role of the bladder and pelvic floor",
-        "authors":[
-            {"name":"Orr, NL", "title":""},
-            {"name":"Noga, H", "title":""},
-            {"name":"Williams, C", "title":""},
-            {"name":"Allaire, C", "title":""}, 
-            {"name":"Bedaiwy, MA", "title":""}, 
-		{"name":"Lisonkova, S", "title":""},
-            {"name":"Smith, KB", "title":""},
-            {"name":"Yong, P", "title":""}
-        ],
-        "year":"2018",
-        "journal":"Journal of Sexual Medicine",
-        "article_link":"https://www.sciencedirect.com/science/article/abs/pii/S1743609518310531",
-        "cite_link":"/publication/journal-article/cite3.bib",
-        "show" : "main"
-        }
 
     ]
 }

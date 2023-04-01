@@ -102,68 +102,70 @@
         }
 
         function populateArticles(obj) {
-        const section = document.querySelector("#pubCards");
+            const section = document.querySelector("#pubCards");
         
             for (const pub of obj.pubs) {
-                const myArticle = document.createElement('div');
-                myArticle.classList.add("pub-list-item");
-                
-                const myI = document.createElement('i');
-                myI.classList.add("far", "fa-file-alt", "pub-icon");
-                myArticle.appendChild(myI);
+                if(pub.show == "main" || pub.show == "yes"){
+                    const myArticle = document.createElement('div');
+                    myArticle.classList.add("pub-list-item");
+                    
+                    const myI = document.createElement('i');
+                    myI.classList.add("far", "fa-file-alt", "pub-icon");
+                    myArticle.appendChild(myI);
 
-                const mySpanClass = document.createElement('span');
-                mySpanClass.classList.add("article-metadata", "li-cite-author");
-                myArticle.appendChild(mySpanClass);
+                    const mySpanClass = document.createElement('span');
+                    mySpanClass.classList.add("article-metadata", "li-cite-author");
+                    myArticle.appendChild(mySpanClass);
 
-                    var count = 0;
-                    const maxCount = pub.authors.length;
-                
-                    for(const author of pub.authors){
-                        
-                        count++;
-                        const mySpan = document.createElement('span');
-                        var boldName = author.name;
+                        var count = 0;
+                        const maxCount = pub.authors.length;
+                    
+                        for(const author of pub.authors){
+                            
+                            count++;
+                            const mySpan = document.createElement('span');
+                            var boldName = author.name;
 
-                        if(count == maxCount){
-                            boldName = boldName + ".";
-                        } else {
-                            boldName = boldName + "; ";
+                            if(count == maxCount){
+                                boldName = boldName + ".";
+                            } else {
+                                boldName = boldName + "; ";
+                            }
+                            if (boldName.includes("Orr")){
+                                const myBold = document.createElement('b');
+                                myBold.textContent = boldName;
+                                myArticle.appendChild(myBold);
+                            } else {
+                                mySpan.textContent = boldName;
+                            }
+                            
+
+                            myArticle.appendChild(mySpan);
                         }
-                        if (boldName.includes("Orr")){
-                            const myBold = document.createElement('b');
-                            myBold.textContent = boldName;
-                            myArticle.appendChild(myBold);
-                        } else {
-                            mySpan.textContent = boldName;
-                        }
-                        
+                    const myYear = document.createElement('a');
+                    myYear.textContent = " (" + pub.year + "). ";
+                    myArticle.appendChild(myYear);
 
-                        myArticle.appendChild(mySpan);
-                    }
-                const myYear = document.createElement('a');
-                myYear.textContent = " (" + pub.year + "). ";
-                myArticle.appendChild(myYear);
+                    const myPub = document.createElement('a');
+                    myPub.href = pub.article_link;
+                    myPub.innerText = pub.article + " ";
+                    myArticle.appendChild(myPub);
 
-                const myPub = document.createElement('a');
-                myPub.href = pub.article_link;
-                myPub.innerText = pub.article + " ";
-                myArticle.appendChild(myPub);
+                    const myNewEm = document.createElement('em');
+                    myNewEm.textContent = pub.journal;
+                    myArticle.appendChild(myNewEm);
 
-                const myNewEm = document.createElement('em');
-                myNewEm.textContent = pub.journal;
-                myArticle.appendChild(myNewEm);
+                    const myPara = document.createElement('p');
+                    const myCite = myPara.appendChild(document.createElement('a'));
+                    myCite.href = '#';
+                    myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm", "js-cite-modal");
+                    myCite.setAttribute("data-filename",pub.cite_link);
+                    myCite.innerText = "Cite";
+                    myPara.appendChild(myCite);
+                    myArticle.appendChild(myPara);
 
-                const myPara = document.createElement('p');
-                const myCite = myPara.appendChild(document.createElement('a'));
-                myCite.href = '#';
-                myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm", "js-cite-modal");
-                myCite.setAttribute("data-filename",pub.cite_link);
-                myCite.innerText = "Cite";
-                myPara.appendChild(myCite);
-                myArticle.appendChild(myPara);
-
-                section.appendChild(myArticle);
+                    section.appendChild(myArticle);
+                }   
             }
         }
 
@@ -173,45 +175,3 @@
 
   </body>
 </html>
-
-
-<!--
-
-    
-                        <div class=pub-list-item style=margin-bottom:1rem>
-                            <i class="far fa-file-alt pub-icon" aria-hidden=true></i>
-                            <span class="article-metadata li-cite-author">
-                                <span>MacLeod, R</span>, 
-                                <span>Parmar, G</span>, 
-                                <span>Wu, S</span>, 
-                                <span>Noga, H</span>, 
-                                <span>Albert, A</span>, 
-                                <span>Flannigan, R</span>, 
-                                <span>Brotto, L</span>, 
-                                <span>Orr, N</span>
-                                    <i class="author-notes fas fa-info-circle" data-toggle=tooltip
-                                    title="co-senior author"></i>,
-                                <span>Wahl, K</span>
-                                    <i class="author-notes fas fa-info-circle" data-toggle=tooltip
-                                    title="co-senior author"></i>,
-                                <span>Yong, P</span>
-                                    <i class="author-notes fas fa-info-circle" data-toggle=tooltip
-                                    title="co-senior author"></i>
-                            </span>
-                            (2023).
-                            <a href=/publication/journal-article />Acceptability, Reliability, and Validity of a Vaginal Insert for the Self-Assessment
-                            of Endometriosis-Associated Deep Dyspareunia: A Pilot Study</a>.
-                            <em>Journal of Sexual Medicine</em>.
-                            <p>
-                                <a class="btn btn-outline-primary btn-page-header btn-sm"
-                                    href=http://arxiv.org/pdf/1512.04133v1 target=_blank rel=noopener>
-                                    PDF
-                                </a>
-                                <a href=# class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-                                    data-filename=/publication/journal-article/cite.bib>
-                                    Cite
-                                </a>
-
-                            </p>
-                        </div>
--->
