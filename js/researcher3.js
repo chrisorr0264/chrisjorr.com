@@ -180,11 +180,12 @@ function populateExperience(obj) {
            
             const myMedia = document.createElement('div');
             myMedia.classList.add("media-body");
-            myExperience.appendChild(myMedia);
+            
             
             const myDiv = document.createElement('div');
             myDiv.classList.add("section-subheading", "article-title", "mb-0", "mt-0")
-            myExperience.appendChild(myDiv);
+            myMedia.appendChild(myDiv);
+            myExperience.appendChild(myMedia);
 
             const myExperienceTitle = document.createElement('a');
             myExperienceTitle.href = experience.link;
