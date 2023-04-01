@@ -1,5 +1,6 @@
 function populate(){
     populatePub();
+    populateExp();
 }
 
 async function populatePub() {
