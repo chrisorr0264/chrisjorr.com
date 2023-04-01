@@ -171,10 +171,10 @@ function populateTalks(obj) {
 }
 
 function populateExperience(obj) {
-    const section = document.querySelector("#exp-sections");
+    const section = document.querySelector("#expSections");
 
     for (const experience of obj.experiences) {
-        if(experience.experience-show == "main" || experience.experience-show == "yes"){
+        if(experience.show == "main" || experience.show == "yes"){
             const myExperience = document.createElement('div');
             myExperience.classList.add("media", "stream-item", "exp-box");
            
@@ -183,29 +183,29 @@ function populateExperience(obj) {
             myExperience.appendChild(myDiv);
 
             const myExperienceTitle = document.createElement('a');
-            myExperienceTitle.href = experience.experience-link;
-            myExperienceTitle.innerText = experience.experience-title + " ";
+            myExperienceTitle.href = experience.link;
+            myExperienceTitle.innerText = experience.title + " ";
             myExperience.appendChild(myExperienceTitle);
 
             const myExperienceCompany = document.createElement('div');
             myExperienceCompany.classList.add("article-style");
-            myExperienceCompany.textContent = experience.experience-company;
+            myExperienceCompany.textContent = experience.company;
             const myExperienceLocation = document.createElement('p');
-            myExperienceLocation.textContent = experience.experience-location;
+            myExperienceLocation.textContent = experience.location;
             myExperienceCompany.appendChild(myExperienceLocation);
             myExperience.appendChild(myExperienceCompany);
 
             const myExperienceText = document.createElement('div');
             myExperienceText.classList.add("article-style");
-            myExperienceText.textContent = experience.experience-text;
+            myExperienceText.textContent = experience.text;
             myExperience.appendChild(myExperienceText);
 
             const myExperienceDate = document.createElement('div');
             myExperienceDate.classList.add("stream-meta", "article-metadata");
-            myExperienceDate.textContent = experience.experience-date;
+            myExperienceDate.textContent = experience.date;
             const myExperienceCity = document.createElement('span');
             myExperienceCity.classList.add("middot-divider");
-            myExperienceCity.textContent = experience.experience-city;
+            myExperienceCity.textContent = experience.city;
             myExperience.appendChild(myExperienceDate);
 
 
