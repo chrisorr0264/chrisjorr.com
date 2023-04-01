@@ -178,6 +178,10 @@ function populateExperience(obj) {
             const myExperience = document.createElement('div');
             myExperience.classList.add("media", "stream-item", "exp-box");
            
+            const myMedia = document.createElement('div');
+            myMedia.classList.add("media-body");
+            myExperience.appendChild(myMedia);
+            
             const myDiv = document.createElement('div');
             myDiv.classList.add("section-subheading", "article-title", "mb-0", "mt-0")
             myExperience.appendChild(myDiv);
