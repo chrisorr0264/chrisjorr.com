@@ -185,12 +185,12 @@ function populateExperience(obj) {
             const myDiv = document.createElement('div');
             myDiv.classList.add("section-subheading", "article-title", "mb-0", "mt-0")
             myMedia.appendChild(myDiv);
-            myExperience.appendChild(myMedia);
+
 
             const myExperienceTitle = document.createElement('a');
             myExperienceTitle.href = experience.link;
             myExperienceTitle.innerText = experience.title + " ";
-            myExperience.appendChild(myExperienceTitle);
+            myMedia.appendChild(myExperienceTitle);
 
             const myExperienceCompany = document.createElement('div');
             myExperienceCompany.classList.add("article-style");
@@ -198,12 +198,12 @@ function populateExperience(obj) {
             const myExperienceLocation = document.createElement('p');
             myExperienceLocation.textContent = experience.location;
             myExperienceCompany.appendChild(myExperienceLocation);
-            myExperience.appendChild(myExperienceCompany);
+            myMedia.appendChild(myExperienceCompany);
 
             const myExperienceText = document.createElement('div');
             myExperienceText.classList.add("article-style");
             myExperienceText.textContent = experience.text;
-            myExperience.appendChild(myExperienceText);
+            myMedia.appendChild(myExperienceText);
 
             const myExperienceDate = document.createElement('div');
             myExperienceDate.classList.add("stream-meta", "article-metadata");
@@ -211,7 +211,9 @@ function populateExperience(obj) {
             const myExperienceCity = document.createElement('span');
             myExperienceCity.classList.add("middot-divider");
             myExperienceCity.textContent = experience.city;
-            myExperience.appendChild(myExperienceDate);
+            myMedia.appendChild(myExperienceDate);
+
+            myExperience.appendChild(MyMedia);
 
 
             section.appendChild(myExperience);
