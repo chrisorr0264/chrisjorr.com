@@ -604,7 +604,7 @@
             }
         }
         if (window.addEventListener("hashchange", k),
-        $("#navbar-main li.nav-item a.nav-link, .js-scroll").on("click", function(b) {
+        $(".nav li.nav-item a.nav-link, .js-scroll").on("click", function(b) {
             let a = this.hash;
             if (this.pathname === window.location.pathname && a && $(a).length && $(".js-widget-page").length > 0) {
                 b.preventDefault();
