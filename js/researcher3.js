@@ -1,3 +1,7 @@
+function populate(){
+    populatePub();
+}
+
 async function populatePub() {
 
     const requestURL = 'https://chrisjorr.com/js/json/publications.json';
