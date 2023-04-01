@@ -16,7 +16,7 @@ async function populatePub() {
 
 async function populatePres(){
     const requestURL2 = 'https://chrisjorr.com/js/json/presentations.json';
-    const request2 = new Request(requestURL);
+    const request2 = new Request(requestURL2);
 
     const response2 = await fetch(request2);
     const presentations = await response2.json();
@@ -24,7 +24,7 @@ async function populatePres(){
 
 async function populateExp(){
     const requestURL3 = 'https://chrisjorr.com/js/json/experience.json';
-    const request3 = new Request(requestURL);
+    const request3 = new Request(requestURL3);
 
     const response3 = await fetch(request3);
     const experiences = await response3.json();
