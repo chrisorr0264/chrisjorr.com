@@ -213,7 +213,7 @@ function populateExperience(obj) {
             myExperienceCity.textContent = experience.city;
             myMedia.appendChild(myExperienceDate);
 
-            myExperience.appendChild(MyMedia);
+            myExperience.appendChild(myMedia);
 
 
             section.appendChild(myExperience);
