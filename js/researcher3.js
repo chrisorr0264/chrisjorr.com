@@ -1,4 +1,4 @@
-async function populate() {
+async function populatePub() {
 
     const requestURL = 'https://chrisjorr.com/js/json/publications.json';
     const request = new Request(requestURL);
@@ -6,19 +6,25 @@ async function populate() {
     const response = await fetch(request);
     const pubs = await response.json();
 
+    populateArticles(pubs);
+}
+
+async function populatePres(){
     const requestURL2 = 'https://chrisjorr.com/js/json/presentations.json';
     const request2 = new Request(requestURL);
 
     const response2 = await fetch(request2);
     const presentations = await response2.json();
+}
 
+async function populateExp(){
     const requestURL3 = 'https://chrisjorr.com/js/json/experience.json';
     const request3 = new Request(requestURL);
 
     const response3 = await fetch(request3);
     const experiences = await response3.json();
 
-    populateArticles(pubs);
+
     populateExperience(experiences);
 
 }
