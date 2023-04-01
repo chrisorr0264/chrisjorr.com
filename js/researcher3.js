@@ -1,10 +1,10 @@
-function populate() {
+async function populate() {
 
     const requestURL = 'https://chrisjorr.com/js/json/publications.json';
     const request = new Request(requestURL);
 
-    const response = fetch(request);
-    const pubs = response.json();
+    const response = await fetch(request);
+    const pubs = await response.json();
 
 
     populateArticles(pubs);
