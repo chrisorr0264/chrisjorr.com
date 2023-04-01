@@ -92,7 +92,7 @@ function populateArticles(obj) {
 }
 
 function populateTalks(obj) {
-    const section = document.querySelector("#pubCards");
+    const section = document.querySelector("#talk-sections");
 
     for (const pub of obj.pubs) {
         if(pub.show == "main" || pub.show == "yes"){
@@ -160,7 +160,7 @@ function populateTalks(obj) {
 }
 
 function populateExperience(obj) {
-    const section = document.querySelector("#pubCards");
+    const section = document.querySelector("#exp-sections");
 
     for (const experience of obj.experiences) {
         if(experience.experience-show == "main" || experience.experience-show == "yes"){
