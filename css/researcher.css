@@ -8342,20 +8342,6 @@ html[dir=rtl] body {
     border-radius: 3px
 }
 
-.portrait-title h2 {
-    font-size: 1.75em;
-    font-weight: 300;
-    color: #000;
-    margin: 20px 0 10px
-}
-
-.portrait-title h3 {
-    font-size: 1rem;
-    font-weight: 300;
-    color: rgba(0,0,0,.54);
-    margin: 0 0 10px
-}
-
 ul.network-icon {
     display: inline-flex;
     flex-direction: row;
@@ -8638,14 +8624,6 @@ body.dark,.dark .docs-toc-link,.dark .modal button.close,.dark input {
     background-color: #44475a!important
 }
 
-.dark .portrait-title h2 {
-    color: #fff
-}
-
-.dark .portrait-title h3 {
-    color: rgba(255,255,255,.7)
-}
-
 .dark ul.ul-edu li .description p.institution {
     color: rgba(255,255,255,.6)
 }
@@ -8729,10 +8707,6 @@ body.dark,.dark .docs-toc-link,.dark .modal button.close,.dark input {
 .avatar {
     width: 240px;
     height: 240px
-}
-
-.portrait-title h2 {
-    font-size: 2.5rem
 }
 
 #profile .network-icon {
