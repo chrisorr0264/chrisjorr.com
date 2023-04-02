@@ -8320,6 +8320,28 @@ html[dir=rtl] body {
     }
 }
 
+.values-circle {
+    width:20%;
+    border-radius: 50%;
+    background: var(--c-background-dark);
+    line-height: 0;
+    position: relative
+}
+
+.values-circle::after {
+    content:"";
+    display: block;
+    padding-bottom:100%
+}
+
+.values-circle .values-text {
+    position: absolute;
+    bottom:50%;
+    width:100%;
+    text-align: center;
+    font-weight:700
+}
+
 .avatar-circle {
     border-radius: 50%;
     border: 5px;
