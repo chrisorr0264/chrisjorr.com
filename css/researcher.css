@@ -8340,7 +8340,8 @@ html[dir=rtl] body {
     bottom:50%;
     width:100%;
     text-align: center;
-    font-weight:700
+    font-weight:700;
+    color: var(--white)
 }
 
 .avatar-circle {
