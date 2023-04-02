@@ -60,7 +60,7 @@ function populateArticles(obj) {
                     var boldName = author.name;
 
                     if(count == maxCount){
-                        boldName = boldName + ".";
+                        boldName = boldName + " ";
                     } else {
                         boldName = boldName + "; ";
                     }
