@@ -8323,8 +8323,9 @@ html[dir=rtl] body {
 .values-circle {
     width:80%;
     border-radius: 50%;
-    background: var(--c-background-dark);
-    line-height: 0;
+    background: linear-gradient(135deg, var(--background-light) 0%, var(--c-background-dark) 100%);
+    box-shadow:inset -8px -7px 4px 0px rgba(0,0,0,0.3);
+
     position: relative
 }
 
