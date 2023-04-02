@@ -8795,3 +8795,17 @@ service p {
     border-color:(--white);
     padding:20px;
 }
+
+.portrait-title h2 {
+    font-size: 1.75em;
+    font-weight: 300;
+    color: #000;
+    margin: 20px 0 10px
+}
+
+.portrait-title h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(0,0,0,.54);
+    margin: 0 0 10px
+}
