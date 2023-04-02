@@ -29,7 +29,7 @@
     --c-background-dark: #4e7e7f;
     --c-background-light:#9ebabb;
     --c-button-dark: #4e737f;
-    --c-button-hover:(--white);
+    --c-button-hover:#fff;
     --c-button-hover-border:#4e737f;
 
 
