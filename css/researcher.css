@@ -8321,7 +8321,7 @@ html[dir=rtl] body {
 }
 
 .values-circle {
-    width:20%;
+    width:80%;
     border-radius: 50%;
     background: var(--c-background-dark);
     line-height: 0;
