@@ -8325,7 +8325,6 @@ html[dir=rtl] body {
     border-radius: 50%;
     background: linear-gradient(135deg, #9ebabb 0%, #4e7e7f 100%);
     box-shadow:inset -8px -7px 4px 0px rgba(0,0,0,0.3);
-
     position: relative
 }
 
@@ -8336,7 +8335,7 @@ html[dir=rtl] body {
 }
 
 .values-circle .values-text {
-    display:block;
+    position: absolute;
     width:100%;
     text-align: center;
     font-weight:700;
