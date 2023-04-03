@@ -1,26 +1,62 @@
-{ "pubs":
+{ "kudos":
 
     [
         {
-            "article":"Acceptability, Reliability, and Validity of a Vaginal Insert for the Self-Assessment of Endometriosis-Associated Deep Dyspareunia: A Pilot Study",
-            "authors":[
-                {"name":"MacLeod, R", "title":""},
-                {"name":"Parmar, G", "title":""},
-                {"name":"Wu, S", "title":""},
-                {"name":"Noga, H", "title":""},
-                {"name":"Albert, A", "title":""},
-                {"name":"Flannigan, R", "title":""},
-                {"name":"Brotto, L", "title":""},
-                {"name":"Orr, N", "title":"co-senior author"},
-                {"name":"Wahl, K", "title":"co-senior author"},
-                {"name":"Yong, P", "title":"co-senior author"}
-            ],
-            "year":"2023",
-            "journal":"Journal of Sexual Medicine",
-            "article_link":"https://scholar.google.com/citations?hl=en&user=i8-4k_AAAAAJ",
-            "cite_link":"/publication/journal-article/cite1.bib"
-            }
-
+            "title":"Rising Star Certificate of Excellence",
+            "organization":"Canadian Association of Medical Education",
+            "date":"2022",
+            "kudo_link":"",
+		"show":"main"
+         }
+        {
+            "title":"Faculty of Medicine Killam Graduate Teaching Assistant Award",
+            "organization":"University of British Columbia",
+            "date":"2021",
+            "kudo_link":"",
+		"show":"main"
+         }
+        {
+            "title":"Li Tze Fong Memorial Fellowship",
+            "organization":"University of British Columbia",
+            "date":"2020-2021",
+            "kudo_link":"",
+		"show":"main"
+         }
+        {
+            "title":"Cordula and Gunter Paetzold Fellowship",
+            "organization":"University of British Columbia",
+            "date":"2019-2020",
+            "kudo_link":"",
+		"show":"main"
+         }
+        {
+            "title":"Four Year Doctoral Fellowship and Tuition Award",
+            "organization":"University of British Columbia",
+            "date":"2019-2022",
+            "kudo_link":"",
+		"show":"main"
+         }
+        {
+            "title":"Simons Foundation Doctoral Scholarship",
+            "organization":"University of British Columbia",
+            "date":"2018",
+            "kudo_link":"",
+		"show":"main"
+         }
+        {
+            "title":"Outstanding Achievement Award for a Masters Student",
+            "organization":"BC Children's Hospital Research Institute",
+            "date":"2018",
+            "kudo_link":"",
+		"show":"main"
+         }
+        {
+            "title":"Canadian Graduate Scholarship - Masters",
+            "organization":"Canadian Institutes of Health Research",
+            "date":"2017-2018",
+            "kudo_link":"",
+		"show":"main"
+         }
 
     ]
 }
