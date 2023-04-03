@@ -8323,18 +8323,18 @@ html[dir=rtl] body {
 .values-circle {
     width:80%;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--background-light) 0%, var(--c-background-dark) 100%);
+    background: linear-gradient(135deg, #9ebabb 0%, #4e7e7f 100%);
     box-shadow:inset -8px -7px 4px 0px rgba(0,0,0,0.3);
 
     position: relative
 }
-
+/*
 .values-circle::after {
     content:"";
     display: block;
     padding-bottom:100%
 }
-
+*/
 .values-circle .values-text {
     position: absolute;
     bottom:50%;
