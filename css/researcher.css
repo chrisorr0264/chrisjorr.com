@@ -8832,6 +8832,7 @@ service p {
     margin: 0 0 10px
 }
 
+/*
 .ball {
     display: inline-block;
     width: 100%;
@@ -8995,3 +8996,4 @@ service p {
     97%, 100% {
       -webkit-transform: scale(1);
       transform: scale(1); } }
+      */
