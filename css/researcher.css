@@ -8328,13 +8328,13 @@ html[dir=rtl] body {
 
     position: relative
 }
-/*
+
 .values-circle::after {
     content:"";
     display: block;
     padding-bottom:100%
 }
-*/
+
 .values-circle .values-text {
     position: absolute;
     bottom:50%;
