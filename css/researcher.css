@@ -8832,7 +8832,7 @@ service p {
     margin: 0 0 10px
 }
 
-/*
+
 .ball {
     display: inline-block;
     width: 100%;
@@ -8940,13 +8940,14 @@ service p {
     -o-perspective-origin: 50% 50%;
     perspective-origin: 50% 50%;
   }
+  /*
   body {
     width: 300px;
     margin: 20px auto;
     background: linear-gradient(to bottom, rgba(100, 100, 100, 0.2) 0%, rgba(255, 255, 255, 0.5) 40%, #ffffff 100%);
     background-repeat: no-repeat;
   }
-  
+  */
   @-webkit-keyframes bubble-anim {
     0% {
       -webkit-transform: scale(1);
@@ -8996,4 +8997,4 @@ service p {
     97%, 100% {
       -webkit-transform: scale(1);
       transform: scale(1); } }
-      */
+    
