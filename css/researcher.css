@@ -8915,13 +8915,13 @@ service p {
     height: 80px;
     width: 100px;
     left: 0px;
-    margin-left: -130px;
+    margin-left: -110px;
     top: 44px;
-    margin-top: -40px;
+    margin-top: -30px;
     color: black;
     font-family: Arial;
-    font-size: 30px;
-    line-height: 60px;
+    font-size: 25px;
+    line-height: 40px;
   }
   
   .ball .two {
@@ -8945,13 +8945,13 @@ service p {
     height: 80px;
     width: 100px;
     left: 0px;
-    margin-left: -130px;
+    margin-left: -110px;
     top: 44px;
     margin-top: -40px;
     color: black;
     font-family: Arial;
-    font-size: 30px;
-    line-height: 60px;
+    font-size: 25px;
+    line-height: 40px;
   }
 
   .ball .three {
@@ -8968,24 +8968,24 @@ service p {
     position: absolute;
   }
   .ball .three:before {
-    content: "Women's Health education";
+    content: "Women's Health Education";
     display: block;
     position: absolute;
     text-align: center;
     height: 80px;
     width: 100px;
     left: 0px;
-    margin-left: -130px;
+    margin-left: -100px;
     top: 44px;
     margin-top: -40px;
     color: black;
     font-family: Arial;
-    font-size: 30px;
-    line-height: 60px;
+    font-size: 25px;
+    line-height: 40px;
   }
   .ball-container {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     display: inline-block;
     margin: 20px;
     -webkit-perspective: 1200px;
