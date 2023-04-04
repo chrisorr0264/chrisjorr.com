@@ -8914,8 +8914,8 @@ service p {
     text-align: center;
     height: 80px;
     width: 100px;
-    left: 50px;
-    margin-left: -40px;
+    left: 0px;
+    margin-left: -130px;
     top: 44px;
     margin-top: -40px;
     color: black;
