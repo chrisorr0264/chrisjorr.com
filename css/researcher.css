@@ -1180,14 +1180,14 @@ a.btn.disabled,fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-    color: #dd2c00;
-    border-color: #dd2c00
+    color: var(--c-button-dark);
+    border-color: var(--c-button-dark)
 }
 
 .btn-outline-primary:hover {
     color: var(--white);
-    background-color: #dd2c00;
-    border-color: #dd2c00
+    background-color: var(--c-button-hover);
+    border-color: var(--c-button-hover-border)
 }
 
 .btn-outline-primary:focus,.btn-outline-primary.focus {
@@ -1195,14 +1195,14 @@ a.btn.disabled,fieldset:disabled a.btn {
 }
 
 .btn-outline-primary.disabled,.btn-outline-primary:disabled {
-    color: #dd2c00;
+    color: var(--c-button-dark);
     background-color: transparent
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active,.btn-outline-primary:not(:disabled):not(.disabled).active,.show>.btn-outline-primary {
     color: var(--white);
-    background-color: #dd2c00;
-    border-color: #dd2c00
+    background-color: var(--c-button-dark);
+    border-color: var(--c-button-dark)
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus,.btn-outline-primary:not(:disabled):not(.disabled).active:focus,.show>.btn-outline-primary {
@@ -1833,8 +1833,8 @@ input[type=submit].btn-block,input[type=reset].btn-block,input[type=button].btn-
 .page-item.active .page-link {
     z-index: 3;
     color: var(--white);
-    background-color: #dd2c00;
-    border-color: #dd2c00
+    background-color: var(--c-background-dark);
+    border-color: var(--c-background-dark)
 }
 
 .page-item.disabled .page-link {
