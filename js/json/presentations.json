@@ -1,109 +1,110 @@
-{ "pres":
+{ "talks":
 
     [
         {
             "conference":"14th World Congress on Endometriosis",
 		"title":"Somatic Cancer-Driver Mutations and Sexual Pain Phenotype in Endometriosis",
-		"type" :"Poster"            
+		"type" :"Poster",            
 		"date":"2021",
             "location":"Virtual",
             "notes":"",
+            "link":"https://endometriosis.ca/14th-world-congress-on-endometriosis-wce2020/",
 		"show":"main"
-            }
+            },
         {
             "conference":"Public Scholars Initiative PhD Go Public",
 		"title":"The Role of Central Sensitization in Endometriosis-associated Deep Dyspareunia",
-		"type" :"Oral"            
+		"type" :"Oral",            
 		"date":"2019",
             "location":"Vancouver",
             "notes":"",
 		"show":"yes"
-            }
+            },
         {
             "conference":"Canadian Society for the Advancement of Gynecologic Excellence",
 		"title":"The Central Sensitization Inventory in Women with Endometriosis",
-		"type" :"Oral"            
+		"type" :"Oral",            
 		"date":"2019",
             "location":"Ottawa",
             "notes":"Best Abstract in the Field of Pain",
 		"show":"main"
-            }
+            },
         {
             "conference":"UBC Obstetrics and Gynecology 19th Annual Academic Day",
 		"title":"Central Sensitization and Endometriosis-Associated Painful Sex",
-		"type" :"Oral"            
+		"type" :"Oral",            
 		"date":"2019",
             "location":"Vancouver",
             "notes":"",
 		"show":"yes"
-            }
+            },
         {
             "conference":"Canadian Pain Society's 40th Annual Scientific Meeting",
 		"title":"Let's Talk About (Painful) Sex!",
-		"type" :"Oral (Symposium)"            
+		"type" :"Oral (Symposium)",            
 		"date":"2019",
             "location":"Toronto",
             "notes":"",
 		"show":"main"
-            }
+            },
         {
             "conference":"International Pelvic Pain Society Annual Scientific Meeting on Pelvic Pain",
 		"title":"Central Sensitization Inventory in Endometriosis-Associated Pain",
-		"type" :"Oral"            
+		"type" :"Oral",            
 		"date":"2019",
             "location":"Toronto",
             "notes":"Sole Oral Presenter Invited for the Endometriosis Session",
 		"show":"main"
-            }
+            },
         {
             "conference":"International Society for the Study of Women's Sexual Health Annual Meeting",
 		"title":"Increased Central Sensitization Among Women with Painful Bladder Syndrome and Deep Dyspareunia",
-		"type" :"Poster"            
+		"type" :"Poster",            
 		"date":"2019",
             "location":"Atlanta",
             "notes":"",
 		"show":"yes"
-            }
+            },
         {
             "conference":"Canadian Pain Society's 40th Annual Scientific Meeting",
 		"title":"Increased Central Sensitization in Women with Chronic Pelvic Pain and Painful Bladder Syndrome",
-		"type" :"Poster"            
+		"type" :"Poster",            
 		"date":"2019",
             "location":"Toronto",
             "notes":"",
 		"show":"yes"
-            }
+            },
         {
             "conference":"International Society for the Study of Women's Sexual Health Annual Meeting",
 		"title":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
-		"type" :"Oral"            
+		"type" :"Oral",            
 		"date":"2018",
             "location":"San Diego",
             "notes":"",
 		"show":"yes"
-            }
+            },
         {
             "conference":"International Pelvic Pain Society Annual Scientific Meeting on Pelvic Pain",
 		"title":"Deep Dyspareunia and Central Sensitization in Women with Endometriosis",
-		"type" :"Poster"            
+		"type" :"Poster",            
 		"date":"2018",
             "location":"Chicago",
             "notes":"",
 		"show":"yes"
-            }
+            },
         {
             "conference":"UBC Obstetrics and Gynecology 18th Annual Academic Day",
 		"title":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
-		"type" :"Oral"            
+		"type" :"Oral",            
 		"date":"2018",
             "location":"Vancouver",
             "notes":"",
 		"show":"yes"
-            }
+            },
         {
             "conference":"Canadian Society for the Advancement of Gynecologic Excellence",
 		"title":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
-		"type" :"Oral"            
+		"type" :"Oral",            
 		"date":"2018",
             "location":"Banff",
             "notes":"Runner-Up Best Oral E-Poster Presentation",
