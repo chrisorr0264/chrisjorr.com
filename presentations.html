@@ -137,12 +137,22 @@
                 const myLocCol = document.createElement('div');
                 myLocCol.classList.add('col-4');
 
-                myLocCol.innerText = talk.date;
+                const myDate = document.createElement('p');
+                myDate.innerText = talk.date;
+
+                myLocCol.appendChild(myDate);
+
                 const myMidDot = document.createElement('span');
                 myMidDot.classList.add("middot-divider");
                 myLocCol.appendChild(myMidDot);
-                myLocCol.innerText = talk.location;
+                
+                const myLoc = document.createElement('p');
+                myLoc.innerText = talk.location;
+                
+                myLocCol.appendChild(myLoc);
+
                 myRow.appendChild(myLocCol);
+                
                 myTalk.appendChild(myRow);
 
                 section.appendChild(myTalk);
