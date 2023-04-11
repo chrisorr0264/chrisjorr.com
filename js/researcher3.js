@@ -1,6 +1,7 @@
 function populate(){
     populatePub();
     populateExp();
+    populateTalks();
 }
 
 async function populatePub() {
@@ -14,12 +15,12 @@ async function populatePub() {
     populateArticles(pubs);
 }
 
-async function populatePres(){
+async function populateTalks(){
     const requestURL2 = 'https://chrisjorr.com/js/json/presentations.json';
     const request2 = new Request(requestURL2);
 
     const response2 = await fetch(request2);
-    const presentations = await response2.json();
+    const talks = await response2.json();
 }
 
 async function populateExp(){
@@ -103,72 +104,63 @@ function populateArticles(obj) {
 }
 
 function populateTalks(obj) {
-    const section = document.querySelector("#talk-sections");
+    const section = document.querySelector("#talks");
+    
+        for (const talk of obj.talks) {
+            const myTalk = document.createElement('div');
+            myTalk.classList.add("pub-list-item");
 
-    for (const pub of obj.pubs) {
-        if(pub.show == "main" || pub.show == "yes"){
-            const myArticle = document.createElement('div');
-            myArticle.classList.add("pub-list-item");
+            const myTitleRow = document.createElement('div');
+            myTitleRow.classList.add("row");
+
             
-            const myI = document.createElement('i');
-            myI.classList.add("far", "fa-file-alt", "pub-icon");
-            myArticle.appendChild(myI);
-
-            const mySpanClass = document.createElement('span');
-            mySpanClass.classList.add("article-metadata", "li-cite-author");
-            myArticle.appendChild(mySpanClass);
-
-                var count = 0;
-                const maxCount = pub.authors.length;
+            const myTitle = document.createElement('a');
+            myTitle.href = talk.link;
+            myTitle.innerText = talk.conference;
+            myTitleRow.appendChild(myTitle);
+            myTalk.appendChild(myTitleRow);
             
-                for(const author of pub.authors){
-                    
-                    count++;
-                    const mySpan = document.createElement('span');
-                    var boldName = author.name;
+            const myRow = document.createElement('div');
+            myRow.classList.add("row");
 
-                    if(count == maxCount){
-                        boldName = boldName + ".";
-                    } else {
-                        boldName = boldName + "; ";
-                    }
-                    if (boldName.includes("Orr")){
-                        const myBold = document.createElement('b');
-                        myBold.textContent = boldName;
-                        myArticle.appendChild(myBold);
-                    } else {
-                        mySpan.textContent = boldName;
-                    }
-                    
+            const myDescCol = document.createElement('div');
+            myDescCol.classList.add('col-8');
 
-                    myArticle.appendChild(mySpan);
-                }
-            const myYear = document.createElement('a');
-            myYear.textContent = " (" + pub.year + "). ";
-            myArticle.appendChild(myYear);
+            const myTypeSpan = document.createElement('span');
+            myTypeSpan.style = "font-weight: bold";
+            myTypeSpan.innerText = talk.type + " Presentation.";
+            myDescCol.appendChild(myTypeSpan);
 
-            const myPub = document.createElement('a');
-            myPub.href = pub.article_link;
-            myPub.innerText = pub.article + " ";
-            myArticle.appendChild(myPub);
+            const myTypePara = document.createElement('p');
+            myTypePara.innerText = talk.title;
+            myDescCol.appendChild(myTypePara);
+            myRow.appendChild(myDescCol);
 
-            const myNewEm = document.createElement('em');
-            myNewEm.textContent = pub.journal;
-            myArticle.appendChild(myNewEm);
+            const myLocCol = document.createElement('div');
+            myLocCol.classList.add('col-4', 'text-center');
 
-            const myPara = document.createElement('p');
-            const myCite = myPara.appendChild(document.createElement('a'));
-            myCite.href = '#';
-            myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm", "js-cite-modal");
-            myCite.setAttribute("data-filename",pub.cite_link);
-            myCite.innerText = "Cite";
-            myPara.appendChild(myCite);
-            myArticle.appendChild(myPara);
+            const myDate = document.createElement('p');
+            myDate.classList.add("mb-0")
+            myDate.innerText = talk.date;
 
-            section.appendChild(myArticle);
-        }   
+            myLocCol.appendChild(myDate);
+
+            const myMidDot = document.createElement('i');
+            myMidDot.classList.add("fa-brands", "fa-galactic-republic");
+            myLocCol.appendChild(myMidDot);
+            
+            const myLoc = document.createElement('p');
+            myLoc.innerText = talk.location;
+            
+            myLocCol.appendChild(myLoc);
+
+            myRow.appendChild(myLocCol);
+            
+            myTalk.appendChild(myRow);
+
+            section.appendChild(myTalk);
+        }
     }
-}
 
 function populateExperience(obj) {
     const section = document.querySelector("#expSections");
