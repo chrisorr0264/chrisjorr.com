@@ -7115,6 +7115,8 @@ article .article-metadata {
 .middot-divider {
     padding-right: .45em;
     padding-left: .45em;
+    padding-top: .45em;
+    padding-bottom: .45em;
     font-size: 15px
 }
 
@@ -7122,6 +7124,17 @@ article .article-metadata {
     content: '\00B7'
 }
 
+.middot-divider-lg {
+    padding-right: .45em;
+    padding-left: .45em;
+    padding-top: .45em;
+    padding-bottom: .45em;
+    font-size: 50px
+}
+
+.middot-divider-lg::after {
+    content: '\00B7'
+}
 .content-widget-hr {
     margin-top: 1.2rem;
     padding-top: 1.2rem;
