@@ -39,13 +39,9 @@ async function populateExp(){
 
 function populateArticles(obj) {
     const section = document.querySelector("#pubCards");
-
-
-
-
     alert(document.title.includes("publications"));
     for (const pub of obj.pubs) {
-        if((!document.title.includes("publications") && pub.show=="main2") || (document.title.includes("publications")&& ((pub.show=="main") || (pub.show=="yes")))){
+        if((!document.title.includes("publications") && pub.show=="main") || (document.title.includes("publications") && (pub.show=="main" || pub.show=="yes"))){
             const myArticle = document.createElement('div');
             myArticle.classList.add("pub-list-item");
             
