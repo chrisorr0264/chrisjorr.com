@@ -21,6 +21,8 @@ async function populateTalks(){
 
     const response2 = await fetch(request2);
     const talks = await response2.json();
+
+    populateTalks(talks);
 }
 
 async function populateExp(){
