@@ -108,61 +108,61 @@ function populateArticles(obj) {
 function populateTalks(obj) {
     const section = document.querySelector("#talks");
     
-        for (const talk of obj.talks) {
-            const myTalk = document.createElement('div');
-            myTalk.classList.add("pub-list-item");
+    for (const talk of obj.talks) {
+        const myTalk = document.createElement('div');
+        myTalk.classList.add("pub-list-item");
 
-            const myTitleRow = document.createElement('div');
-            myTitleRow.classList.add("row");
+        const myTitleRow = document.createElement('div');
+        myTitleRow.classList.add("row");
 
-            
-            const myTitle = document.createElement('a');
-            myTitle.href = talk.link;
-            myTitle.innerText = talk.conference;
-            myTitleRow.appendChild(myTitle);
-            myTalk.appendChild(myTitleRow);
-            
-            const myRow = document.createElement('div');
-            myRow.classList.add("row");
+        
+        const myTitle = document.createElement('a');
+        myTitle.href = talk.link;
+        myTitle.innerText = talk.conference;
+        myTitleRow.appendChild(myTitle);
+        myTalk.appendChild(myTitleRow);
+        
+        const myRow = document.createElement('div');
+        myRow.classList.add("row");
 
-            const myDescCol = document.createElement('div');
-            myDescCol.classList.add('col-8');
+        const myDescCol = document.createElement('div');
+        myDescCol.classList.add('col-8');
 
-            const myTypeSpan = document.createElement('span');
-            myTypeSpan.style = "font-weight: bold";
-            myTypeSpan.innerText = talk.type + " Presentation.";
-            myDescCol.appendChild(myTypeSpan);
+        const myTypeSpan = document.createElement('span');
+        myTypeSpan.style = "font-weight: bold";
+        myTypeSpan.innerText = talk.type + " Presentation.";
+        myDescCol.appendChild(myTypeSpan);
 
-            const myTypePara = document.createElement('p');
-            myTypePara.innerText = talk.title;
-            myDescCol.appendChild(myTypePara);
-            myRow.appendChild(myDescCol);
+        const myTypePara = document.createElement('p');
+        myTypePara.innerText = talk.title;
+        myDescCol.appendChild(myTypePara);
+        myRow.appendChild(myDescCol);
 
-            const myLocCol = document.createElement('div');
-            myLocCol.classList.add('col-4', 'text-center');
+        const myLocCol = document.createElement('div');
+        myLocCol.classList.add('col-4', 'text-center');
 
-            const myDate = document.createElement('p');
-            myDate.classList.add("mb-0")
-            myDate.innerText = talk.date;
+        const myDate = document.createElement('p');
+        myDate.classList.add("mb-0")
+        myDate.innerText = talk.date;
 
-            myLocCol.appendChild(myDate);
+        myLocCol.appendChild(myDate);
 
-            const myMidDot = document.createElement('i');
-            myMidDot.classList.add("fa-brands", "fa-galactic-republic");
-            myLocCol.appendChild(myMidDot);
-            
-            const myLoc = document.createElement('p');
-            myLoc.innerText = talk.location;
-            
-            myLocCol.appendChild(myLoc);
+        const myMidDot = document.createElement('i');
+        myMidDot.classList.add("fa-brands", "fa-galactic-republic");
+        myLocCol.appendChild(myMidDot);
+        
+        const myLoc = document.createElement('p');
+        myLoc.innerText = talk.location;
+        
+        myLocCol.appendChild(myLoc);
 
-            myRow.appendChild(myLocCol);
-            
-            myTalk.appendChild(myRow);
+        myRow.appendChild(myLocCol);
+        
+        myTalk.appendChild(myRow);
 
-            section.appendChild(myTalk);
-        }
+        section.appendChild(myTalk);
     }
+}
 
 function populateExperience(obj) {
     const section = document.querySelector("#expSections");
