@@ -1,7 +1,7 @@
 function populate(){
     populatePub();
     populateExp();
-    populateTalks();
+    populatePresentations();
 }
 
 async function populatePub() {
@@ -15,7 +15,7 @@ async function populatePub() {
     populateArticles(pubs);
 }
 
-async function populateTalks(){
+async function populatePresentations(){
     const requestURL2 = 'https://chrisjorr.com/js/json/presentations.json';
     const request2 = new Request(requestURL2);
 
