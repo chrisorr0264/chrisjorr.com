@@ -39,7 +39,7 @@ async function populateExp(){
 
 function populateArticles(obj) {
     const section = document.querySelector("#pubCards");
-    alert(document.title.includes("publications"));
+    alert(document.title);
     for (const pub of obj.pubs) {
         if((!document.title.includes("publications") && pub.show=="main") || (document.title.includes("publications") && (pub.show=="main" || pub.show=="yes"))){
             const myArticle = document.createElement('div');
