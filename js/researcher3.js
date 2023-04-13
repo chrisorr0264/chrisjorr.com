@@ -38,7 +38,7 @@ async function populateExp(){
 }
 
 function populateArticles(obj) {
-    const section = document.querySelector("#pubCards");
+    const sectionPub = document.querySelector("#pubCards");
     /* alert(document.title); */
     for (const pub of obj.pubs) {
         if((!document.title.includes("Publications") && pub.show=="main") || (document.title.includes("Publications") && (pub.show=="main" || pub.show=="yes"))){
@@ -100,13 +100,13 @@ function populateArticles(obj) {
             myPara.appendChild(myCite);
             myArticle.appendChild(myPara);
 
-            section.appendChild(myArticle);
+            sectionPub.appendChild(myArticle);
         }   
     }
 }
 
 function populateTalks(obj) {
-    const section = document.querySelector("#talks");
+    const sectionTalk = document.querySelector("#talks");
     
     for (const talk of obj.talks) {
         if((!document.title.includes("Presentations") && talk.show=="main") || (document.title.includes("Presentations") && (talk.show=="main" || talk.show=="yes"))){
@@ -161,13 +161,13 @@ function populateTalks(obj) {
             
             myTalk.appendChild(myRow);
 
-            section.appendChild(myTalk);
+            sectionTalk.appendChild(myTalk);
         }
     }
 }
 
 function populateExperience(obj) {
-    const section = document.querySelector("#expSections");
+    const sectionExp = document.querySelector("#expSections");
 
     for (const experience of obj.experiences) {
         if((!document.title.includes("Experience") && experience.show=="main") || (document.title.includes("Experience") && (experience.show=="main" || experience.show=="yes"))){
@@ -212,7 +212,7 @@ function populateExperience(obj) {
             myExperience.appendChild(myMedia);
 
 
-            section.appendChild(myExperience);
+            sectionExp.appendChild(myExperience);
         }   
     }
 }
