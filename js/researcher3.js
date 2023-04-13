@@ -189,7 +189,7 @@ function populateExperience(obj) {
             myMedia.appendChild(myExperienceTitle);
 
             const myExpDate = document.createElement('span');
-            myExpDate.style = "float: right";
+            myExpDate.style = "float: right font-size: .8rem";
             myExpDate.innerText = experience.date + " | " + experience.city
             myMedia.appendChild(myExpDate);
 
