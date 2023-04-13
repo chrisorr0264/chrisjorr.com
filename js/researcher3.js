@@ -188,6 +188,11 @@ function populateExperience(obj) {
             myExperienceTitle.innerText = experience.title + " ";
             myMedia.appendChild(myExperienceTitle);
 
+            const myExpDate = document.createElement('span');
+            myExpDate.style = "float: right";
+            myExpDate.innerText = experience.date + " | " + experience.city
+            myMedia.appendChild(myExpDate);
+
             const myExperienceCompany = document.createElement('div');
             myExperienceCompany.classList.add("article-style");
             myExperienceCompany.textContent = experience.company;
@@ -201,13 +206,7 @@ function populateExperience(obj) {
             myExperienceText.textContent = experience.text;
             myMedia.appendChild(myExperienceText);
 
-            const myExperienceDate = document.createElement('div');
-            myExperienceDate.classList.add("stream-meta", "article-metadata");
-            myExperienceDate.textContent = experience.date;
-            const myExperienceCity = document.createElement('span');
-            myExperienceCity.classList.add("middot-divider");
-            myExperienceCity.textContent = experience.city;
-            myMedia.appendChild(myExperienceDate);
+
 
             myExperience.appendChild(myMedia);
 
