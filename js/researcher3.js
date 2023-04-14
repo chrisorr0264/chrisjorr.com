@@ -39,11 +39,11 @@ async function populateExp(){
 }
 
 async function populateRecognitions(){
-    const requestURL3 = 'https://chrisjorr.com/js/json/experience.json';
-    const request3 = new Request(requestURL3);
+    const requestURL4 = 'https://chrisjorr.com/js/json/recognitions.json';
+    const request4 = new Request(requestURL4);
 
-    const response3 = await fetch(request3);
-    const kudos = await response3.json();
+    const response4 = await fetch(request4);
+    const kudos = await response4.json();
 
 
     populateKudos(kudos);
