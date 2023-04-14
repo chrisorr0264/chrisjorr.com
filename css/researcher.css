@@ -53,7 +53,7 @@ html {
     -webkit-tap-highlight-color: transparent
 }
 
-article,aside,footer,header,hgroup,main,nav,section {
+article,aside,figcaption,figure,footer,header,main,nav,section {
     display: block
 }
 
@@ -136,6 +136,10 @@ pre {
     margin-bottom: 1rem;
     overflow: auto;
     -ms-overflow-style: scrollbar
+}
+
+figure {
+    margin: 0 0 1rem
 }
 
 img {
@@ -318,6 +322,20 @@ small,.small {
     border-radius: .25rem;
     max-width: 100%;
     height: auto
+}
+
+.figure {
+    display: inline-block
+}
+
+.figure-img {
+    margin-bottom: .5rem;
+    line-height: 1
+}
+
+.figure-caption {
+    font-size: 90%;
+    color: #6c757d
 }
 
 pre {
@@ -8470,6 +8488,30 @@ ul.ul-edu li .description p.institution {
 .experience .m-2 .border.exp-fill {
     background-color: #4e7e7f!important
 }
+
+figure img {
+    height: auto;
+    max-width: 100%
+}
+
+figure figcaption {
+    margin-top: .75em;
+    margin-bottom: 1.65rem;
+    line-height: 1.4;
+    font-size: .76rem;
+    text-align: center
+}
+
+figure figcaption.numbered::before {
+    font-weight: 700;
+    text-transform: uppercase;
+    content: attr(data-pre)counter(captions)attr(data-post)
+}
+
+figure figcaption.numbered {
+    counter-increment: captions
+}
+
 
 .featurette {
     font-size: .8rem;
