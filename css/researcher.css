@@ -12519,6 +12519,7 @@ service p {
     min-width: 260px;
     height: 200px;
     background-color: #b7c8c9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 8px 30px 0 rgba(0, 0, 0, 0.5);
     overflow:hidden;
   }
 
