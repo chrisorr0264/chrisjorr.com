@@ -2676,14 +2676,14 @@ a.btn.disabled,fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-    color: #dd2c00;
-    border-color: #dd2c00
+    color: #4e7e7f;
+    border-color: #4e7e7f
 }
 
 .btn-outline-primary:hover {
     color: #fff;
-    background-color: #dd2c00;
-    border-color: #dd2c00
+    background-color: #4e7e7f;
+    border-color: #4e7e7f
 }
 
 .btn-outline-primary:focus,.btn-outline-primary.focus {
@@ -9992,15 +9992,15 @@ a,h3.article-title a:hover {
 }
 
 a:hover,a:focus {
-    color: #dd2c00
+    color: #4e7e7f
 }
 
 .dark a,.dark h3.article-title a:hover {
-    color: #dd2c00
+    color: #4e7e7f
 }
 
 .dark a:not(.btn):hover,.dark a:not(.btn):focus {
-    color: #dd2c00
+    color: #4e7e7f
 }
 
 pre,code {
