@@ -230,7 +230,7 @@ function populateExperience(obj) {
 }
 
 function populateKudos(obj) {
-    const sectionKudo = document.querySelector("#KudoSections");
+    const sectionKudo = document.querySelector("#kudoSections");
 
     for (const kudo of obj.kudos) {
         if((!document.title.includes("Recognitions") && kudo.show=="main") || (document.title.includes("Recognitions") && (kudo.show=="main" || kudo.show=="yes"))){
