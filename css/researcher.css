@@ -12514,6 +12514,13 @@ service p {
     color: rgba(0,0,0,.54);
     margin: 0 0 10px
 }
+.interests-card {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    background-color: #4e7e7f;
+    overflow:hidden;
+  }
 
 .interests-card-image {
     height: 100%;
