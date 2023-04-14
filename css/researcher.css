@@ -12516,7 +12516,7 @@ service p {
 }
 .interests-card {
     position: relative;
-    width: 300px;
+
     height: 200px;
     background-color: #b7c8c9;
     overflow:hidden;
@@ -12538,7 +12538,7 @@ service p {
 .interests-card_body {
     position: absolute;
     inset: 0;
-    padding: 50px;
+    padding: 30px;
     color: #fff;
     text-align: center;
     display: flex;
