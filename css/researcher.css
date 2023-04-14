@@ -8333,28 +8333,6 @@ html[dir=rtl] body {
     }
 }
 
-.values-circle {
-    width:80%;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #9ebabb 0%, #4e7e7f 100%);
-    box-shadow:inset -8px -7px 4px 0px rgba(0,0,0,0.3);
-    position: relative
-}
-
-.values-circle::after {
-    content:"";
-    display: block;
-    padding-bottom:100%
-}
-
-.values-circle .values-text {
-    position: absolute;
-    width:100%;
-    text-align: center;
-    font-weight:700;
-    color: var(--white)
-}
-
 .avatar-circle {
     border-radius: 50%;
     border: 5px;
@@ -8845,7 +8823,7 @@ service p {
     margin: 0 0 10px
 }
 
-.values_card-image {
+.interests-card-image {
 height: 100%;
 width: 100%;
 object-fit: cover;
@@ -8853,12 +8831,12 @@ scale: 1.15;
 transition: opacity 0.25s, scale 0.35s;
 }
 
-.values_card:hover .values_card_image {
+.interests-card:hover .interests-card_image {
 opacity: 0.5;
 scale: 1;
 }
 
-.values_card_body {
+.interests-card_body {
 position: absolute;
 inset: 0;
 padding: 50px;
@@ -8871,7 +8849,7 @@ row-gap: 15px;
 justify-content: center;
 }
 
-.values_card_body::before {
+.interests-card_body::before {
 content: '';
 position: absolute;
 inset: 20px;
@@ -8881,25 +8859,25 @@ scale 1.25;
 transition: opacity 0.25s, scale 0.25s;
 }
 
-.values_card:hover .values_card_body::before {
+.interests-card:hover .interests-card_body::before {
 opacity: 1;
 scale: 1;
 }
 
-.values_card_title {
+.interests-card_title {
 letter-spacing: 1px;
 text-transform: uppercase;
 text-shadow: 1px 1px 10px rgba(0,0,0,.5);
 }
 
-.values_card_description {
+.interests-card_description {
 font-size: 14px;
 opacity: 0;
 translate: -25px;
 transition: opacity 0.25s, translate 0.25s;
 }
 
-.values_card:hover .values_card_description {
+.interests-card:hover .interests-card_description {
 opacity: 1;
 translate: 0;
 }
