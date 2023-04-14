@@ -12521,6 +12521,7 @@ service p {
     background-color: #b7c8c9;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 8px 30px 0 rgba(0, 0, 0, 0.5);
     overflow:hidden;
+    border-radius: .3rem;
   }
 
 .interests-card-image {
