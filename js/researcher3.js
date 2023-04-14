@@ -229,20 +229,6 @@ function populateExperience(obj) {
     }
 }
 
-<div class="card experience course">
-<div class=card-body>
-    <div class="d-flex align-content-start">
-            <div class="section-subheading card-title exp-title text-muted my-0">CAME Rising Star Certificate of Excellence</div>
-            <div class="card-subtitle my-0 article-metadata"><a
-                    href=https://www.came-acem.ca/ target=_blank
-                    rel=noopener>Canadian Association of Medical Education</a><span class=middot-divider></span>
-                2022
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
 function populateKudos(obj) {
     const sectionKudo = document.querySelector("#KudoSections");
 
