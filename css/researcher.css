@@ -12516,7 +12516,7 @@ service p {
 }
 .interests-card {
     position: relative;
-
+    min-width: 260px;
     height: 200px;
     background-color: #b7c8c9;
     overflow:hidden;
