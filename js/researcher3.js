@@ -2,6 +2,7 @@ function populate(){
     populatePub();
     populateExp();
     populatePresentations();
+    populateRecognitions();
 }
 
 async function populatePub() {
@@ -34,6 +35,18 @@ async function populateExp(){
 
 
     populateExperience(experiences);
+
+}
+
+async function populateRecognitions(){
+    const requestURL3 = 'https://chrisjorr.com/js/json/experience.json';
+    const request3 = new Request(requestURL3);
+
+    const response3 = await fetch(request3);
+    const kudos = await response3.json();
+
+
+    populateKudos(kudos);
 
 }
 
@@ -212,6 +225,60 @@ function populateExperience(obj) {
 
 
             sectionExp.appendChild(myExperience);
+        }   
+    }
+}
+
+<div class="card experience course">
+<div class=card-body>
+    <div class="d-flex align-content-start">
+            <div class="section-subheading card-title exp-title text-muted my-0">CAME Rising Star Certificate of Excellence</div>
+            <div class="card-subtitle my-0 article-metadata"><a
+                    href=https://www.came-acem.ca/ target=_blank
+                    rel=noopener>Canadian Association of Medical Education</a><span class=middot-divider></span>
+                2022
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+function populateKudos(obj) {
+    const sectionKudo = document.querySelector("#KudoSections");
+
+    for (const kudo of obj.kudos) {
+        if((!document.title.includes("Recognitions") && kudo.show=="main") || (document.title.includes("Recognitions") && (kudo.show=="main" || kudo.show=="yes"))){
+            const myKudo = document.createElement('div');
+            myKudo.classList.add("card", "experience", "course");
+           
+            const myCard = document.createElement('div');
+            myCard.classList.add("card-body");
+            
+            
+            const myDiv = document.createElement('div');
+            myDiv.classList.add("section-subheading", "card-title", "exp-title", "text-muted", "mt-0")
+            myDiv.innerText = kudo.title;
+            myCard.appendChild(myDiv);
+
+
+            const myKudoBody = document.createElement('div');
+            myKudoBody.classList.add("card-subtitle", "my-0", "article-metadata");
+
+            const myKudoOrg = document.createElement('a');
+            myKudoOrg.href = kudo.kudo_link;
+            myKudoOrg.innerText = kudo.organization + " ";
+            myKudoBody.appendChild(myKudoOrg);
+
+            const mySpan = document.createElement('span');
+            mySpan.classList.add("middot-divider");
+            mySpan.innerText = kudo.date;
+            myKudoBody.appendChild(mySpan);
+            
+
+            myCard.appendChild(myKudoBody);
+
+
+            sectionKudo.appendChild(myCard);
         }   
     }
 }

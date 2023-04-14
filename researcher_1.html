@@ -664,28 +664,14 @@
                         <h1 class=mb-0>Recognitions</h1>
                     </div>
                     <div class=col-12>
-                        <div class="card experience course">
-                            <div class=card-body>
-                                <div class="d-flex align-content-start">
-                                    <div class="mr-2 mb-2"><a href=https://www.came-acem.ca/awards/came-rising-star-certificate-of-excellence/ target=_blank
-                                            rel=noopener><img src=/img/came_rising_star.jpg width=56px
-                                                height=56px alt=CAME Rising Star></a></div>
-                                    <div>
-                                        <div class="section-subheading card-title exp-title text-muted my-0">CAME Rising Star Certificate of Excellence</div>
-                                        <div class="card-subtitle my-0 article-metadata"><a
-                                                href=https://www.came-acem.ca/ target=_blank
-                                                rel=noopener>Canadian Association of Medical Education</a><span class=middot-divider></span>
-                                            2022
-                                        </div>
-                                    </div>
-                                </div>
-                                <a class=card-link href=https://www.came-acem.ca/ target=_blank rel=noopener>
-                                    See certificate
-                                </a>
-                            </div>
+    
+                        <div id="kudoSections">
+
                         </div>
-                        
-                        
+                    </div>
+
+                    <div class="col-12">
+                        <a href = "recognitions.html">All Recognitions</a>
                     </div>
                 </div>
             </div>
@@ -805,94 +791,6 @@
         </div>
     </div>
 
-<!--
-    <script>
-
-        async function populate() {
-
-        const requestURL = 'https://chrisjorr.com/js/json/publications.json';
-        const request = new Request(requestURL);
-
-        const response = await fetch(request);
-        const pubs = await response.json();
-
-
-        populateArticles(pubs);
-
-        }
-
-        function populateArticles(obj) {
-        const section = document.querySelector("#pubCards");
-        
-            for (const pub of obj.pubs) {
-                if(pub.show=="main"){
-                    const myArticle = document.createElement('div');
-                    myArticle.classList.add("pub-list-item");
-                    
-                    const myI = document.createElement('i');
-                    myI.classList.add("far", "fa-file-alt", "pub-icon");
-                    myArticle.appendChild(myI);
-
-                    const mySpanClass = document.createElement('span');
-                    mySpanClass.classList.add("article-metadata", "li-cite-author");
-                    myArticle.appendChild(mySpanClass);
-
-                        var count = 0;
-                        const maxCount = pub.authors.length;
-                    
-                        for(const author of pub.authors){
-                            
-                            count++;
-                            const mySpan = document.createElement('span');
-                            var boldName = author.name;
-
-                            if(count == maxCount){
-                                boldName = boldName + ".";
-                            } else {
-                                boldName = boldName + "; ";
-                            }
-                            if (boldName.includes("Orr")){
-                                const myBold = document.createElement('b');
-                                myBold.textContent = boldName;
-                                myArticle.appendChild(myBold);
-                            } else {
-                                mySpan.textContent = boldName;
-                            }
-                            
-
-                            myArticle.appendChild(mySpan);
-                        }
-                    const myYear = document.createElement('a');
-                    myYear.textContent = " (" + pub.year + "). ";
-                    myArticle.appendChild(myYear);
-
-                    const myPub = document.createElement('a');
-                    myPub.href = pub.article_link;
-                    myPub.innerText = pub.article + " ";
-                    myArticle.appendChild(myPub);
-
-                    const myNewEm = document.createElement('em');
-                    myNewEm.textContent = pub.journal;
-                    myArticle.appendChild(myNewEm);
-
-                    const myPara = document.createElement('p');
-                    const myCite = myPara.appendChild(document.createElement('a'));
-                    myCite.href = '#';
-                    myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm", "js-cite-modal");
-                    myCite.setAttribute("data-filename",pub.cite_link);
-                    myCite.innerText = "Cite";
-                    myPara.appendChild(myCite);
-                    myArticle.appendChild(myPara);
-
-                    section.appendChild(myArticle);
-                }
-            }
-        }
-
-        populate();
-
-    </script>
--->
 
 
     <script type="text/javascript">
