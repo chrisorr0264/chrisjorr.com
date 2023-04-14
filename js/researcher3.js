@@ -162,7 +162,7 @@ function populateTalks(obj) {
             myLocCol.appendChild(myDate);
 
             const myMidDot = document.createElement('i');
-            myMidDot.classList.add("fa-brands", "fa-galactic-republic");
+            myMidDot.classList.add("fa-solid", "fa-ellipsis");
             myLocCol.appendChild(myMidDot);
             
             const myLoc = document.createElement('p');
