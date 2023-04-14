@@ -256,10 +256,12 @@ function populateKudos(obj) {
             myKudoBody.appendChild(myKudoOrg);
 
             const mySpan = document.createElement('span');
-            mySpan.classList.add("middot-divider");
-            mySpan.innerText = kudo.date;
+            mySpan.classList.add("fa-solid", "fa-ellipsis-vertical");
             myKudoBody.appendChild(mySpan);
             
+            const myDate = document.createElement('span');
+            myDate.innerText = kudo.date;
+            myKudoBody.appendChild(myDate);
 
             myCard.appendChild(myKudoBody);
 
