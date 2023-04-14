@@ -10430,8 +10430,8 @@ figure img {
 }
 
 figure figcaption {
-    margin-top: .75em;
-    margin-bottom: 1.65rem;
+    margin-top: 1em;
+    margin-bottom: 1rem;
     line-height: 1.4;
     font-size: .76rem;
     text-align: center
@@ -12516,9 +12516,9 @@ service p {
 }
 .interests-card {
     position: relative;
-    width: 350px;
-    height: 250px;
-    background-color: #4e7e7f;
+    width: 300px;
+    height: 200px;
+    background-color: #b7c8c9;
     overflow:hidden;
   }
 
