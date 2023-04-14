@@ -260,7 +260,7 @@ function populateKudos(obj) {
             myKudoBody.appendChild(mySpan);
             
             const myDate = document.createElement('span');
-            myDate.innerText = kudo.date;
+            myDate.innerText = " " + kudo.date;
             myKudoBody.appendChild(myDate);
 
             myCard.appendChild(myKudoBody);
