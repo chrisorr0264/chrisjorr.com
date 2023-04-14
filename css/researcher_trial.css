@@ -8774,12 +8774,12 @@ body.dark,.dark .docs-toc-link,.dark .modal button.close,.dark input {
     bottom: 0;
     right: 0;
     width: 100%;
-/*    height: 100%; */
+    /*    height: 100%; */
     aspect-ratio: 16/9;
     border: none;
-  }
+}
 
-  .video-container {
+.video-container {
     position: relative;
     padding-bottom:56.25%;
     height:0
