@@ -11393,7 +11393,7 @@ footer {
 
 .footer-rows {
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 30px;
     display: flex;
     flex-wrap:wrap
   }
