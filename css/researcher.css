@@ -11374,6 +11374,10 @@ footer {
 
 .footer-container {
 
+    position:  absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     font-size: 2rem;
     text-align: center;
     color: var(--white);  
@@ -12542,7 +12546,7 @@ service p {
     scale: 1.15;
     transition: opacity 0.25s, scale 0.35s;
 }
-    
+
 .interests-card:hover .interests-card_image {
     opacity: 0.5;
     scale: 1;
