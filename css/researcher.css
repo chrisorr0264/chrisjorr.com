@@ -11372,7 +11372,13 @@ footer {
 
 footer p {
     font-size: .75rem;
-    text-align: center
+    text-align: center;
+    color: var(--white);  
+    border-style: solid;
+    border-width: 10px;
+    border-radius: .25rem;
+    border-color: var(--white);
+    padding: 20px;
 }
 
 footer .powered-by {
