@@ -12608,3 +12608,50 @@ service p {
     opacity: 1;
     translate: 0;
 }
+
+.btn-ref {
+    display: inline-block;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #4e7e7f;
+    border: 1px solid;
+    border-color: #4e7e7f;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    /* transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+    */
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .btn-ref {
+        transition: none
+    }
+}
+
+.btn-ref:hover {
+    outline: 3px solid #4e7e7f;
+    outline-offset:2px
+}
+/*
+.btn-ref:focus,.btn-ref.focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(221,44,0,.25)
+}
+*/
+.btn-ref.disabled,.btn-ref:disabled {
+    opacity: .65
+}
+
+.btn-ref:not(:disabled):not(.disabled) {
+    cursor: pointer
+}
+
+a.btn-ref.disabled,fieldset:disabled a.btn-ref {
+    pointer-events: none
+}
