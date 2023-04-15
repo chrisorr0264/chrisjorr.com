@@ -11390,7 +11390,8 @@ footer .powered-by {
 
 .site-footer {
     color: rgba(0,0,0,.54);
-    display: flex
+    display: flex;
+    background-color: #4e7e7f
 }
 
 .dark .site-footer,.dark .docs .body-footer {
