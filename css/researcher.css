@@ -11371,14 +11371,15 @@ footer {
 }
 
 footer p {
-    font-size: .75rem;
+    max-width: 300px;
+    font-size: 2rem;
     text-align: center;
     color: var(--white);  
     border-style: solid;
-    border-width: 10px;
+    border-width: 5px;
     border-radius: .25rem;
     border-color: var(--white);
-    padding: 20px;
+    padding: 10px;
 }
 
 footer .powered-by {
