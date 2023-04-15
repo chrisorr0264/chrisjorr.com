@@ -1,0 +1,40 @@
+[
+    { "interests":
+
+        [
+            {
+                "interest":"Endometriosis Research"
+            },
+
+            {
+                "interest":"Patient-Oriented Research"
+            },
+
+            {
+                "Interest":"Women's Health Education"
+            }
+    
+        ]
+    },
+
+    { "values":
+
+        [
+            {
+                "value":"Enthusiasm",
+                "value-icon": "fa-heart-circle-exclamation"
+            },
+
+            {
+                "value":"Collaboration",
+                "value-icon":"fa-handshake"
+            },
+
+            {
+                "value":"Respect",
+                "value-icon":"fa-hand-holding-heart"
+            }
+    
+        ]
+    }
+]

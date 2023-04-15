@@ -3,6 +3,7 @@ function populate(){
     populateExp();
     populatePresentations();
     populateRecognitions();
+    populateInterests();
 }
 
 async function populatePub() {
@@ -47,6 +48,18 @@ async function populateRecognitions(){
 
 
     populateKudos(kudos);
+
+}
+
+async function populateInterests(){
+    const requestURL5 = 'https://chrisjorr.com/js/json/details.json';
+    const request5 = new Request(requestURL5);
+
+    const response5 = await fetch(request5);
+    const interests = await response5.json();
+
+
+    populateInts(interests);
 
 }
 
@@ -270,6 +283,47 @@ function populateKudos(obj) {
         }   
     }
 }
+
+
+function populateInts(obj) {
+    const sectionInterests = document.querySelector("#interestSections");
+
+    for (const interest of obj.interests) {
+
+        const myInterest = document.createElement('div');
+        myInterest.classList.add("col-12", "col-sm-4", "pb-5", "mx-auto");
+        
+        const myFigure = document.createElement('figure');
+        myFigure.classList.add("interests-card");
+        
+        const img = document.createElement('img');
+        img.src = "";
+        img.alt = "";
+        img.classList.add("interests-card_image");
+
+        myFigure.appendChild(img);
+
+        const caption = document.createElement('figcaption');
+        caption.classList.add("interests-card_body");
+
+        const myH3 = document.createElement('h3');
+        myH3.classList.add("interestes-card_title");
+        myH3.innerText = interest.interest;
+        caption.appendChild(myH3);
+
+        const myP = document.createElement('p');
+        myP.classList.add("interests-card_description");
+        caption.appendChild(myP);
+
+        myFigure.appendChild(caption);
+
+        sectionInterests.appendChild(myFigure);
+ 
+    }
+}
+
+
+
 /* Smooth Scrolling */
 window.onload=function(){
     document.getElementById('navigation').addEventListener('click', function (e) {
