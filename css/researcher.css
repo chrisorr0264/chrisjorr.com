@@ -11399,7 +11399,8 @@ footer {
   }
 
 footer .powered-by {
-    font-size: .67rem
+    font-size: .67rem;
+    text-align: center
 }
 
 .site-footer {
