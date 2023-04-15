@@ -12651,3 +12651,8 @@ service p {
 a.btn-ref.disabled,fieldset:disabled a.btn-ref {
     pointer-events: none
 }
+
+.interest-section {
+    display:flex;
+    flex-wrap:wrap
+}
