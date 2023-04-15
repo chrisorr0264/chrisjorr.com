@@ -56,10 +56,10 @@ async function populateInterests(){
     const request5 = new Request(requestURL5);
 
     const response5 = await fetch(request5);
-    const interests = await response5.json();
+    const details = await response5.json();
 
 
-    populateInts(interests);
+    populateInts(details);
 
 }
 
@@ -308,7 +308,7 @@ function populateInts(obj) {
 
         const myH3 = document.createElement('h3');
         myH3.classList.add("interestes-card_title");
-        myH3.innerText = interest.interest;
+        myH3.innerText = interest.title;
         caption.appendChild(myH3);
 
         const myP = document.createElement('p');
