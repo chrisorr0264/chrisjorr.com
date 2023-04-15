@@ -333,7 +333,7 @@ function populateValues(obj) {
         myValue.classList.add("col-12", "col-sm-4", "pb-5", "mx-auto");
         
         const myFeaturette = document.createElement('div');
-        myDiv.classList.add("featurette-icon");
+        myFeaturette.classList.add("featurette-icon");
         
         const myIcon = document.createElement('i');
         myIcon.classList.add("fa-solid");
