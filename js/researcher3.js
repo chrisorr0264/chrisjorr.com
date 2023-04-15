@@ -60,6 +60,7 @@ async function populateInterests(){
 
 
     populateInts(details);
+    populateValues(details);
 
 }
 
