@@ -288,7 +288,7 @@ function populateKudos(obj) {
 function populateInts(obj) {
     const sectionInterests = document.querySelector("#interestSections");
 
-    for (const interest of obj.interests) {
+    for (const interest of obj[0].interests) {
 
         const myInterest = document.createElement('div');
         myInterest.classList.add("col-12", "col-sm-4", "pb-5", "mx-auto");
