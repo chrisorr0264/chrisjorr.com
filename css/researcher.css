@@ -11373,8 +11373,8 @@ footer {
 }
 
 .footer-container {
-    max-width: 400px;
-    font-size: 1rem;
+
+    font-size: 2rem;
     text-align: center;
     color: var(--white);  
     border-style: solid;
@@ -11389,7 +11389,8 @@ footer .powered-by {
 }
 
 .site-footer {
-    color: rgba(0,0,0,.54)
+    color: rgba(0,0,0,.54);
+    display: flex
 }
 
 .dark .site-footer,.dark .docs .body-footer {
