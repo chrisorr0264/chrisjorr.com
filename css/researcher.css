@@ -12654,5 +12654,6 @@ a.btn-ref.disabled,fieldset:disabled a.btn-ref {
 
 .interest-section {
     display:flex;
-    flex-wrap:wrap
+    flex-wrap:wrap;
+    width: -webkit-fill-available
 }
