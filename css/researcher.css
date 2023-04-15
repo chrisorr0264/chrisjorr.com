@@ -11391,6 +11391,13 @@ footer {
     padding:5px;
 }
 
+.footer-rows {
+    justify-content: center;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap:wrap
+  }
+
 footer .powered-by {
     font-size: .67rem
 }
