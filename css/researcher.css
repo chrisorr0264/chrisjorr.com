@@ -11366,12 +11366,13 @@ summary:focus {
 }
 
 footer {
+    justify-content: center;
     margin: 4rem 0 0;
     width: 100%
 }
 
 footer p {
-    max-width: 300px;
+    max-width: 400px;
     font-size: 1rem;
     text-align: center;
     color: var(--white);  
