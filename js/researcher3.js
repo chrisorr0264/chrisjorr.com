@@ -336,11 +336,14 @@ function populateValues(obj) {
         
         const myIcon = document.createElement('i');
         myIcon.classList.add("fa-solid");
-        myIcon.classList.add(value.value-icon);
+        myIcon.classList.add(value.icon);
 
         myFeaturette.appendChild(myIcon);
-
         myValue.appendChild(myFeaturette);
+
+        const myH3 = document.createElement('h3');
+        myH3.innerText = value.title;
+        myValue.appendChild(myH3);
 
         sectionValues.appendChild(myValue);
  

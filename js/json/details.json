@@ -21,18 +21,18 @@
 
         [
             {
-                "value":"Enthusiasm",
-                "value-icon": "fa-heart-circle-exclamation"
+                "title":"Enthusiasm",
+                "icon": "fa-heart-circle-exclamation"
             },
 
             {
-                "value":"Collaboration",
-                "value-icon":"fa-handshake"
+                "title":"Collaboration",
+                "icon":"fa-handshake"
             },
 
             {
-                "value":"Respect",
-                "value-icon":"fa-hand-holding-heart"
+                "title":"Respect",
+                "icon":"fa-hand-holding-heart"
             }
     
         ]
