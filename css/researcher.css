@@ -11372,14 +11372,14 @@ footer {
 
 footer p {
     max-width: 300px;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
     color: var(--white);  
     border-style: solid;
-    border-width: 5px;
+    border-width: 2px;
     border-radius: .25rem;
     border-color: var(--white);
-    padding: 10px;
+    padding:5px;
 }
 
 footer .powered-by {
