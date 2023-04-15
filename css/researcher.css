@@ -12634,7 +12634,7 @@ service p {
     }
 }
 
-.btn-ref:hover {
+.btn-ref:hover,.btn-ref:focus,.btn-ref.focus {
     outline: 3px solid #4e7e7f;
     outline-offset:2px
 }
