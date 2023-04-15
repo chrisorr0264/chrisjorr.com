@@ -316,8 +316,9 @@ function populateInts(obj) {
         caption.appendChild(myP);
 
         myFigure.appendChild(caption);
+        myInterest.appendChild(myFigure);
 
-        sectionInterests.appendChild(myFigure);
+        sectionInterests.appendChild(myInterest);
  
     }
 }
