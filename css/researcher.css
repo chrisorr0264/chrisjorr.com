@@ -9895,7 +9895,14 @@ body.no-navbar {
     min-height: 100vh
 }
 
-.page-header,.page-footer {
+.page-header {
+    flex-shrink: 0
+}
+
+.page-footer {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
     flex-shrink: 0
 }
 
@@ -11374,10 +11381,6 @@ footer {
 
 .footer-container {
 
-    position:  absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     font-size: 2rem;
     text-align: center;
     color: var(--white);  
