@@ -323,6 +323,30 @@ function populateInts(obj) {
     }
 }
 
+function populateValues(obj) {
+    const sectionValues = document.querySelector("#valueSections");
+
+    for (const value of obj[1].values) {
+
+        const myValue = document.createElement('div');
+        myValue.classList.add("col-12", "col-sm-4", "pb-5", "mx-auto");
+        
+        const myFeaturette = document.createElement('div');
+        myDiv.classList.add("featurette-icon");
+        
+        const myIcon = document.createElement('i');
+        myIcon.classList.add("fa-solid");
+        myIcon.classList.add(value.value-icon);
+
+        myFeaturette.appendChild(myIcon);
+
+        myValue.appendChild(myFeaturette);
+
+        sectionValues.appendChild(myValue);
+ 
+    }
+}
+
 
 
 /* Smooth Scrolling */
