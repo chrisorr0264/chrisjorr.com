@@ -355,7 +355,7 @@ function populateValues(obj) {
 function populateEducation(obj) {
     const sectionEducation = document.querySelector("#schoolCards");
 
-    for (const school of obj[3].schools) {
+    for (const school of obj[2].schools) {
 
         const myEducation = document.createElement('div');
         myEducation.classList.add("row", "experience");
