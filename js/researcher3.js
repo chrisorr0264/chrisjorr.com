@@ -420,8 +420,10 @@ function populateEducation(obj) {
         myCard.appendChild(myCardBody);
         myDegrees.appendChild(myCard);
 
+        myEducation.appendChild(mySidePanel);
+        myEducation.appendChild(myDegrees);
 
-        sectionEducation.appendChild(myDegrees);
+        sectionEducation.appendChild(myEducation);
  
     }
 }
