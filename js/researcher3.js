@@ -3,7 +3,7 @@ function populate(){
     populateExp();
     populatePresentations();
     populateRecognitions();
-    populateInterests();
+    populateDetails();
 }
 
 async function populatePub() {
@@ -51,7 +51,7 @@ async function populateRecognitions(){
 
 }
 
-async function populateInterests(){
+async function populateDetails(){
     const requestURL5 = 'https://chrisjorr.com/js/json/details.json';
     const request5 = new Request(requestURL5);
 
@@ -61,6 +61,7 @@ async function populateInterests(){
 
     populateInts(details);
     populateValues(details);
+    populateEducation(details);
 
 }
 
@@ -351,6 +352,76 @@ function populateValues(obj) {
     }
 }
 
+function populateEducation(obj) {
+    const sectionEducation = document.querySelector("#schoolCards");
+
+    for (const school of obj[3].schools) {
+
+        const myEducation = document.createElement('div');
+        myEducation.classList.add("row", "experience");
+        
+        const mySidePanel = document.createElement('div');
+        mySidePanel.classList.add("col-auto", "text-center", "flex-column", "d-none", "d-sm-flex");
+        
+        const mySpacing = document.createElement('div');
+        mySpacing.classList.add("row", "h-50");
+
+        const myIconArea = document.createElement('div');
+        myIconArea.classList.add("featurette-icon")
+
+        const myIcon = document.createElement('i');
+        myIcon.classList.add("fa-solid", "fa-user-graduate");
+        myIconArea.appendChild(myIcon);
+
+        mySidePanel.appendChild(mySpacing);
+        mySidePanel.appendChild(myIconArea);
+        mySidePanel.appendChild(mySpacing);
+
+
+        const myDegrees = document.createElement('div');
+        myDegrees.classList.add("col", "py-2");
+
+        const myCard = document.createElement('div');
+        myCard.classList.add('card');
+
+        const myCardBody = document.createElement('div');
+        myCardBody.classList.add('card-body');
+
+        const myTitle = document.createElement('div');
+        myTitle.classList.add("section-subheading", "card-title", "exp-title", "text-muted", "my-0");
+        myTitle.innerText = school.degree;
+
+        const myLoc = document.createElement('div');
+        myLoc.classList.add("section-subheading", "card-title", "exp-company", "text-muted", "my-0");
+        myLoc.innerText = school.facility
+
+        const myDate = document.createElement('div');
+        myDate.classList.add("text-muted", "exp-meta");
+        myDate.innerText = school.date;
+
+        const mySpan = document.createElement('span');
+        mySpan.classList.add("middot-divider");
+        mySpan.outerText = school.city;
+
+        myDate.appendChild(mySpan);
+
+        const myDesc = document.createElement('div');
+        myDesc.classList.add("card-text");
+        myDesc.innerText = school.text;
+
+        myCardBody.appendChild(myTitle);
+        myCardBody.appendChild(myLoc);
+        myCardBody.appendChild(myDate);
+        myCardBody.appendChild(myDesc);
+
+        myCard.appendChild(myCardBody);
+        myDegrees.appendChild(myCard);
+
+
+        sectionEducation.appendChild(myDegrees);
+ 
+    }
+}
 
 
 /* Smooth Scrolling */

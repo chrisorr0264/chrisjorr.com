@@ -36,5 +36,42 @@
             }
     
         ]
+    },
+
+    { "schools":
+
+        [
+            {
+                "degree":"PhD - Reproductive and Developmental Sciences",
+                "facility": "University of British Columbia",
+                "date":"May 2018 - Aug 2022",
+                "city": "Vancouver",
+                "link":"",
+                "text":"Thesis Title: Central Sensitization and Somatic Activating KRAS Mutations in Endometriosis-Associated Pain.",
+                "show": "main"
+            },
+
+            {
+                "degree":"MSc - Reproductive and Developmental Sciences",
+                "facility": "University of British Columbia",
+                "date":"Jun 2016 - May 2018",
+                "city": "Vancouver",
+                "link":"",
+                "text":"Thesis Title: Central Sensitization in Endometriosis-Associated Deep Dyspareunia.",
+                "show": "main"
+            },
+
+            {
+                "degree":"BSc - Honours Life Sciences, Biomedical Science",
+                "facility": "Queen's University",
+                "date":"Sep 2012 - May 2016",
+                "city": "Kingston",
+                "link":"",
+                "text":"",
+                "show": "main"
+            }
+    
+        ]
     }
+
 ]

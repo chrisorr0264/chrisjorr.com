@@ -12583,7 +12583,7 @@ service p {
     inset: 20px;
     border: 2px solid #fff;
     opacity: 0;
-    scale 1.25;
+    scale: 1.25;
     transition: opacity 0.25s, scale 0.25s;
 }
     
