@@ -401,9 +401,12 @@ function populateEducation(obj) {
 
         const mySpan = document.createElement('span');
         mySpan.classList.add("middot-divider");
-        mySpan.outerText = school.city;
+
+        const myCity = document.createElement('span');
+        myCity.innerText = school.city;
 
         myDate.appendChild(mySpan);
+        myDate.appendChild(myCity);
 
         const myDesc = document.createElement('div');
         myDesc.classList.add("card-text");
