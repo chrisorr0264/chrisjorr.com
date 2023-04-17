@@ -373,9 +373,12 @@ function populateEducation(obj) {
         myIcon.classList.add("fa-solid", "fa-user-graduate");
         myIconArea.appendChild(myIcon);
 
+        const mySpacing2 = document.createElement('div');
+        mySpacing2.classList.add("row", "h-50");
+
         mySidePanel.appendChild(mySpacing);
         mySidePanel.appendChild(myIconArea);
-        mySidePanel.appendChild(mySpacing);
+        mySidePanel.appendChild(mySpacing2);
 
 
         const myDegrees = document.createElement('div');
