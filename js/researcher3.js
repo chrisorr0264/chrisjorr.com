@@ -563,10 +563,10 @@ function populateEmployment(obj) {
         myMainSection.appendChild(myCard);
 
         
-        myEducation.appendChild(mySidePanel);
-        myEducation.appendChild(myMainSection);
+        myEmployment.appendChild(mySidePanel);
+        myEmployment.appendChild(myMainSection);
 
-        sectionEducation.appendChild(myEducation);
+        sectionEmployment.appendChild(myEmployment);
  
     }
 }
