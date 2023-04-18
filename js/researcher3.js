@@ -568,6 +568,7 @@ function populateEmployment(obj) {
 
         sectionEmployment.appendChild(myEmployment);
  
+        count++;
     }
 }
 
