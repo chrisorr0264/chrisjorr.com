@@ -475,7 +475,7 @@ function populateEmployment(obj) {
 
         const mySpacingBottom = document.createElement('div');
         mySpacingBottom.classList.add("row", "h-50");
-        mySpacingBottom.append (myLine.cloneNode(true), myBlank.cloneNode(true));
+        mySpacingBottom.append(myLine.cloneNode(true), myBlank.cloneNode(true));
 
         mySidePanel.append(mySpacingTop, myIconArea, mySpacingBottom);
 
@@ -487,7 +487,8 @@ function populateEmployment(obj) {
         mySidePanel.classList.add("col-auto", "text-center", "flex-column", "d-none", "d-sm-flex");
         
         const mySpacingTop = document.createElement('div');
-        mySpacingTop.classList.add(myLine.cloneNode(true), myBlank.cloneNode(true));
+        mySpacingTop.classList.add("row", "h-50");
+        mySpacingTop.appendChild(myLine.cloneNode(true), myBlank.cloneNode(true));
 
         const myIconArea = document.createElement('div');
         myIconArea.classList.add("m-2");
@@ -506,7 +507,8 @@ function populateEmployment(obj) {
         mySidePanel.classList.add("col-auto", "text-center", "flex-column", "d-none", "d-sm-flex");
         
         const mySpacingTop = document.createElement('div');
-        mySpacingTop.classList.add(myLine.cloneNode(true), myBlank.cloneNode(true));
+        mySpacingTop.classList.add(("row", "h-50");
+        mySpacingTop.appendChild(myLine.cloneNode(true), myBlank.cloneNode(true));
 
         const myIconArea = document.createElement('div');
         myIconArea.classList.add("m-2");
@@ -514,7 +516,7 @@ function populateEmployment(obj) {
 
         const mySpacingBottom = document.createElement('div');
         mySpacingBottom.classList.add("row", "h-50");
-        mySpacingBottom.append (myLine.cloneNode(true), myBlank.cloneNode(true));
+        mySpacingBottom.append(myLine.cloneNode(true), myBlank.cloneNode(true));
 
         mySidePanel.append(mySpacingTop, myIconArea, mySpacingBottom);
 
