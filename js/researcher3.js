@@ -435,7 +435,7 @@ function populateEducation(obj) {
 function populateEmployment(obj) {
     const sectionEmployment = document.querySelector("#employmentCards");
 
-    var count = 1;
+    var count = 0;
     for (const employer of obj[3].employers) {
 
         const myEmployment = document.createElement('div');
@@ -480,7 +480,7 @@ function populateEmployment(obj) {
         mySidePanel.append(mySpacingTop, myIconArea, mySpacingBottom);
 
 
-        } else if (count == obj[3].employers.length) {
+        } else if (count == (obj[3].employers.length - 1)) {
         /* case: last employment */
 
         var mySidePanel = document.createElement('div');
