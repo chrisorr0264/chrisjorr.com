@@ -435,7 +435,7 @@ function populateEducation(obj) {
 function populateEmployment(obj) {
     const sectionEmployment = document.querySelector("#employmentCards");
 
-    var count = 0;
+    var count = 1;
     for (const employer of obj[3].employers) {
 
         const myEmployment = document.createElement('div');
