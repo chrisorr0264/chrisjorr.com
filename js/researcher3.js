@@ -475,7 +475,7 @@ function populateEmployment(obj) {
 
         const mySpacingBottom = document.createElement('div');
         mySpacingBottom.classList.add("row", "h-50");
-        mySpacingBottom.append (myBlankLine.cloneNode(true), myBlank.cloneNode(true));
+        mySpacingBottom.append (myLine.cloneNode(true), myBlank.cloneNode(true));
 
         mySidePanel.append(mySpacingTop, myIconArea, mySpacingBottom);
 
