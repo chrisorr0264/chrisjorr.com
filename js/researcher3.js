@@ -488,7 +488,7 @@ function populateEmployment(obj) {
         
         const mySpacingTop = document.createElement('div');
         mySpacingTop.classList.add("row", "h-50");
-        mySpacingTop.appendChild(myLine.cloneNode(true), myBlank.cloneNode(true));
+        mySpacingTop.append(myLine.cloneNode(true), myBlank.cloneNode(true));
 
         const myIconArea = document.createElement('div');
         myIconArea.classList.add("m-2");
@@ -496,7 +496,7 @@ function populateEmployment(obj) {
 
         const mySpacingBottom = document.createElement('div');
         mySpacingBottom.classList.add("row", "h-50");
-        mySpacingBottom.append (myBlank.cloneNode(true), myBlank.cloneNode(true));
+        mySpacingBottom.append(myBlank.cloneNode(true), myBlank.cloneNode(true));
 
         mySidePanel.append(mySpacingTop, myIconArea, mySpacingBottom);
 
@@ -508,7 +508,7 @@ function populateEmployment(obj) {
         
         const mySpacingTop = document.createElement('div');
         mySpacingTop.classList.add("row", "h-50");
-        mySpacingTop.appendChild(myLine.cloneNode(true), myBlank.cloneNode(true));
+        mySpacingTop.append(myLine.cloneNode(true), myBlank.cloneNode(true));
 
         const myIconArea = document.createElement('div');
         myIconArea.classList.add("m-2");
