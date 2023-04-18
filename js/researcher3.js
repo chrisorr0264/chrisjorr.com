@@ -462,7 +462,7 @@ function populateEmployment(obj) {
         if (count == 0){
         /* case: first employment (active) */
 
-        const mySidePanel = document.createElement('div');
+        var mySidePanel = document.createElement('div');
         mySidePanel.classList.add("col-auto", "text-center", "flex-column", "d-none", "d-sm-flex");
         
         const mySpacingTop = document.createElement('div');
@@ -483,7 +483,7 @@ function populateEmployment(obj) {
         } else if (count == obj[3].length) {
         /* case: last employment */
 
-        const mySidePanel = document.createElement('div');
+        var mySidePanel = document.createElement('div');
         mySidePanel.classList.add("col-auto", "text-center", "flex-column", "d-none", "d-sm-flex");
         
         const mySpacingTop = document.createElement('div');
@@ -502,7 +502,7 @@ function populateEmployment(obj) {
         } else {
         /* all other employments */
 
-        const mySidePanel = document.createElement('div');
+        var mySidePanel = document.createElement('div');
         mySidePanel.classList.add("col-auto", "text-center", "flex-column", "d-none", "d-sm-flex");
         
         const mySpacingTop = document.createElement('div');
@@ -533,25 +533,25 @@ function populateEmployment(obj) {
 
         const myTitle = document.createElement('div');
         myTitle.classList.add("section-subheading", "card-title", "exp-title", "text-muted", "my-0");
-        myTitle.innerText = employment.title;
+        myTitle.innerText = employer.title;
 
         const myCompany = document.createElement('div');
         myCompany.classList.add("section-subheading", "card-title", "exp-company", "text-muted", "my-0");
-        myCompany.innerText = employment.company;
+        myCompany.innerText = employer.company;
 
         const myLoc = document.createElement('div');
         myLoc.classList.add("section-subheading", "card-title", "exp-company", "text-muted", "my-0");
-        myLoc.innerText = employment.location;
+        myLoc.innerText = employer.location;
 
         const myDate = document.createElement('div');
         myDate.classList.add("text-muted", "exp-meta");
-        myDate.innerText = employment.date;
+        myDate.innerText = employer.date;
 
         const mySpan = document.createElement('span');
         mySpan.classList.add("middot-divider");
 
         const myCity = document.createElement('span');
-        myCity.innerText = employment.city;
+        myCity.innerText = employer.city;
 
         myDate.append(mySpan, myCity);
 
