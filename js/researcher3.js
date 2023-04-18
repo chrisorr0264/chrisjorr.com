@@ -444,19 +444,19 @@ function populateEmployment(obj) {
         /* create reusable constants */ 
         const myBlank = document.createElement('div');
         myBlank.classList.add("col");
-        myBlank.innerText = "&nbsp;";
+        myBlank.innerHTML = "&nbsp;";
 
         const myLine = document.createElement('div');
         myLine.classList.add("col", "border-right");
-        myLine.innerText = "&nbsp;";
+        myLine.innerHTML = "&nbsp;";
 
         const myFilledIcon = document.createElement('span');
         myFilledIcon.classList.add("badge", "badge-pill", "border", "exp-fill");
-        myFilledIcon.innerText = "&nbsp;";
+        myFilledIcon.innerHTML = "&nbsp;";
 
         const myEmptyIcon = document.createElement('span');
         myEmptyIcon.classList.add("badge", "badge-pill", "border");
-        myEmptyIcon.innerText = "&nbsp;";
+        myEmptyIcon.innerHTML = "&nbsp;";
         
         /* determine what sidebar to use */
         if (count == 0){
