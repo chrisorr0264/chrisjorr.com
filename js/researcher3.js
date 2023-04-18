@@ -557,7 +557,7 @@ function populateEmployment(obj) {
 
         myCardSection.append(myTitle, myCompany, myLoc, myDate);
 
-        myCardBody.appendChild(mySection);
+        myCardBody.appendChild(myCardSection);
 
         myCard.appendChild(myCardBody);
         myMainSection.appendChild(myCard);
