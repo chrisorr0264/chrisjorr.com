@@ -439,7 +439,7 @@ function populateEmployment(obj) {
     for (const employer of obj[3].employers) {
 
         const myEmployment = document.createElement('div');
-        myEducation.classList.add("row", "experience");
+        myEmployment.classList.add("row", "experience");
         
         /* create reusable constants */ 
         const myBlank = document.createElement('div');
