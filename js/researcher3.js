@@ -507,7 +507,7 @@ function populateEmployment(obj) {
         mySidePanel.classList.add("col-auto", "text-center", "flex-column", "d-none", "d-sm-flex");
         
         const mySpacingTop = document.createElement('div');
-        mySpacingTop.classList.add(("row", "h-50");
+        mySpacingTop.classList.add("row", "h-50");
         mySpacingTop.appendChild(myLine.cloneNode(true), myBlank.cloneNode(true));
 
         const myIconArea = document.createElement('div');
