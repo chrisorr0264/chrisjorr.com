@@ -72,6 +72,77 @@
             }
     
         ]
+    },
+
+    { "employers":
+
+        [
+            {
+                "title":"Postdoctorial Researcher",
+                "company": "School of Nursing",
+                "date":"Sep 2022 - Present",
+                "location":"University of British Columbia",
+                "city": "Vancouver",
+                "link":"",
+                "current":"yes",
+                "show": "main"
+            },
+
+            {
+                "title":"Graduate Research Assistant",
+                "company": "Endometriosis and Pelvic Pain Laboratory",
+                "date":"Jun 2016 – Aug 2022",
+                "location":"University of British Columbia",
+                "city": "Vancouver",
+                "link":"",
+                "current":"no",
+                "show": "main"
+            },
+
+            {
+                "title":"Course Moderator",
+                "company": "MD Undergraduate Program",
+                "date":"Sep 2020 – Apr 2021",
+                "location":"University of British Columbia",
+                "city": "Vancouver",
+                "link":"",
+                "current":"no",
+                "show": "main"
+            },
+
+            {
+                "title":"Histology Teaching Assistant (1st and 2nd Year UBC Medical Students)",
+                "company": "MD Undergraduate Program",
+                "date":"Aug 2016 – Apr 2021",
+                "location":"University of British Columbia",
+                "city": "Vancouver",
+                "link":"",
+                "current":"no",
+                "show": "main"
+            },
+
+            {
+                "title":"Research Assistant (Reproductive and Developmental Sciences Laboratory)",
+                "company": "Biomedical and Molecular Sciences",
+                "date":"Sep 2015 – Apr 2016",
+                "location":"Queen's University",
+                "city": "Kingston",
+                "link":"",
+                "current":"no",
+                "show": "main"
+            },
+
+            {
+                "title":"Research Assistant (Neuroanatomy Laboratory)",
+                "company": "Biomedical and Molecular Sciences",
+                "date":"Sep 2012 – Apr 2015",
+                "location":"Queen's University",
+                "city": "Kingston",
+                "link":"",
+                "current":"no",
+                "show": "main"
+            }
+        ]
     }
 
 ]

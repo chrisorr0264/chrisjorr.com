@@ -62,6 +62,7 @@ async function populateDetails(){
     populateInts(details);
     populateValues(details);
     populateEducation(details);
+    populateEmployment(details);
 
 }
 
@@ -431,6 +432,144 @@ function populateEducation(obj) {
     }
 }
 
+function populateEmployment(obj) {
+    const sectionEmployment = document.querySelector("#employmentCards");
+
+    var count = 0;
+    for (const employer of obj[3].employers) {
+
+        const myEmployment = document.createElement('div');
+        myEducation.classList.add("row", "experience");
+        
+        /* create reusable constants */ 
+        const myBlank = document.createElement('div');
+        myBlank.classList.add("col");
+        myBlank.innerText = "&nbsp;";
+
+        const myLine = document.createElement('div');
+        myLine.classList.add("col", "border-right");
+        myLine.innerText = "&nbsp;";
+
+        const myFilledIcon = document.createElement('span');
+        myFilledIcon.classList.add("badge", "badge-pill", "border", "exp-fill");
+        myFilledIcon.innerText = "&nbsp;";
+
+        const myEmptyIcon = document.createElement('span');
+        myEmptyIcon.classList.add("badge", "badge-pill", "border");
+        myEmptyIcon.innerText = "&nbsp;";
+        
+        /* determine what sidebar to use */
+        if (count == 0){
+        /* case: first employment (active) */
+
+        const mySidePanel = document.createElement('div');
+        mySidePanel.classList.add("col-auto", "text-center", "flex-column", "d-none", "d-sm-flex");
+        
+        const mySpacingTop = document.createElement('div');
+        mySpacingTop.classList.add("row", "h-50");
+        mySpacingTop.append (myBlank.cloneNode(true), myBlank.cloneNode(true));
+
+        const myIconArea = document.createElement('div');
+        myIconArea.classList.add("m-2");
+        myIconArea.appendChild(myFilledIcon.cloneNode(true));
+
+        const mySpacingBottom = document.createElement('div');
+        mySpacingBottom.classList.add("row", "h-50");
+        mySpacingBottom.append (myBlankLine.cloneNode(true), myBlank.cloneNode(true));
+
+        mySidePanel.append(mySpacingTop, myIconArea, mySpacingBottom);
+
+
+        } else if (count == obj[3].length) {
+        /* case: last employment */
+
+        const mySidePanel = document.createElement('div');
+        mySidePanel.classList.add("col-auto", "text-center", "flex-column", "d-none", "d-sm-flex");
+        
+        const mySpacingTop = document.createElement('div');
+        mySpacingTop.classList.add(myLine.cloneNode(true), myBlank.cloneNode(true));
+
+        const myIconArea = document.createElement('div');
+        myIconArea.classList.add("m-2");
+        myIconArea.appendChild(myEmptyIcon.cloneNode(true));
+
+        const mySpacingBottom = document.createElement('div');
+        mySpacingBottom.classList.add("row", "h-50");
+        mySpacingBottom.append (myBlank.cloneNode(true), myBlank.cloneNode(true));
+
+        mySidePanel.append(mySpacingTop, myIconArea, mySpacingBottom);
+
+        } else {
+        /* all other employments */
+
+        const mySidePanel = document.createElement('div');
+        mySidePanel.classList.add("col-auto", "text-center", "flex-column", "d-none", "d-sm-flex");
+        
+        const mySpacingTop = document.createElement('div');
+        mySpacingTop.classList.add(myLine.cloneNode(true), myBlank.cloneNode(true));
+
+        const myIconArea = document.createElement('div');
+        myIconArea.classList.add("m-2");
+        myIconArea.appendChild(myEmptyIcon.cloneNode(true));
+
+        const mySpacingBottom = document.createElement('div');
+        mySpacingBottom.classList.add("row", "h-50");
+        mySpacingBottom.append (myLine.cloneNode(true), myBlank.cloneNode(true));
+
+        mySidePanel.append(mySpacingTop, myIconArea, mySpacingBottom);
+
+        }
+
+        const myMainSection = document.createElement('div');
+        myMainSection.classList.add("col", "py-2");
+
+        const myCard = document.createElement('div');
+        myCard.classList.add('card');
+
+        const myCardBody = document.createElement('div');
+        myCardBody.classList.add("card-body", "d-flex", "align-content-start", "exp-title", "text-muted", "my-0");
+
+        const myCardSection = document.createElement('div');
+
+        const myTitle = document.createElement('div');
+        myTitle.classList.add("section-subheading", "card-title", "exp-title", "text-muted", "my-0");
+        myTitle.innerText = employment.title;
+
+        const myCompany = document.createElement('div');
+        myCompany.classList.add("section-subheading", "card-title", "exp-company", "text-muted", "my-0");
+        myCompany.innerText = employment.company;
+
+        const myLoc = document.createElement('div');
+        myLoc.classList.add("section-subheading", "card-title", "exp-company", "text-muted", "my-0");
+        myLoc.innerText = employment.location;
+
+        const myDate = document.createElement('div');
+        myDate.classList.add("text-muted", "exp-meta");
+        myDate.innerText = employment.date;
+
+        const mySpan = document.createElement('span');
+        mySpan.classList.add("middot-divider");
+
+        const myCity = document.createElement('span');
+        myCity.innerText = employment.city;
+
+        myDate.append(mySpan, myCity);
+
+        myCardSection.append(myTitle, myCompany, myLoc, myDate);
+
+        myCardBody.appendChild(mySection);
+
+        myCard.appendChild(myCardBody);
+        myMainSection.appendChild(myCard);
+
+        
+        myEducation.appendChild(mySidePanel);
+        myEducation.appendChild(myMainSection);
+
+        sectionEducation.appendChild(myEducation);
+ 
+    }
+}
 
 /* Smooth Scrolling */
 window.onload=function(){
