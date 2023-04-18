@@ -480,7 +480,7 @@ function populateEmployment(obj) {
         mySidePanel.append(mySpacingTop, myIconArea, mySpacingBottom);
 
 
-        } else if (count == obj[3].length) {
+        } else if (count == obj[3].employers.length) {
         /* case: last employment */
 
         var mySidePanel = document.createElement('div');
