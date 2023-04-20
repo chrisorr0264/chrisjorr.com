@@ -431,8 +431,11 @@ function populatePresentations(obj) {
             myDescCol.appendChild(myTypeSpan);
 
             const myTypePara = document.createElement('p');
-            myTypePara.innerText = presentation.title;
-            myDescCol.appendChild(myTypePara);
+            myTypePara.innerHTML = presentation.title;
+            const myNotePara = document.createElement('p');
+            myNotePara.classList.add("text-muted");
+            myNotePara.innerText = presentation.notes;
+            myDescCol.append(myTypePara, myNotePara);
             myRow.appendChild(myDescCol);
 
             const myLocCol = document.createElement('div');
