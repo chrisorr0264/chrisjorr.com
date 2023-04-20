@@ -406,7 +406,7 @@ function populatePresentations(obj) {
     for (const presentation of obj[5].presentations) {
         if((!document.title.includes("Presentations") && presentation.show=="main") || (document.title.includes("Presentations") && (presentation.show=="main" || presentation.show=="yes"))){
             const myPresentation = document.createElement('div');
-            myTalk.classList.add("pub-list-item");
+            myPresentation.classList.add("pub-list-item");
 
             const myTitleRow = document.createElement('div');
             myTitleRow.classList.add("row");
