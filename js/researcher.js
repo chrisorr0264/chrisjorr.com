@@ -335,8 +335,8 @@ function populateEmployment(obj) {
 function populatePublications(obj) {
     const sectionPublications = document.querySelector("#publicationCards");
 
-    for (const pub of obj[4].pubs) {
-        if((!document.title.includes("Publications") && pub.show=="main") || (document.title.includes("Publications") && (pub.show=="main" || pub.show=="yes"))){
+    for (const publication of obj[4].publications) {
+        if((!document.title.includes("Publications") && publication.show=="main") || (document.title.includes("Publications") && (publication.show=="main" || publication.show=="yes"))){
             const myPublication = document.createElement('div');
             myPublication.classList.add("pub-list-item");
             
@@ -349,9 +349,9 @@ function populatePublications(obj) {
             myPublication.appendChild(mySpanClass);
 
                 var count = 0;
-                const maxCount = pub.authors.length;
+                const maxCount = publication.authors.length;
             
-                for(const author of pub.authors){
+                for(const author of publication.authors){
                     
                     count++;
                     const mySpan = document.createElement('span');
@@ -374,23 +374,23 @@ function populatePublications(obj) {
                     myPublication.appendChild(mySpan);
                 }
             const myYear = document.createElement('a');
-            myYear.textContent = " (" + pub.year + "). ";
+            myYear.textContent = " (" + publication.year + "). ";
             myPublication.appendChild(myYear);
 
             const myPub = document.createElement('a');
             myPub.href = pub.article_link;
-            myPub.innerText = pub.article + " ";
+            myPub.innerText = publication.article + " ";
             myPublication.appendChild(myPub);
 
             const myNewEm = document.createElement('em');
-            myNewEm.textContent = pub.journal;
+            myNewEm.textContent = publication.journal;
             myPublication.appendChild(myNewEm);
 
             const myPara = document.createElement('p');
             const myCite = myPara.appendChild(document.createElement('a'));
             myCite.href = '#';
             myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm", "js-cite-modal");
-            myCite.setAttribute("data-filename",pub.cite_link);
+            myCite.setAttribute("data-filename",publication.cite_link);
             myCite.innerText = "Cite";
             myPara.appendChild(myCite);
             myPublication.appendChild(myPara);
@@ -413,8 +413,8 @@ function populatePresentations(obj) {
 
             
             const myTitle = document.createElement('a');
-            myTitle.href = talk.link;
-            myTitle.innerText = talk.conference;
+            myTitle.href = presentation.link;
+            myTitle.innerText = presentation.conference;
             myTitleRow.appendChild(myTitle);
             myPresentation.appendChild(myTitleRow);
             
@@ -426,11 +426,11 @@ function populatePresentations(obj) {
 
             const myTypeSpan = document.createElement('span');
             myTypeSpan.style = "font-weight: bold";
-            myTypeSpan.innerText = talk.type + " Presentation.";
+            myTypeSpan.innerText = presentation.type + " Presentation.";
             myDescCol.appendChild(myTypeSpan);
 
             const myTypePara = document.createElement('p');
-            myTypePara.innerText = talk.title;
+            myTypePara.innerText = presentation.title;
             myDescCol.appendChild(myTypePara);
             myRow.appendChild(myDescCol);
 
@@ -439,7 +439,7 @@ function populatePresentations(obj) {
 
             const myDate = document.createElement('p');
             myDate.classList.add("mb-0")
-            myDate.innerText = talk.date;
+            myDate.innerText = presentation.date;
 
             myLocCol.appendChild(myDate);
 
@@ -448,7 +448,7 @@ function populatePresentations(obj) {
             myLocCol.appendChild(myMidDot);
             
             const myLoc = document.createElement('p');
-            myLoc.innerText = talk.location;
+            myLoc.innerText = presentation.location;
             
             myLocCol.appendChild(myLoc);
 
@@ -515,7 +515,7 @@ function populateRecognitions(obj) {
     const sectionRecognitions = document.querySelector("#recognitionCards");
 
     for (const recognition of obj[7].recognitions) {
-        if((!document.title.includes("Recognitions") && kudo.show=="main") || (document.title.includes("Recognitions") && (kudo.show=="main" || kudo.show=="yes"))){
+        if((!document.title.includes("Recognitions") && recognition.show=="main") || (document.title.includes("Recognitions") && (recognition.show=="main" || recognition.show=="yes"))){
             const myRecognition = document.createElement('div');
             myRecognition.classList.add("card", "experience", "course");
            
@@ -525,7 +525,7 @@ function populateRecognitions(obj) {
             
             const myDiv = document.createElement('div');
             myDiv.classList.add("section-subheading", "card-title", "exp-title", "text-muted", "mt-0")
-            myDiv.innerText = kudo.title;
+            myDiv.innerText = recognition.title;
             myCard.appendChild(myDiv);
 
 
@@ -533,7 +533,7 @@ function populateRecognitions(obj) {
             myKudoBody.classList.add("card-subtitle", "my-0", "article-metadata");
 
             const myKudoOrg = document.createElement('a');
-            myKudoOrg.href = kudo.kudo_link;
+            myKudoOrg.href = recognition.kudo_link;
             myKudoOrg.innerText = kudo.organization + " ";
             myKudoBody.appendChild(myKudoOrg);
 

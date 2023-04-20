@@ -517,112 +517,123 @@
 
         [
             {
-                "conference":"14th World Congress on Endometriosis",
+            "conference":"14th World Congress on Endometriosis",
             "title":"Somatic Cancer-Driver Mutations and Sexual Pain Phenotype in Endometriosis",
             "type" :"Poster",            
             "date":"2021",
-                "location":"Virtual",
-                "notes":"",
-                "link":"https://endometriosis.ca/14th-world-congress-on-endometriosis-wce2020/",
+            "location":"Virtual",
+            "notes":"",
+            "link":"https://endometriosis.ca/14th-world-congress-on-endometriosis-wce2020/",
             "show":"main"
                 },
             {
-                "conference":"Public Scholars Initiative PhD Go Public",
+            "conference":"Public Scholars Initiative PhD Go Public",
             "title":"The Role of Central Sensitization in Endometriosis-associated Deep Dyspareunia",
             "type" :"Oral",            
             "date":"2019",
-                "location":"Vancouver",
-                "notes":"",
+            "location":"Vancouver",
+            "notes":"",
+            "link":"https://www.grad.ubc.ca/psi",
             "show":"yes"
                 },
             {
-                "conference":"Canadian Society for the Advancement of Gynecologic Excellence",
+            "conference":"Canadian Society for the Advancement of Gynecologic Excellence",
             "title":"The Central Sensitization Inventory in Women with Endometriosis",
             "type" :"Oral",            
             "date":"2019",
-                "location":"Ottawa",
-                "notes":"Best Abstract in the Field of Pain",
+            "location":"Ottawa",
+            "notes":"Best Abstract in the Field of Pain",
+            "link":"https://cansage.org/",
             "show":"main"
                 },
             {
-                "conference":"UBC Obstetrics and Gynecology 19th Annual Academic Day",
+            "conference":"UBC Obstetrics and Gynecology 19th Annual Academic Day",
             "title":"Central Sensitization and Endometriosis-Associated Painful Sex",
             "type" :"Oral",            
             "date":"2019",
-                "location":"Vancouver",
-                "notes":"",
+            "location":"Vancouver",
+            "notes":"",
+            "link":"https://obgyn.ubc.ca/faculty-resources/professional-development/academic-day/",
             "show":"yes"
                 },
             {
-                "conference":"Canadian Pain Society's 40th Annual Scientific Meeting",
+            "conference":"Canadian Pain Society's 40th Annual Scientific Meeting",
             "title":"Let's Talk About (Painful) Sex!",
             "type" :"Oral (Symposium)",            
             "date":"2019",
-                "location":"Toronto",
-                "notes":"",
+            "location":"Toronto",
+            "notes":"",
+            "link":"https://www.canadianpainsociety.ca/",
             "show":"main"
                 },
             {
-                "conference":"International Pelvic Pain Society Annual Scientific Meeting on Pelvic Pain",
+            "conference":"International Pelvic Pain Society Annual Scientific Meeting on Pelvic Pain",
             "title":"Central Sensitization Inventory in Endometriosis-Associated Pain",
             "type" :"Oral",            
             "date":"2019",
-                "location":"Toronto",
-                "notes":"Sole Oral Presenter Invited for the Endometriosis Session",
+            "location":"Toronto",
+            "notes":"Sole Oral Presenter Invited for the Endometriosis Session",
+            "link":"https://www.pelvicpain.org/",
             "show":"main"
                 },
             {
-                "conference":"International Society for the Study of Women's Sexual Health Annual Meeting",
+            "conference":"International Society for the Study of Women's Sexual Health Annual Meeting",
             "title":"Increased Central Sensitization Among Women with Painful Bladder Syndrome and Deep Dyspareunia",
             "type" :"Poster",            
             "date":"2019",
-                "location":"Atlanta",
-                "notes":"",
+            "location":"Atlanta",
+            "notes":"",
+            "link":"https://www.isswsh.org/",
             "show":"yes"
                 },
             {
-                "conference":"Canadian Pain Society's 40th Annual Scientific Meeting",
+            "conference":"Canadian Pain Society's 40th Annual Scientific Meeting",
             "title":"Increased Central Sensitization in Women with Chronic Pelvic Pain and Painful Bladder Syndrome",
             "type" :"Poster",            
             "date":"2019",
-                "location":"Toronto",
-                "notes":"",
+            "location":"Toronto",
+            "notes":"",
+            "link":"https://www.canadianpainsociety.ca/",
             "show":"yes"
                 },
             {
-                "conference":"International Society for the Study of Women's Sexual Health Annual Meeting",
+            "conference":"International Society for the Study of Women's Sexual Health Annual Meeting",
             "title":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
             "type" :"Oral",            
             "date":"2018",
-                "location":"San Diego",
-                "notes":"",
+            "location":"San Diego",
+            "notes":"",
+            "link":"https://www.isswsh.org/",
             "show":"yes"
                 },
             {
-                "conference":"International Pelvic Pain Society Annual Scientific Meeting on Pelvic Pain",
+            "conference":"International Pelvic Pain Society Annual Scientific Meeting on Pelvic Pain",
             "title":"Deep Dyspareunia and Central Sensitization in Women with Endometriosis",
             "type" :"Poster",            
             "date":"2018",
-                "location":"Chicago",
-                "notes":"",
+            "location":"Chicago",
+            "notes":"",
+            "link":"https://www.pelvicpain.org/",
             "show":"yes"
                 },
             {
-                "conference":"UBC Obstetrics and Gynecology 18th Annual Academic Day",
+            "conference":"UBC Obstetrics and Gynecology 18th Annual Academic Day",
             "title":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
             "type" :"Oral",            
             "date":"2018",
-                "location":"Vancouver",
-                "notes":"",
+            "location":"Vancouver",
+            "notes":"",
+            "link":"https://obgyn.ubc.ca/faculty-resources/professional-development/academic-day/",
             "show":"yes"
                 },
             {
-                "conference":"Canadian Society for the Advancement of Gynecologic Excellence",
+            "conference":"Canadian Society for the Advancement of Gynecologic Excellence",
             "title":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
             "type" :"Oral",            
             "date":"2018",
-                "location":"Banff",
-                "notes":"Runner-Up Best Oral E-Poster Presentation",
+            "location":"Banff",
+            "notes":"Runner-Up Best Oral E-Poster Presentation",
+            "link":"https://cansage.org/",
             "show":"yes"
                 }
         ]
@@ -637,7 +648,7 @@
                 "date":"Sep 2020 - May 2021",
                 "location":"University of British Columbia",
                 "city": "Vancouver",
-                "link":"",
+                "link":"https://grad-postdoc.med.ubc.ca/current-students/student-wellbeing/peer-mentorship-program/peer-mentorship-training/",
                 "text":"Supported a junior graduate student through their transition into graduate school. I helped them apply to teaching and research assistantships, as well as develop connections and access resources on campus.",
                 "show": "main"
             },
@@ -648,7 +659,7 @@
                 "date":"Jul 2019",
                 "location":"University of British Columbia",
                 "city": "Vancouver",
-                "link":"",
+                "link":"https://vancouversummerprogram.ubc.ca/course-packages/medicine/",
                 "text":"Presented a lecture on endometriosis and a lecture on the histology of the female reproductive system. Also, developed an afternoon interactive lab session on histology.",
                 "show": "main"
             },
@@ -659,7 +670,7 @@
                 "date":"Sep 10, 2019 – Dec 31, 2022",
                 "location":"University of British Columbia",
                 "city": "Vancouver",
-                "link":"",
+                "link":"https://cps.med.ubc.ca/",
                 "text":"Taught the urinary and respiratory units for the course: Introduction to Microscopic Human Anatomy (CAPS390).",
                 "show": "main"
             },
@@ -670,7 +681,7 @@
                 "date":"May 2019",
                 "location":"University of British Columbia",
                 "city": "Kamloops and Williams Lake",
-                "link":"",
+                "link":"https://www.bcchr.ca/events/mini-med-school",
                 "text":"Conducted a hands-on workshop session on laparoscopic surgery for high school students.",
                 "show": "main"
             },
@@ -681,7 +692,7 @@
                 "date":"Apr 2019",
                 "location":"University of British Columbia",
                 "city": "Vancouver",
-                "link":"",
+                "link":"https://quantumleapsvan.wordpress.com/home/",
                 "text":"Described my research experience as a women in a STEM field to a group of female high school students, and ran a hands-on histology lab demonstration.",
                 "show": "main"
             },
@@ -692,7 +703,7 @@
                 "date":"Sep 2016 - Apr 2021",
                 "location":"University of British Columbia",
                 "city": "Vancouver",
-                "link":"",
+                "link":"https://www.uroubc.com/rex-mentors/",
                 "text":"Provided undergraduate students at UBC with advice and support as they create a research project and poster to present at the Multidisciplinary Undergraduate Research Conference.",
                 "show": "main"
             },
@@ -703,7 +714,7 @@
                 "date":"Sep 2014 - Apr 2016",
                 "location":"Queen's University",
                 "city": "Kingston",
-                "link":"",
+                "link":"https://healthsci.queensu.ca/",
                 "text":"Teaching Assistant for a course entitled: The Principles of Human Morphology II (ANAT215).",
                 "show": "main"
             }
@@ -717,56 +728,56 @@
                 "title":"Rising Star Certificate of Excellence",
                 "organization":"Canadian Association of Medical Education",
                 "date":"2022",
-                "kudo_link":"",
+                "link":"https://www.came-acem.ca/awards/came-rising-star-certificate-of-excellence/",
             "show":"main"
             },
             {
                 "title":"Faculty of Medicine Killam Graduate Teaching Assistant Award",
                 "organization":"University of British Columbia",
                 "date":"2021",
-                "kudo_link":"",
+                "link":"https://grad-postdoc.med.ubc.ca/killam-graduate-teaching-assistant-awards/",
             "show":"main"
             },
             {
                 "title":"Li Tze Fong Memorial Fellowship",
                 "organization":"University of British Columbia",
                 "date":"2020-2021",
-                "kudo_link":"",
+                "link":"https://www.grad.ubc.ca/",
             "show":"main"
             },
             {
                 "title":"Cordula and Gunter Paetzold Fellowship",
                 "organization":"University of British Columbia",
                 "date":"2019-2020",
-                "kudo_link":"",
+                "link":"https://www.grad.ubc.ca/",
             "show":"main"
             },
             {
                 "title":"Four Year Doctoral Fellowship and Tuition Award",
                 "organization":"University of British Columbia",
                 "date":"2019-2022",
-                "kudo_link":"",
+                "link":"https://www.grad.ubc.ca/",
             "show":"main"
             },
             {
                 "title":"Simons Foundation Doctoral Scholarship",
                 "organization":"University of British Columbia",
                 "date":"2018",
-                "kudo_link":"",
+                "link":"https://www.grad.ubc.ca/",
             "show":"main"
             },
             {
                 "title":"Outstanding Achievement Award for a Masters Student",
                 "organization":"BC Children's Hospital Research Institute",
                 "date":"2018",
-                "kudo_link":"",
+                "link":"https://www.bcchr.ca/",
             "show":"main"
             },
             {
                 "title":"Canadian Graduate Scholarship - Masters",
                 "organization":"Canadian Institutes of Health Research",
                 "date":"2017-2018",
-                "kudo_link":"",
+                "link":"https://cihr-irsc.gc.ca/e/193.html",
             "show":"main"
             }
 
