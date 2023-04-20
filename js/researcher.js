@@ -378,7 +378,7 @@ function populatePublications(obj) {
             myPublication.appendChild(myYear);
 
             const myPub = document.createElement('a');
-            myPub.href = pub.article_link;
+            myPub.href = publication.article_link;
             myPub.innerText = publication.article + " ";
             myPublication.appendChild(myPub);
 
