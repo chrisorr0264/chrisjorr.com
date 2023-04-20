@@ -40,6 +40,7 @@ async function populateDetails(){
     populateEmployment(details);
     populatePublications(details);
     populatePresentations(details);
+    populateExperience(details);
     populateRecognitions(details);
 
 }
