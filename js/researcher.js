@@ -533,8 +533,8 @@ function populateRecognitions(obj) {
             myKudoBody.classList.add("card-subtitle", "my-0", "article-metadata");
 
             const myKudoOrg = document.createElement('a');
-            myKudoOrg.href = recognition.kudo_link;
-            myKudoOrg.innerText = kudo.organization + " ";
+            myKudoOrg.href = recognition.link;
+            myKudoOrg.innerText = recognition.organization + " ";
             myKudoBody.appendChild(myKudoOrg);
 
             const mySpan = document.createElement('span');
@@ -542,7 +542,7 @@ function populateRecognitions(obj) {
             myKudoBody.appendChild(mySpan);
             
             const myDate = document.createElement('span');
-            myDate.innerText = " " + kudo.date;
+            myDate.innerText = " " + recognition.date;
             myKudoBody.appendChild(myDate);
 
             myCard.appendChild(myKudoBody);
