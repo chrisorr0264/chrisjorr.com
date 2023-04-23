@@ -579,7 +579,7 @@ window.onload=function(){
 
 function citeModal(details,index) {
 
-    populateDetails();
+    populateDetails(details);
 
     const arrayofCitations = details[8].citations;
     const citation = array.get(arrayofCitations,index);
