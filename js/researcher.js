@@ -18,7 +18,6 @@ citations: 8
 
 /* Imports */
 
-import { jsonToBibtex } from "@devisle/reference-js";
 
 /* Constants */
 
@@ -583,7 +582,7 @@ function citeModal(details,index) {
     const arrayofCitations = details[8].citations;
     const citation = array.get(arrayofCitations,index);
     
-    const bibText = jsonToBibtex(JSON.stringify(citation));
+    const bibText = JSON.stringify(citation);
 
 
     const myModal = new Modal({
