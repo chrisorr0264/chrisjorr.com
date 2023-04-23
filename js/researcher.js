@@ -22,6 +22,8 @@ citations: 8
 /* Constants */
 
 const keyAuthor = "Orr";
+const requestURL = 'js/json/details.json';
+const request = new Request(requestURL);
 
 /* Initial function to trigger all calls.  */
 function populate(){
@@ -31,11 +33,9 @@ function populate(){
 
 /* Main function to retrieve json with details for the website  */
 async function populateDetails(){
-    const requestURL5 = 'js/json/details.json';
-    const request5 = new Request(requestURL5);
 
-    const response5 = await fetch(request5);
-    const details = await response5.json();
+    const response = await fetch(request);
+    const details = await response.json();
 
 /* Calling all the functions to populate the website sections  */
     populateInterests(details);
@@ -579,27 +579,33 @@ window.onload=function(){
 
 function citeModal(index) {
 
-    const requestURL = 'js/json/details.json';
-    const request = new Request(requestURL);
-
-    const fetchPromise = fetch(request);
-    fetchPromise.then(response => {
-      return response.json();
-    }).then(citations => {
-        return citations[8].citations;
-    });
-
-    console.log(JSON.stringify(fetchPromise));
-    const citation = array.get(fetchPromise,index);
-    
-    const bibText = JSON.stringify(citation);
-
-
     const myModal = new Modal({
         effect: 'zoom', // zoom|slide
         size: 'medium', // small|medium|large|full
         title: 'Citation',
-        content: bibText,
+        content: function(){
+
+            fetchPromise = fetch(request);
+        
+            fetchPromise.then(response => {
+              return response.json();
+            })
+                .then(citations => {
+                   
+                    return citations[8].citations;
+            })
+                .then(citation => {
+                    const bibText = JSON.stringify(citation);                   
+                    content: bibText;
+            })
+            ;
+        
+
+            //const citation = array.get(fetchPromise,index);
+            
+ 
+
+        },
         onOpen: function() {
             console.log('modal open');
         },
