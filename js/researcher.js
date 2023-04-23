@@ -17,7 +17,7 @@ citations: 8
 */
 
 /* Imports */
-
+import ("/js/modal.js");
 
 /* Constants */
 
