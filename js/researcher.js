@@ -574,26 +574,23 @@ window.onload=function(){
     });
 }
 
-/* Populate Citations */
 
-async function populateCitations(){
-    const requestURL5 = 'js/json/details.json';
-    const request5 = new Request(requestURL5);
-
-    const response5 = await fetch(request5);
-    const details = await response5.json();
-
-    return details;
-
-}
 /* Pop up the Modal Box  */
 
 function citeModal(index) {
 
-    const obj = populateCitations();
+    const requestURL = 'js/json/details.json';
+    const request = new Request(requestURL);
 
-    const arrayofCitations = obj[8].citations;
-    const citation = array.get(arrayofCitations,index);
+    const fetchPromise = fetch(request);
+    fetchPromise.then(response => {
+      return response.json();
+    }).then(citations => {
+        return citations[8].citations;
+    });
+
+    
+    const citation = array.get(fetchPromise,index);
     
     const bibText = JSON.stringify(citation);
 
