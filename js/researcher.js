@@ -13,7 +13,12 @@ publications: 4
 presentations: 5
 experiences: 6
 recognitions: 7
+citations: 8
 */
+
+/* Imports */
+
+import { jsonToBibtex } from "@devisle/reference-js";
 
 /* Constants */
 
@@ -390,9 +395,9 @@ function populatePublications(obj) {
             const myPara = document.createElement('p');
             const myCite = myPara.appendChild(document.createElement('a'));
             myCite.href = '#';
-            myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm", "js-cite-modal");
-            myCite.setAttribute("data-filename",publication.cite_link);
-            myCite.innerText = "Cite";
+            myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm");
+            myCite.onclick(citeModal(publication.pmid));
+            myCite.innerHTML = "Cite";
             myPara.appendChild(myCite);
             myPublication.appendChild(myPara);
 
@@ -568,4 +573,30 @@ window.onload=function(){
             document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
         }
     });
+}
+
+
+/* Pop up the Modal Box  */
+
+function citeModal(details,index) {
+
+    const arrayofCitations = details[8].citations;
+    const citation = array.get(arrayofCitations,index);
+    
+    const bibText = jsonToBibtex(JSON.stringify(citation));
+
+
+    const myModal = new Modal({
+        effect: 'zoom', // zoom|slide
+        size: 'medium', // small|medium|large|full
+        title: 'Citation',
+        content: bibText,
+        onOpen: function() {
+            console.log('modal open');
+        },
+        onClose: function() {
+            console.log('modal closed');
+        }           
+    });
+
 }

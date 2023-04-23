@@ -163,7 +163,7 @@
                 "year":"2023",
                 "journal":"JAMA Network Open",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/36848090/",
-                "cite_link":"/publications/cite1.bib",
+                "pmid":"",
                 "show" : "main"
             },
 
@@ -190,7 +190,7 @@
                 "year":"2023",
                 "journal":"Journal of Pathology: Clinical Research",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/36977195/",
-                "cite_link":"/publications/cite2.bib",
+                "pmid":"",
                 "show" : "main"
             },
             
@@ -211,7 +211,7 @@
                 "year":"2022",
                 "journal":"PAIN",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/34030173/",
-                "cite_link":"/publications/cite3.bib",
+                "pmid":"",
                 "show" : "main"
             },
 
@@ -246,7 +246,7 @@
                 "year":"2023",
                 "journal":"Nature Genetics",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/36624343/",
-                "cite_link":"/publications/cite4.bib",
+                "pmid":"",
                 "show" : "yes"
             },
 
@@ -267,7 +267,7 @@
                 "year":"2023",
                 "journal":"JMIR Research Protocols",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/36972117/",
-                "cite_link":"/publications/cite5.bib",
+                "pmid":"",
                 "show" : "main"
             },
 
@@ -283,7 +283,7 @@
                 "year":"2021",
                 "journal":"Journal of Obstetrics and Gynecology Canada",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/32753352/",
-                "cite_link":"/publications/cite6.bib",
+                "pmid":"",
                 "show" : "yes"                              
             },
 
@@ -301,7 +301,7 @@
                 "year":"2020",
                 "journal":"Sexual Medicine Reviews",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/30928249/",
-                "cite_link":"/publications/cite7.bib",
+                "pmid":"",
                 "show" : "yes"      
             },
 
@@ -319,7 +319,7 @@
                 "year":"2020",
                 "journal":"Journal of Women's Health",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/32176592/",
-                "cite_link":"/publications/cite8.bib",
+                "pmid":"",
                 "show" : "yes"      
             },
 
@@ -338,7 +338,7 @@
                 "year":"2020",
                 "journal":"Journal of Obstetrics and Gynecology Canada",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/31864912/",
-                "cite_link":"/publications/cite9.bib",
+                "pmid":"",
                 "show" : "yes"     
             },
 
@@ -360,7 +360,7 @@
                 "year":"2020",
                 "journal":"Sexual Medicine",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/32061579/",
-                "cite_link":"/publications/cite10.bib",
+                "pmid":"",
                 "show" : "yes"     
             },
 
@@ -380,7 +380,7 @@
                 "year":"2020",
                 "journal":"Journal of Sexual Medicine",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/31983669/",
-                "cite_link":"/publications/cite11.bib",
+                "pmid":"",
                 "show" : "yes"   
             },
 
@@ -401,7 +401,7 @@
                 "year":"2019",
                 "journal":"PLOS ONE",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/31315131/",
-                "cite_link":"/publications/cite12.bib",
+                "pmid":"",
                 "show" : "yes"  
             },
 
@@ -437,7 +437,7 @@
                 "year":"2018",
                 "journal":"Human Reproduction",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/30428062/",
-                "cite_link":"/publications/cite13.bib",
+                "pmid":"",
                 "show" : "yes"  
             },
 
@@ -456,7 +456,7 @@
                 "year":"2018",
                 "journal":"Journal of Sexual Medicine",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/30078464/",
-                "cite_link":"/publications/cite14.bib",
+                "pmid":"",
                 "show" : "yes" 
             },
 
@@ -507,7 +507,7 @@
                 "year":"2017",
                 "journal":"New England Journal of Medicine",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/28489996/",
-                "cite_link":"/publications/cite14.bib",
+                "pmid":"",
                 "show" : "yes" 
             }
         ]
@@ -780,6 +780,25 @@
                 "link":"https://cihr-irsc.gc.ca/e/193.html",
             "show":"main"
             }
+
+        ]
+    },
+
+    { "citations":
+
+        [
+            {
+                "type": "ARTICLE",
+                "pmid": "36848090",
+                "title": "Association of Central Sensitization Inventory Scores With Pain Outcomes After Endometriosis Surgery",
+                "author": "Orr NL, Huang AJ, Liu YD, Noga H, Bedaiwy MA, Williams C, Allaire C, Yong PJ",
+                "journal": "JAMA Network Open",
+                "year": "2023",
+                "volume": "6",
+                "issue": "2",
+                "pages": ""
+            }
+            
 
         ]
     }
