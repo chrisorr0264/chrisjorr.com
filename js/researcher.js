@@ -589,7 +589,7 @@ function citeModal(index) {
         return citations[8].citations;
     });
 
-    console.log(fetchPromise)
+    console.log(JSON.stringify(fetchPromise));
     const citation = array.get(fetchPromise,index);
     
     const bibText = JSON.stringify(citation);
