@@ -398,9 +398,9 @@ function populatePublications(obj) {
             myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm");
             myCite.addEventListener("click", event => {
                 event.preventDefault();
-                let modalElement = document.querySelector(element.dataset.modal);
+
                 let modal = new Modal({ 
-                    element: modalElement,
+                    element: myCite,
                     effect: 'zoom', // zoom|slide
                     size: 'medium', // small|medium|large|full
                     id: index,
