@@ -394,7 +394,7 @@ function populatePublications(obj) {
             const myPara = document.createElement('p');
             const myCite = myPara.appendChild(document.createElement('a'));
             myCite.href = '#';
-            myCite.setAttribute("data-modal",publication.pmid);
+            myCite.setAttribute("data-modal","."+ publication.pmid);
             
             myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm");
 
@@ -402,9 +402,11 @@ function populatePublications(obj) {
             myPara.appendChild(myCite);
             myPublication.appendChild(myPara);
 
+            myModal(publication.pmid);
             sectionPublications.appendChild(myPublication);
         }   
     }
+    Modal.initElements();
 }
 /* Function to populate the Presentation section of the website. Looks for ID=presentationCards  */
 function populatePresentations(obj) {
@@ -467,6 +469,8 @@ function populatePresentations(obj) {
             myPresentation.appendChild(myRow);
 
             sectionPresentations.appendChild(myPresentation);
+
+            myModal(publication.pmid);
         }
     }
 }
@@ -597,17 +601,12 @@ function citeModal(index) {
                     return citations[8].citations;
             })
                 .then(citation => {
-                    const bibText = JSON.stringify(citation);                   
+                    const bibText = JSON.stringify(citation.index);                   
                     content: bibText;
             })
             ;
         
-
-            //const citation = array.get(fetchPromise,index);
-            
- 
-
-        },
+         },
         onOpen: function() {
             console.log('modal open');
         },
