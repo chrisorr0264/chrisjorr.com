@@ -394,7 +394,7 @@ function populatePublications(obj) {
             const myPara = document.createElement('p');
             const myCite = myPara.appendChild(document.createElement('a'));
             myCite.href = '#';
-            myCite.setAttribute("data-modal","."+ publication.pmid);
+            myCite.setAttribute("data-modal",".id"+ publication.pmid);
             
             myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm");
 
@@ -402,7 +402,7 @@ function populatePublications(obj) {
             myPara.appendChild(myCite);
             myPublication.appendChild(myPara);
 
-            citeModal(publication.pmid);
+            citeModal("id" + publication.pmid);
             sectionPublications.appendChild(myPublication);
         }   
     }
