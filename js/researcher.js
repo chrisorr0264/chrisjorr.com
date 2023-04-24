@@ -403,7 +403,7 @@ function populatePublications(obj) {
                     element: myCite,
                     effect: 'zoom', // zoom|slide
                     size: 'medium', // small|medium|large|full
-                    id: index,
+                    id: publication.pmid,
                     title: 'Citation - ' + publication.pmid,
                     content: function(){
         
