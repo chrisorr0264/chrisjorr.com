@@ -173,13 +173,14 @@ class Modal {
             element.addEventListener('click', event => {
                 event.preventDefault();
                 let modalElement = document.querySelector(element.dataset.modal);
-                let modal = new Modal({ element: modalElement });
+/*                let modal = new Modal({ element: modalElement });
                 for (let data in modalElement.dataset) {
                     if (modal[data]) {
                         modal[data] = modalElement.dataset[data];
                     }                           
                 }
-                modal.open();
+                */
+                modalElement.open();
             });
         });
     }
