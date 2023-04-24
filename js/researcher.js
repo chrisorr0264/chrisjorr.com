@@ -400,7 +400,7 @@ function populatePublications(obj) {
                 event.preventDefault();
 
                 let modal = new Modal({ 
-                    element: myCite,
+                    //element: myCite,
                     effect: 'zoom', // zoom|slide
                     size: 'medium', // small|medium|large|full
                     id: publication.pmid,
