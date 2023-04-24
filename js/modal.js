@@ -5,14 +5,14 @@ class Modal {
         this.options = Object.assign(defaults, options);
         if (this.options.element == null) {
             this.options.element = document.createElement('div');
-            this.options.element.classList.add('modal');
+            this.options.element.classList.add('modal', 'fade');
             this.options.element.innerHTML = `
-                <div class="container">
-                    <div class="header">
+                <div class="container modal-content">
+                    <div class="modal-header">
                         <button class="close">&times;</button> 
                     </div>
-                    <div class="content"></div>
-                    <div class="footer">
+                    <div class="content model-body"></div>
+                    <div class="modal-footer">
                         <button class="close">Close</button>
                     </div>
                 </div>                        
