@@ -437,7 +437,6 @@ function populatePublications(obj) {
             myPara.appendChild(myCite);
             myPublication.appendChild(myPara);
 
-            citeModal("id" + publication.pmid);
             sectionPublications.appendChild(myPublication);
         }   
     }
