@@ -163,7 +163,7 @@
                 "year":"2023",
                 "journal":"JAMA Network Open",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/36848090/",
-                "pmid":"123",
+                "pmid":"36848090",
                 "show" : "main"
             },
 
@@ -190,7 +190,7 @@
                 "year":"2023",
                 "journal":"Journal of Pathology: Clinical Research",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/36977195/",
-                "pmid":"234",
+                "pmid":"36977195",
                 "show" : "main"
             },
             
@@ -211,7 +211,7 @@
                 "year":"2022",
                 "journal":"PAIN",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/34030173/",
-                "pmid":"345",
+                "pmid":"34030173",
                 "show" : "main"
             },
 
@@ -246,7 +246,7 @@
                 "year":"2023",
                 "journal":"Nature Genetics",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/36624343/",
-                "pmid":"",
+                "pmid":"36624343",
                 "show" : "yes"
             },
 
@@ -267,7 +267,7 @@
                 "year":"2023",
                 "journal":"JMIR Research Protocols",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/36972117/",
-                "pmid":"",
+                "pmid":"36972117",
                 "show" : "main"
             },
 
@@ -283,7 +283,7 @@
                 "year":"2021",
                 "journal":"Journal of Obstetrics and Gynecology Canada",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/32753352/",
-                "pmid":"",
+                "pmid":"32753352",
                 "show" : "yes"                              
             },
 
@@ -301,7 +301,7 @@
                 "year":"2020",
                 "journal":"Sexual Medicine Reviews",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/30928249/",
-                "pmid":"",
+                "pmid":"30928249",
                 "show" : "yes"      
             },
 
@@ -319,7 +319,7 @@
                 "year":"2020",
                 "journal":"Journal of Women's Health",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/32176592/",
-                "pmid":"",
+                "pmid":"32176592",
                 "show" : "yes"      
             },
 
@@ -338,7 +338,7 @@
                 "year":"2020",
                 "journal":"Journal of Obstetrics and Gynecology Canada",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/31864912/",
-                "pmid":"",
+                "pmid":"31864912",
                 "show" : "yes"     
             },
 
@@ -360,7 +360,7 @@
                 "year":"2020",
                 "journal":"Sexual Medicine",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/32061579/",
-                "pmid":"",
+                "pmid":"32061579",
                 "show" : "yes"     
             },
 
@@ -380,7 +380,7 @@
                 "year":"2020",
                 "journal":"Journal of Sexual Medicine",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/31983669/",
-                "pmid":"",
+                "pmid":"31983669",
                 "show" : "yes"   
             },
 
@@ -401,7 +401,7 @@
                 "year":"2019",
                 "journal":"PLOS ONE",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/31315131/",
-                "pmid":"",
+                "pmid":"31315131",
                 "show" : "yes"  
             },
 
@@ -437,7 +437,7 @@
                 "year":"2018",
                 "journal":"Human Reproduction",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/30428062/",
-                "pmid":"",
+                "pmid":"30428062",
                 "show" : "yes"  
             },
 
@@ -456,7 +456,7 @@
                 "year":"2018",
                 "journal":"Journal of Sexual Medicine",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/30078464/",
-                "pmid":"",
+                "pmid":"30078464",
                 "show" : "yes" 
             },
 
@@ -507,7 +507,7 @@
                 "year":"2017",
                 "journal":"New England Journal of Medicine",
                 "article_link":"https://pubmed.ncbi.nlm.nih.gov/28489996/",
-                "pmid":"",
+                "pmid":"28489996",
                 "show" : "yes" 
             }
         ]
