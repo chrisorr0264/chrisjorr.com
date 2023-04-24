@@ -1,7 +1,7 @@
 class Modal {
 
     constructor(options) {
-        let defaults = { element: null, effect: 'zoom', state: 'closed', size: 'medium', id: null, content: null, footer: null, header: null, title: null };
+        let defaults = { element: null, effect: 'zoom', state: 'closed', size: 'medium', id: "", content: null, footer: null, header: null, title: null };
         this.options = Object.assign(defaults, options);
         if (this.options.element == null) {
             this.options.element = document.createElement('div');
