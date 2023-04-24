@@ -115,47 +115,47 @@ class Modal {
     }
 
     get headerElement() {
-        return this.options.element.querySelector('.header');
+        return this.options.element.querySelector('.model-header');
     }
 
     set header(value) {
         if (!value) {
-            this.options.element.querySelector('.header').remove();
+            this.options.element.querySelector('.modal-header').remove();
         } else {
-            if (!this.options.element.querySelector('.header')) {
-                this.options.element.querySelector('.container').insertAdjacentHTML('afterbegin', `<div class="header"></div>`);
+            if (!this.options.element.querySelector('.modal-header')) {
+                this.options.element.querySelector('.container').insertAdjacentHTML('afterbegin', `<div class="modal-header"></div>`);
             }
-            this.options.element.querySelector('.header').innerHTML = value;
+            this.options.element.querySelector('.modal-header').innerHTML = value;
         }
     }
 
     get title() {
-        return this.options.element.querySelector('.header .title') ? this.options.element.querySelector('.header .title').innerHTML : null;
+        return this.options.element.querySelector('.modal-header .title') ? this.options.element.querySelector('.modal-header .title').innerHTML : null;
     }
 
     set title(value) {
-        if (!this.options.element.querySelector('.header .title')) {
-            this.options.element.querySelector('.header').insertAdjacentHTML('afterbegin', `<h1 class="title"></h1>`);
+        if (!this.options.element.querySelector('.modal-header .title')) {
+            this.options.element.querySelector('.modal-header').insertAdjacentHTML('afterbegin', `<h1 class="title"></h1>`);
         }
-        this.options.element.querySelector('.header .title').innerHTML = value;
+        this.options.element.querySelector('.modal-header .title').innerHTML = value;
     }
 
     get footer() {
-        return this.options.element.querySelector('.footer').innerHTML;
+        return this.options.element.querySelector('.modal-footer').innerHTML;
     }
 
     get footerElement() {
-        return this.options.element.querySelector('.footer');
+        return this.options.element.querySelector('.modal-footer');
     }
 
     set footer(value) {
         if (!value) {
-            this.options.element.querySelector('.footer').remove();
+            this.options.element.querySelector('.modal-footer').remove();
         } else {
-            if (!this.options.element.querySelector('.footer')) {
-                this.options.element.querySelector('.container').insertAdjacentHTML('beforeend', `<div class="footer"></div>`);
+            if (!this.options.element.querySelector('.modal-footer')) {
+                this.options.element.querySelector('.container').insertAdjacentHTML('beforeend', `<div class="modal-footer"></div>`);
             }
-            this.options.element.querySelector('.footer').innerHTML = value;
+            this.options.element.querySelector('.modal-footer').innerHTML = value;
         }
     }
 
