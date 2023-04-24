@@ -5,7 +5,7 @@ class Modal {
         this.options = Object.assign(defaults, options);
         if (this.options.element == null) {
             this.options.element = document.createElement('div');
-            this.options.element.classList.add('modal', 'fade');
+            this.options.element.classList.add('modal', 'fade', 'show');
             this.options.element.innerHTML = `
                 <div class="container modal-content">
                     <div class="modal-header">
