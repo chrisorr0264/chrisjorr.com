@@ -588,6 +588,7 @@ function citeModal(index) {
     const myModal = new Modal({
         effect: 'zoom', // zoom|slide
         size: 'medium', // small|medium|large|full
+        id: index,
         title: 'Citation',
         content: function(){
 

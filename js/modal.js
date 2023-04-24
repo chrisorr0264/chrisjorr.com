@@ -1,7 +1,7 @@
 class Modal {
 
     constructor(options) {
-        let defaults = { element: null, effect: 'zoom', state: 'closed', size: 'medium', content: null, footer: null, header: null, title: null };
+        let defaults = { element: null, effect: 'zoom', state: 'closed', size: 'medium', id: null, content: null, footer: null, header: null, title: null };
         this.options = Object.assign(defaults, options);
         if (this.options.element == null) {
             this.options.element = document.createElement('div');
@@ -34,6 +34,7 @@ class Modal {
             this.title = this.options.title;
         }
         this.size = this.options.size;
+        this.id = this.options.id;
         this._eventHandlers();
     }
 
@@ -68,6 +69,16 @@ class Modal {
         this.options.effect = value;
         this.options.element.querySelector('.container').classList.remove('zoom', 'slide');
         this.options.element.querySelector('.container').classList.add(value);
+    }
+
+    get id() {
+        return this.options.id;
+    }
+
+    set id(value) {
+        this.options.id = value;
+//        this.options.element.classList.remove('small', 'large', 'medium', 'full');
+        this.options.element.classList.add(value);
     }
 
     get size() {
