@@ -395,9 +395,44 @@ function populatePublications(obj) {
             const myCite = myPara.appendChild(document.createElement('a'));
             myCite.href = '#';
             myCite.setAttribute("data-modal",".id"+ publication.pmid);
-            
             myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm");
+            myCite.addEventListener("click", event => {
+                event.preventDefault();
+                let modalElement = document.querySelector(element.dataset.modal);
+                let modal = new Modal({ 
+                    element: modalElement,
+                    effect: 'zoom', // zoom|slide
+                    size: 'medium', // small|medium|large|full
+                    id: index,
+                    title: 'Citation - ' + publication.pmid,
+                    content: function(){
+        
+                        fetchPromise = fetch(request);
+                    
+                        fetchPromise.then(response => {
+                          return response.json();
+                        })
+                            .then(citations => {
+                               
+                                return citations[8].citations;
+                        })
+                            .then(citation => {
+                                const bibText = JSON.stringify(citation.index);                   
+                                content: bibText;
+                        })
+                    },
 
+                    onOpen: function() {
+                        console.log('modal open');
+                    },
+                    onClose: function() {
+                        console.log('modal closed');
+                    }
+
+                });
+                         
+                modal.open();
+            });
             myCite.innerHTML = "Cite";
             myPara.appendChild(myCite);
             myPublication.appendChild(myPara);
@@ -406,7 +441,7 @@ function populatePublications(obj) {
             sectionPublications.appendChild(myPublication);
         }   
     }
-    Modal.initElements();
+
 }
 /* Function to populate the Presentation section of the website. Looks for ID=presentationCards  */
 function populatePresentations(obj) {
@@ -581,39 +616,4 @@ window.onload=function(){
 }
 
 
-/* Pop up the Modal Box  */
 
-function citeModal(index) {
-
-    const myModal = new Modal({
-        effect: 'zoom', // zoom|slide
-        size: 'medium', // small|medium|large|full
-        id: index,
-        title: 'Citation',
-        content: function(){
-
-            fetchPromise = fetch(request);
-        
-            fetchPromise.then(response => {
-              return response.json();
-            })
-                .then(citations => {
-                   
-                    return citations[8].citations;
-            })
-                .then(citation => {
-                    const bibText = JSON.stringify(citation.index);                   
-                    content: bibText;
-            })
-            ;
-        
-         },
-        onOpen: function() {
-            console.log('modal open');
-        },
-        onClose: function() {
-            console.log('modal closed');
-        }           
-    });
-
-}
