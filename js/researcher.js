@@ -402,7 +402,7 @@ function populatePublications(obj) {
             myPara.appendChild(myCite);
             myPublication.appendChild(myPara);
 
-            myModal(publication.pmid);
+            Modal.myModal(publication.pmid);
             sectionPublications.appendChild(myPublication);
         }   
     }
