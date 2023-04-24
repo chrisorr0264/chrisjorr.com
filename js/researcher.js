@@ -395,7 +395,7 @@ function populatePublications(obj) {
             const myCite = myPara.appendChild(document.createElement('a'));
             myCite.href = '#';
             myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm");
-            myCite.onclick(citeModal(publication.pmid));
+            myCite.addEventListener('click',citeModal(publication.pmid));
             myCite.innerHTML = "Cite";
             myPara.appendChild(myCite);
             myPublication.appendChild(myPara);
