@@ -401,7 +401,7 @@ function populatePublications(obj) {
             myCite.addEventListener("click", event => {
                 event.preventDefault();
                 var myCitation = citations.filter(a => a.pmid === publication.pmid);
-                var myContent = JSON.parse(myCitation);
+
 
                 let modal = new Modal({ 
                     //element: myCite,
@@ -409,7 +409,7 @@ function populatePublications(obj) {
                     size: 'medium', // small|medium|large|full
                     id: publication.pmid,
                     title: 'Citation - ' + publication.pmid,
-                    content: myContent.title,
+                    content: myCitation.title,
 
                     onOpen: function() {
                         console.log('modal open');
