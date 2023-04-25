@@ -339,6 +339,7 @@ function populateEmployment(obj) {
 /* Function to populate the Publications section of the website. Looks for ID=publicationCards  */
 function populatePublications(obj) {
     const sectionPublications = document.querySelector("#publicationCards");
+    const citations = obj[8].citations;
 
     for (const publication of obj[4].publications) {
         if((!document.title.includes("Publications") && publication.show=="main") || (document.title.includes("Publications") && (publication.show=="main" || publication.show=="yes"))){
@@ -397,12 +398,10 @@ function populatePublications(obj) {
             myCite.setAttribute("data-modal",".id"+ publication.pmid);
             myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm");
             
-            const citations = obj[8].citations;
-            var myCitation = citations.filter(a => a.pmid === publication.pmid);
-            
             myCite.addEventListener("click", event => {
                 event.preventDefault();
-
+                var myCitation = citations.filter(a => a.pmid === publication.pmid);
+                
                 let modal = new Modal({ 
                     //element: myCite,
                     effect: 'zoom', // zoom|slide
