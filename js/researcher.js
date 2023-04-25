@@ -396,6 +396,27 @@ function populatePublications(obj) {
             myCite.href = '#';
             myCite.setAttribute("data-modal",".id"+ publication.pmid);
             myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm");
+            
+            const fetchPromise = fetch("https://ghibliapi.herokuapp.com/people");
+            // Target main element
+            const main = document.getElementById("main");
+            fetchPromise.then(response => {
+              return response.json();
+            }).then(people => {
+              const names = people.map(person => person.name).join("\n");
+              // Append names to main element
+              main.innerHTML = names;
+            });
+
+            const fetchPromise = fetch(request);
+            
+            let citations = fetchPromise.then(response => {
+                  return response.json();
+                }).then(details => {
+                    return details[8];
+                });
+            var myCitation = citations.filter(a => a.pmid === publication.pmid);
+            
             myCite.addEventListener("click", event => {
                 event.preventDefault();
 
@@ -405,22 +426,7 @@ function populatePublications(obj) {
                     size: 'medium', // small|medium|large|full
                     id: publication.pmid,
                     title: 'Citation - ' + publication.pmid,
-                    content: function(){
-        
-                        fetchPromise = fetch(request);
-                    
-                        fetchPromise.then(response => {
-                          return response.json();
-                        })
-                            .then(citations => {
-                               
-                                return citations[8].citations;
-                        })
-                            .then(citation => {
-                                const bibText = JSON.stringify(citation.index);                   
-                                content: bibText;
-                        })
-                    },
+                    content: myCitation,
 
                     onOpen: function() {
                         console.log('modal open');
