@@ -401,14 +401,14 @@ function populatePublications(obj) {
             myCite.addEventListener("click", event => {
                 event.preventDefault();
                 var myCitation = citations.filter(a => a.pmid === publication.pmid);
-                
+
                 let modal = new Modal({ 
                     //element: myCite,
                     effect: 'zoom', // zoom|slide
                     size: 'medium', // small|medium|large|full
                     id: publication.pmid,
                     title: 'Citation - ' + publication.pmid,
-                    content: myCitation.title,
+                    content: JSON.parse(myCitation).title,
 
                     onOpen: function() {
                         console.log('modal open');
