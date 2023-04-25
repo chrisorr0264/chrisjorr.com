@@ -401,6 +401,7 @@ function populatePublications(obj) {
             myCite.addEventListener("click", event => {
                 event.preventDefault();
                 var myCitation = citations.filter(a => a.pmid === publication.pmid);
+                let data = jsonToBibtex(JSON.stringify(myCitation), "citations")
 
 
                 let modal = new Modal({ 
@@ -409,7 +410,7 @@ function populatePublications(obj) {
                     size: 'medium', // small|medium|large|full
                     id: publication.pmid,
                     title: 'Citation - ' + publication.pmid,
-                    content: myCitation[0].title,
+                    content: data,
 
                     onOpen: function() {
                         console.log('modal open');

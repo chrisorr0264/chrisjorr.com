@@ -797,9 +797,175 @@
                 "volume": "6",
                 "issue": "2",
                 "pages": ""
-            }
+            },
             
+            {
+                "type": "ARTICLE",
+                "pmid":"36977195",
+                "title":"KRAS  Mutation and Greater Burden of Disease in Endometriosis",
+                "author": "Orr NL, Albert A, Liu YD, Lum A, Hong J, Ionescu CL, Senz J, Nazeran TM, Lee AF, Noga H, Lawrenson K, Williams C, Allaire C, Bedaiwy MA, Anglesio MS, Yong, PJ",
+                "journal":"Journal of Pathology: Clinical Research",
+                "year":"2023",
+                "volume": "",
+                "issue": "",
+                "pages": ""
+            },
+            
+            {
+                "type": "ARTICLE",
+                "pmid": "34030173",
+                "title": "Central  Sensitization Inventory in Endometriosis",
+                "author": "Orr NL, Wahl KJ, Lisonek M, Joannou A, Noga H, Albert A, Bedaiwy MA, Williams C, Allaire C, Yong PJ",
+                "journal":"PAIN",
+                "year":"2022",
+                "volume": "",
+                "issue": "",
+                "pages": ""
+            },
 
+            {
+                "type": "ARTICLE",
+                "pmid": "36624343",
+                "title": "Single-cell Transcriptomic Analysis of Endometriosis",
+                "author": "Fonseca MA, Wright KN, Lin X, Abbasi F, Haro M, Sun J, Hernandez L, Orr NL, Hong J, Choi-Kuaea Y, Maluf HM, Balzer BL, Cass I, Truong M, Wang Y, Pisarska MD, Dinh H, El-Naggar A, Huntsman D, Anglesio MS, Goodman MT, Medeiros F, Siedhoff M, Lawrenson K",
+                "journal":"Nature Genetics",
+                "year":"2023",
+                "volume": "",
+                "issue": "",
+                "pages": ""
+            },
+
+            {
+                "type": "ARTICLE",
+                "pmid":"36972117",
+                "title":"Ohnut Versus  a Waitlist Control for the Self-management of Endometriosis-Associated Deep Dyspareunia: Protocol for a Pilot Randomized Controlled Trial",
+                "author": "Zhang S, MacLeod R, Parmar G, Orr NL, Wahl KJ, Noga, H, Albert A, Flannigan R, Brotto L, Yong P",
+                "journal":"JMIR Research Protocols",
+                "year":"2023",
+                "volume": "",
+                "issue": "",
+                "pages": ""
+            },
+
+            {
+                "type": "ARTICLE",
+                "pmid": "32753352",
+                "title": "Endometriosis in Canada: It Is Time for Collaboration to Advance Patient-Oriented, Evidence-Based Policy, Care, and Research",
+                "author": "Wahl KJ, Yong PJ, Bridge Cook P, Allaire C", 
+                "journal":"Journal of Obstetrics and Gynecology Canada",
+                "year":"2021",
+                "volume": "",
+                "issue": "",
+                "pages": ""                      
+            },
+
+            {
+                "type": "ARTICLE",
+                "pmid": "30928249",
+                "title": "Deep Dyspareunia: Review of Pathophysiology and Proposed Future Research Priorities",
+                "authors": "Orr NL, Wahl KJ, Joannou A, Hartmann D, Valle L, Yong PJ",
+                "journal":"Sexual Medicine Reviews",
+                "year":"2020",
+                "volume": "",
+                "issue": "",
+                "pages": ""      
+            },
+
+            {
+                "type": "ARTICLE",
+                "pmid": "32176592",             
+                "title": "A Quantitative Analysis of Sleep Quality in Women with Endometriosis",
+                "author": "Arion K, Orr NL, Noga H, Allaire C, Williams C, Bedaiwy MA, Yong PJ",
+                "journal":"Journal of Women's Health",
+                "year":"2020",
+                "volume": "",
+                "issue": "",
+                "pages": ""           
+            },
+
+            {
+                "type": "ARTICLE",
+                "pmid": "31864912",
+                "title": "Endometriosis and Negative Perception of the Medical Profession",
+                "author": "Ng N, Wahl KJ, Orr NL, Noga H, Williams C, Allaire C, Bedaiwy MA, Yong PJ",
+                "journal":"Journal of Obstetrics and Gynecology Canada",
+                "year":"2020",
+                "volume": "",
+                "issue": "",
+                "pages": ""     
+            },
+
+            {
+                "type": "ARTICLE",
+                "pmid": "32061579",
+                "title": "Deep Dyspareunia, Superficial Dyspareunia, and Infertility Concerns Among Women with Endometriosis: A Cross-Sectional Study",
+                "author": "Wahl KJ, Orr NL, Lisonek M, Noga H, Bedaiwy MA, Williams C, Allaire C, Albert A, Smith KB, Cox S, Yong PJ",
+                "journal":"Sexual Medicine",
+                "year":"2020",
+                "volume": "",
+                "issue": "",
+                "pages": ""     
+            },
+
+            {
+                "type": "ARTICLE",
+                "pmid": "31983669",
+                "title": "Phenotyping Sexual Pain in Endometriosis using the Central Sensitization Inventory",
+                "author": "Orr NL, Wahl KJ, Noga H, Allaire C, Williams C, Bedaiwy MA, Albert A, Smith KB, Yong PJ",
+                "journal":"Journal of Sexual Medicine",
+                "year":"2020",
+                "volume": "",
+                "issue": "",
+                "pages": ""      
+            },
+
+            {
+                "type": "ARTICLE",
+                "pmid":"31315131",
+                "title": "Plasminogen Activator Inhibitor-1 (PAI-1) Expression in Endometriosis",
+                "author": "Alotaibi F, Peng B, Klausen C, Lee A, Abdelkareem A, Orr NL, Noga H, Robinson W, Bedaiwy MA, Yong PJ",
+                "journal":"PLOS ONE",
+                "year":"2019",
+                "volume": "",
+                "issue": "",
+                "pages": ""      
+            },
+
+            {
+                "type": "ARTICLE",
+                "pmid": "30428062",
+                "title": "Iatrogenic Endometriosis Harbors Somatic Cancer-Driver Mutations",
+                "author":"Lac V, Verhoef L, Aguirre-Hernandez R, Nazeran TM, Tessier-Cloutier B, Praetorius T, Orr NL, Noga H, Lum A, Khattra J, Prentice LM, Co D, Koebel M, Mijatovic V, Lee AF, Pasternak J, Bleeker MC, Kraemer B, Brucker SY, Kommoss F, Kommoss S, Horlings HM, Yong PJ, Huntsman DG, Anglesio MS",  
+                "journal":"Human Reproduction",
+                "year":"2018",
+                "volume": "",
+                "issue": "",
+                "pages": ""     
+            },
+
+            {
+                "type": "ARTICLE",
+                "pmid": "30078464",
+                "title":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
+                "author": "Orr NL, Noga H, Smith KB, Lisonkova S, Williams C, Allaire C, Bedaiwy MA, Yong P",
+                "journal":"Journal of Sexual Medicine",
+                "year":"2018",
+                "volume": "",
+                "issue": "",
+                "pages": ""    
+            },
+
+            {
+                "type": "ARTICLE",
+                "pmid":"28489996",
+                "title":"Cancer-Associated Mutations in Endometriosis without Cancer",
+                "author": "Anglesio MS, Papadopoulos N, Ayhan A, Nazeran TM, Noe M, Horlings HM, Lum A, Jones S, Senz J, Sexkin T, Ho J, Wu R, Lac V, Ogawa H, Tessier-Cloutier B, Alhassan R, Wang A, Wang Y, Cohen J, Wong F, Hasanovic A, Orr NL, Zhang M, Popoli M, McMahon W, Wood L, Mattox A, Allaire C, Segars J, Williams C, Tomasetti C, Boyd N, Kinzler K, Gilks C, Diaz L, Wang T, Vogelstein B, Yong PJ, Huntsman D, Shih I",
+                "journal":"New England Journal of Medicine",
+                "year":"2017",
+                "volume": "",
+                "issue": "",
+                "pages": ""   
+            }
         ]
     }
 
