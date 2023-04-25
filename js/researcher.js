@@ -17,7 +17,7 @@ citations: 8
 */
 
 /* Imports */
-import { jsonToBibtex } from "js\node_modules\@devisle";
+
 
 /* Constants */
 
