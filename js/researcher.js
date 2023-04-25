@@ -409,7 +409,7 @@ function populatePublications(obj) {
                     size: 'medium', // small|medium|large|full
                     id: publication.pmid,
                     title: 'Citation - ' + publication.pmid,
-                    content: JSON.stringify(myCitation),
+                    content: myCitation.title,
 
                     onOpen: function() {
                         console.log('modal open');
