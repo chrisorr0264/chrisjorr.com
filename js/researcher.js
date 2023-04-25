@@ -397,7 +397,7 @@ function populatePublications(obj) {
             myCite.setAttribute("data-modal",".id"+ publication.pmid);
             myCite.classList.add("btn", "btn-outline-primary", "btn-page-header", "btn-sm");
             
-            const citations = details[8].citations;
+            const citations = obj[8].citations;
             var myCitation = citations.filter(a => a.pmid === publication.pmid);
             
             myCite.addEventListener("click", event => {
