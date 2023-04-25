@@ -7,12 +7,12 @@ class Modal {
             this.options.element = document.createElement('div');
             this.options.element.classList.add('modal', 'fade');
             this.options.element.innerHTML = `
-                <div class="container modal-content">
-                    <div class="modal-header">
+                <div class="container">
+                    <div class="header">
                         <button class="close">&times;</button> 
                     </div>
                     <div class="content model-body"></div>
-                    <div class="modal-footer">
+                    <div class="footer">
                         <button class="close">Close</button>
                     </div>
                 </div>                        
@@ -42,7 +42,7 @@ class Modal {
         this.options.state = 'open';
         this.options.element.style.display = 'flex';
         this.options.element.getBoundingClientRect();
-        this.options.element.classList.add('show');
+        this.options.element.classList.add('open');
         if (this.options.onOpen) {
             this.options.onOpen(this);
         }
@@ -115,47 +115,47 @@ class Modal {
     }
 
     get headerElement() {
-        return this.options.element.querySelector('.model-header');
+        return this.options.element.querySelector('.header');
     }
 
     set header(value) {
         if (!value) {
-            this.options.element.querySelector('.modal-header').remove();
+            this.options.element.querySelector('.header').remove();
         } else {
-            if (!this.options.element.querySelector('.modal-header')) {
-                this.options.element.querySelector('.container').insertAdjacentHTML('afterbegin', `<div class="modal-header"></div>`);
+            if (!this.options.element.querySelector('.header')) {
+                this.options.element.querySelector('.container').insertAdjacentHTML('afterbegin', `<div class="header"></div>`);
             }
-            this.options.element.querySelector('.modal-header').innerHTML = value;
+            this.options.element.querySelector('.header').innerHTML = value;
         }
     }
 
     get title() {
-        return this.options.element.querySelector('.modal-header .title') ? this.options.element.querySelector('.modal-header .title').innerHTML : null;
+        return this.options.element.querySelector('.header .title') ? this.options.element.querySelector('.header .title').innerHTML : null;
     }
 
     set title(value) {
-        if (!this.options.element.querySelector('.modal-header .title')) {
-            this.options.element.querySelector('.modal-header').insertAdjacentHTML('afterbegin', `<h1 class="title"></h1>`);
+        if (!this.options.element.querySelector('.header .title')) {
+            this.options.element.querySelector('.header').insertAdjacentHTML('afterbegin', `<h1 class="title"></h1>`);
         }
-        this.options.element.querySelector('.modal-header .title').innerHTML = value;
+        this.options.element.querySelector('.header .title').innerHTML = value;
     }
 
     get footer() {
-        return this.options.element.querySelector('.modal-footer').innerHTML;
+        return this.options.element.querySelector('.footer').innerHTML;
     }
 
     get footerElement() {
-        return this.options.element.querySelector('.modal-footer');
+        return this.options.element.querySelector('.footer');
     }
 
     set footer(value) {
         if (!value) {
-            this.options.element.querySelector('.modal-footer').remove();
+            this.options.element.querySelector('.footer').remove();
         } else {
-            if (!this.options.element.querySelector('.modal-footer')) {
-                this.options.element.querySelector('.container').insertAdjacentHTML('beforeend', `<div class="modal-footer"></div>`);
+            if (!this.options.element.querySelector('.footer')) {
+                this.options.element.querySelector('.container').insertAdjacentHTML('beforeend', `<div class="footer"></div>`);
             }
-            this.options.element.querySelector('.modal-footer').innerHTML = value;
+            this.options.element.querySelector('.footer').innerHTML = value;
         }
     }
 
