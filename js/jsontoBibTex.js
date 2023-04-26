@@ -57,7 +57,7 @@ const isValidJSON = (json) => {
   return false;
 };
 
-const chevrotain = require('chevrotain');
+
 
 const { createToken } = chevrotain;
 
