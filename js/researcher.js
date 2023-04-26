@@ -401,7 +401,15 @@ function populatePublications(obj) {
             myCite.addEventListener("click", event => {
                 event.preventDefault();
                 var myCitation = citations.filter(a => a.pmid === publication.pmid);
-                let data = jsonToBibtex(JSON.stringify(myCitation), "citations")
+                let data = "@ARTICLE{" + myCitation.pmid + ",<br>" 
+                    + "AUTHOR = " + myCitation.author + ",<br>"
+                    + "TITLE = " + myCitation.title + ", <br>"
+                    + "YEAR = " + myCitation.year + ", <br>"
+                    + "JOURNAL = " + myCitation.journal + ", <br>"
+                    + "VOLUME = " + myCitation.volume + ", <br>"
+                    + "ISSUE = " + myCitation.issue + ", <br>"
+                    + "PAGES = " + myCitation.pages + ", <br>"
+                    + "}";
 
 
                 let modal = new Modal({ 
