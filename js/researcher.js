@@ -419,14 +419,14 @@ function populatePublications(obj) {
                     id: publication.pmid,
                     title: 'Citation - ' + publication.pmid,
                     content: data,
-
+/*
                     onOpen: function() {
                         console.log('modal open');
                     },
                     onClose: function() {
                         console.log('modal closed');
                     }
-
+*/
                 });
                          
                 modal.open();

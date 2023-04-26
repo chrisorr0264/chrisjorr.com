@@ -1,10 +1,4 @@
-/*! Wowchemy v5.3.0 | https://wowchemy.com/ */
-/*! Copyright 2016-present George Cushen (https://georgecushen.com/) */
-/*! License: https://github.com/wowchemy/wowchemy-hugo-modules/blob/main/LICENSE.md */
-/*!* Bootstrap v4.6.0 (https://getbootstrap.com/)
-* Copyright 2011-2021 The Bootstrap Authors
-* Copyright 2011-2021 Twitter, Inc.
-* Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)*/
+
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -32,7 +26,7 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-sans-serif: "fjalla one", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
@@ -41,7 +35,7 @@
 }
 
 html {
-    font-family: sans-serif;
+    font-family: fjalla one,sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
@@ -54,7 +48,7 @@ article,aside,figcaption,figure,footer,header,hgroup,main,nav,section {
 
 body {
     margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,liberation sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    font-family: fjalla one,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,liberation sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -5785,7 +5779,7 @@ a.close.disabled {
     z-index: 1070;
     display: block;
     margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,liberation sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    font-family: fjalla one,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,liberation sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -5898,7 +5892,7 @@ a.close.disabled {
     z-index: 1060;
     display: block;
     max-width: 276px;
-    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,liberation sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    font-family: fjalla one,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,liberation sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -9837,7 +9831,7 @@ a.text-dark:hover,a.text-dark:focus {
 }
 
 html {
-    font-family: merriweather,sans-serif;
+    font-family: fjalla one,sans-serif;
     font-size: 16.17px;
     color: rgba(0,0,0,.8);
     line-height: 1.65;
@@ -12483,7 +12477,7 @@ div.chart {
     -moz-box-shadow: 0px 22px 68px -9px rgba(0,0,0,0.35);
     box-shadow: 0px 22px 68px -9px rgba(0,0,0,0.35);
     bottom: 0;
-    font-family: "Raleway", Arial, san-serif;
+    font-family: fjalla one,sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
