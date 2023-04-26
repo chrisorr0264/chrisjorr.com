@@ -41,15 +41,15 @@ async function populateDetails(){
     
     if(document.title.includes("Education")){
         populateEducation(details);
-    } else if(!document.title.includes("Employment")){
+    } else if(document.title.includes("Employment")){
         populateEmployment(details);
-    } else if(!document.title.includes("Publications")){
+    } else if(document.title.includes("Publications")){
         populatePublications(details);
-    } else if(!document.title.includes("Presentations")){
+    } else if(document.title.includes("Presentations")){
         populatePresentations(details);
-    } else if(!document.title.includes("Experience")){
+    } else if(document.title.includes("Experience")){
         populateExperience(details);
-    } else if(!document.title.includes("Recognitions")){
+    } else if(document.title.includes("Recognitions")){
         populateRecognitions
     } else {
         populateInterests(details);
