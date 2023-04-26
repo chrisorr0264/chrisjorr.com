@@ -482,7 +482,7 @@ function populatePresentations(obj) {
 
             const myTypeSpan = document.createElement('span');
             myTypeSpan.style = "font-weight: bold";
-            myTypeSpan.innerText = presentation.type + " Presentation.";
+            myTypeSpan.innerText = presentation.type + " Presentation";
             myDescCol.appendChild(myTypeSpan);
 
             const myTypePara = document.createElement('p');
