@@ -11389,7 +11389,8 @@ footer .powered-by {
     width:100%;
     color: rgba(0,0,0,.54);
     display: flex;
-    background-color: #4e7e7f
+    background-color: #4e7e7f;
+    padding-bottom: 20px;
 }
 
 .dark .site-footer,.dark .docs .body-footer {

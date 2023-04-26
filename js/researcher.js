@@ -399,6 +399,7 @@ function populatePublications(obj) {
 
             const myPub = document.createElement('a');
             myPub.href = publication.article_link;
+            myPub.target="_blank";
             myPub.innerText = publication.article + " ";
             myPublication.appendChild(myPub);
 
