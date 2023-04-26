@@ -190,7 +190,7 @@ function populateEducation(obj) {
 
             const myDesc = document.createElement('div');
             myDesc.classList.add("card-text");
-            myDesc.innerText = school.text;
+            myDesc.innerHTML = school.text;
 
             myCardBody.appendChild(myTitle);
             myCardBody.appendChild(myLoc);
