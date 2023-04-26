@@ -26,7 +26,7 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: "fjalla one", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-sans-serif: "Merriweather","fjalla one", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
@@ -35,7 +35,7 @@
 }
 
 html {
-    font-family: fjalla one,sans-serif;
+    font-family: Merriweather,fjalla one,sans-serif;
     font-size: 16.17px;
     color: rgba(0,0,0,.8);
     line-height: 1.15;
@@ -12580,9 +12580,10 @@ service p {
     
 .interests-card_title {
     letter-spacing: 1px;
-    text-transform: uppercase;
+/*    text-transform: uppercase; */
     text-shadow: 1px 1px 10px rgba(0,0,0,.5);
     margin:auto;
+    font-family: Merriweather;
 }
     
 .interests-card_description {
