@@ -401,14 +401,14 @@ function populatePublications(obj) {
             myCite.addEventListener("click", event => {
                 event.preventDefault();
                 var myCitation = citations.filter(a => a.pmid === publication.pmid);
-                let data = "@ARTICLE{" + myCitation.pmid + ",<br>" 
-                    + "AUTHOR = " + myCitation.author + ",<br>"
-                    + "TITLE = " + myCitation.title + ", <br>"
-                    + "YEAR = " + myCitation.year + ", <br>"
-                    + "JOURNAL = " + myCitation.journal + ", <br>"
-                    + "VOLUME = " + myCitation.volume + ", <br>"
-                    + "ISSUE = " + myCitation.issue + ", <br>"
-                    + "PAGES = " + myCitation.pages + ", <br>"
+                let data = "@" + myCitation[0].type + "{" + myCitation[0].pmid + ",<br>" 
+                    + "AUTHOR = " + myCitation[0].author + ",<br>"
+                    + "TITLE = " + myCitation[0].title + ", <br>"
+                    + "YEAR = " + myCitation[0].year + ", <br>"
+                    + "JOURNAL = " + myCitation[0].journal + ", <br>"
+                    + "VOLUME = " + myCitation[0].volume + ", <br>"
+                    + "ISSUE = " + myCitation[0].issue + ", <br>"
+                    + "PAGES = " + myCitation[0].pages + ", <br>"
                     + "}";
 
 
