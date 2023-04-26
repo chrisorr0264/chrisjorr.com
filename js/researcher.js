@@ -38,15 +38,29 @@ async function populateDetails(){
     const details = await response.json();
 
 /* Calling all the functions to populate the website sections  */
-    populateInterests(details);
-    populateValues(details);
-    populateEducation(details);
-    populateEmployment(details);
-    populatePublications(details);
-    populatePresentations(details);
-    populateExperience(details);
-    populateRecognitions(details);
-
+    
+    if(document.title.includes("Education")){
+        populateEducation(details);
+    } else if(!document.title.includes("Employment")){
+        populateEmployment(details);
+    } else if(!document.title.includes("Publications")){
+        populatePublications(details);
+    } else if(!document.title.includes("Presentations")){
+        populatePresentations(details);
+    } else if(!document.title.includes("Experience")){
+        populateExperience(details);
+    } else if(!document.title.includes("Recognitions")){
+        populateRecognitions
+    } else {
+        populateInterests(details);
+        populateValues(details);
+        populateEducation(details);
+        populateEmployment(details);
+        populatePublications(details);
+        populatePresentations(details);
+        populateExperience(details);
+        populateRecognitions(details);
+    }
 }
 
 /* Function to populate the Interests section of the website. Looks for ID=interestCards  */
