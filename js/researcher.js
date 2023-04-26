@@ -86,7 +86,7 @@ function populateInterests(obj) {
         caption.classList.add("interests-card_body");
 
         const myH3 = document.createElement('h3');
-        myH3.classList.add("interestes-card_title");
+        myH3.classList.add("interests-card_title");
         myH3.innerText = interest.title;
         caption.appendChild(myH3);
 
