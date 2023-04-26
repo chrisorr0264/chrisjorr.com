@@ -26,7 +26,7 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-sans-serif: "fjalla one", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
@@ -35,7 +35,7 @@
 }
 
 html {
-    font-family: sans-serif;
+    font-family: fjalla one,sans-serif;
     font-size: 16.17px;
     color: rgba(0,0,0,.8);
     line-height: 1.15;
@@ -62,7 +62,7 @@ article,aside,figcaption,figure,footer,header,hgroup,main,nav,section {
 
 body {
     margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,liberation sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    font-family: Merriweather,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,liberation sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -5807,7 +5807,7 @@ a.close.disabled {
     z-index: 1070;
     display: block;
     margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,liberation sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    font-family: fjalla one,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,liberation sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -5920,7 +5920,7 @@ a.close.disabled {
     z-index: 1060;
     display: block;
     max-width: 276px;
-    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,liberation sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    font-family: fjalla one,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,liberation sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -9932,14 +9932,14 @@ ul.task-list li input[type=checkbox] {
 }
 
 .navbar-light {
-    font-family: sans-serif;
+    font-family: fjalla one,sans-serif;
     font-weight: 400;
     line-height: 1.25;
     text-rendering: optimizeLegibility
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: sans-serif;
+    font-family: fjalla one,sans-serif;
     font-weight: 400;
     margin-top: 1rem;
     margin-bottom: .5rem;
@@ -11809,7 +11809,7 @@ html[dir=rtl] body {
 
 .section-subheading {
     font-size: 1.25rem;
-    font-family: sans-serif;
+    font-family: fjalla one,sans-serif;
     font-weight: 700;
     margin-top: 1rem;
     margin-bottom: .5rem
@@ -12464,7 +12464,7 @@ div.chart {
     -moz-box-shadow: 0px 22px 68px -9px rgba(0,0,0,0.35);
     box-shadow: 0px 22px 68px -9px rgba(0,0,0,0.35);
     bottom: 0;
-    font-family: sans-serif;
+    font-family: fjalla one,sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
