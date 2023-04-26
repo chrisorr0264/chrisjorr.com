@@ -50,7 +50,7 @@ async function populateDetails(){
     } else if(document.title.includes("Experience")){
         populateExperience(details);
     } else if(document.title.includes("Recognitions")){
-        populateRecognitions
+        populateRecognitions(details);
     } else {
         populateInterests(details);
         populateValues(details);
