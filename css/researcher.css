@@ -12591,6 +12591,7 @@ service p {
     letter-spacing: 1px;
     text-transform: uppercase;
     text-shadow: 1px 1px 10px rgba(0,0,0,.5);
+    margin:auto;
 }
     
 .interests-card_description {
