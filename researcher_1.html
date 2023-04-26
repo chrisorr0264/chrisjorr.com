@@ -344,12 +344,16 @@
                 <h4 class="powered-by" style="text-align:center">
                     Published by Dr. Natasha Orr
                 </h4>
+                <small>&copy; Copyright {{currentYear}}, Dr. Natasha Orr</small>
             </div>
             </div>
         </div>
     </div>
 
-
+    <script>
+        var d= new Date(); page.currentYear = d.getFullYear();
+    </script>
+    
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", populate());
     </script>
