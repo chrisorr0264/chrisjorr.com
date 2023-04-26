@@ -488,7 +488,7 @@ function populatePresentations(obj) {
             const myTypePara = document.createElement('p');
             myTypePara.innerHTML = presentation.title;
             const myNotePara = document.createElement('p');
-            myNotePara.classList.add("text-muted");
+            myNotePara.classList.add("text-muted","award");
             myNotePara.innerText = presentation.notes;
             myDescCol.append(myTypePara, myNotePara);
             myRow.appendChild(myDescCol);
