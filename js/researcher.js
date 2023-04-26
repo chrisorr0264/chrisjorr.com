@@ -462,7 +462,7 @@ function populatePresentations(obj) {
         if((!document.title.includes("Presentations") && presentation.show=="main") || (document.title.includes("Presentations") && (presentation.show=="main" || presentation.show=="yes"))){
             const myPresentation = document.createElement('div');
             myPresentation.classList.add("pub-list-item", "exp-box");
-            myPresentation.style("margin:10px");
+            myPresentation.style = "margin:10px";
 
             const myTitleRow = document.createElement('div');
             myTitleRow.classList.add("row");
