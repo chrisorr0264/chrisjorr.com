@@ -16,7 +16,7 @@
         media=print onload="this.media='all'">
     <link rel=stylesheet href=/css/researcher.css>
 
-    <script src=/js/researcher3.js type="text/javascript"></script>
+    <script src=/js/researcher.js type="text/javascript"></script>
 
     <title>Recognitions</title>
     <link rel="icon" type="image/icon" href="/img/no.png">
@@ -24,11 +24,6 @@
   </head>
 
   <body id=top class="page-wrapper no-navbar">
-
-    <script src=/js/researcher.js></script>
-    <script src=/js/researcher2.js></script>  
-
-    <span class="js-widget-page d-none"></span>
 
     <section id=recognitions class="home-section wg-pages" style="padding-top:30px">
 
@@ -40,7 +35,7 @@
 
                 <div class="col-12">
 
-                    <div id="kudoSections">
+                    <div id="recognitionCards">
 
 
                     </div>
@@ -51,124 +46,25 @@
     </section>
 
     <div class=page-footer>
-        <div class=container>
-            <footer class=site-footer>
-                <p class=powered-by>
-                    Published by Dr. Natasha Orr.
-                </p>
-            </footer>
+        <div class="site-footer">
+            <div class="col-12 footer-rows">
+                <div class="footer-container">I hope you have a great day!</div>
+            <div class="col-12 footer-rows">
+                <h4 class="powered-by" style="text-align:center">
+                    Published by Dr. Natasha Orr
+                </h4>
+            </div>
+            </div>
         </div>
     </div>
 
-    <div id=modal class="modal fade" role=dialog>
-        <div class=modal-dialog>
-            <div class=modal-content>
-                <div class=modal-header>
-                    <h5 class=modal-title>Cite</h5>
-                    <button type=button class=close data-dismiss=modal aria-label=Close>
-                        <span aria-hidden=true>&#215;</span>
-                    </button>
-                </div>
-            <div class=modal-body>
-                <pre><code class="tex hljs"></code></pre>
-            </div>
-            <div class=modal-footer>
-                <a class="btn btn-outline-primary my-1 js-copy-cite" href=# target=_blank>
-                    <i class="fas fa-copy"></i> Copy
-                </a>
-                <a class="btn btn-outline-primary my-1 js-download-cite" href=# target=_blank>
-                    <i class="fas fa-download"></i> Download
-                </a>
-                <div id=modal-error></div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", populateRecognitions());
+        document.addEventListener("DOMContentLoaded", populate());
     </script>
 
-<!--
-    <script>
 
-        async function populate() {
-
-        const requestURL = 'https://chrisjorr.com/js/json/presentations.json';
-        const request = new Request(requestURL);
-
-        const response = await fetch(request);
-        const talks = await response.json();
-
-
-        populateTalks(talks);
-
-        }
-
- 
-        function populateTalks(obj) {
-        const section = document.querySelector("#talks");
-        
-            for (const talk of obj.talks) {
-                const myTalk = document.createElement('div');
-                myTalk.classList.add("pub-list-item");
-
-                const myTitleRow = document.createElement('div');
-                myTitleRow.classList.add("row");
-
-                
-                const myTitle = document.createElement('a');
-                myTitle.href = talk.link;
-                myTitle.innerText = talk.conference;
-                myTitleRow.appendChild(myTitle);
-                myTalk.appendChild(myTitleRow);
-                
-                const myRow = document.createElement('div');
-                myRow.classList.add("row");
-
-                const myDescCol = document.createElement('div');
-                myDescCol.classList.add('col-8');
-
-                const myTypeSpan = document.createElement('span');
-                myTypeSpan.style = "font-weight: bold";
-                myTypeSpan.innerText = talk.type + " Presentation.";
-                myDescCol.appendChild(myTypeSpan);
-
-                const myTypePara = document.createElement('p');
-                myTypePara.innerText = talk.title;
-                myDescCol.appendChild(myTypePara);
-                myRow.appendChild(myDescCol);
-
-                const myLocCol = document.createElement('div');
-                myLocCol.classList.add('col-4', 'text-center');
-
-                const myDate = document.createElement('p');
-                myDate.classList.add("mb-0")
-                myDate.innerText = talk.date;
-
-                myLocCol.appendChild(myDate);
-
-                const myMidDot = document.createElement('i');
-                myMidDot.classList.add("fa-brands", "fa-galactic-republic");
-                myLocCol.appendChild(myMidDot);
-                
-                const myLoc = document.createElement('p');
-                myLoc.innerText = talk.location;
-                
-                myLocCol.appendChild(myLoc);
-
-                myRow.appendChild(myLocCol);
-                
-                myTalk.appendChild(myRow);
-
-                section.appendChild(myTalk);
-            }
-        }
-
-        populate();
-
-    </script>
--->
   </body>
 </html>
 

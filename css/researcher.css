@@ -12708,6 +12708,7 @@ a.btn-ref.disabled,fieldset:disabled a.btn-ref {
   .modal .container .content {
     padding: 20px 15px;
     flex: 1;
+    font-size: small;
   }
   .modal .container .content .prompt-input input {
     padding: 10px;
