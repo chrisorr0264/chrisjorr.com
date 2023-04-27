@@ -473,6 +473,7 @@ function populatePresentations(obj) {
             myTitle.href = presentation.link;
             myTitle.target= "_blank";
             myTitle.innerText = presentation.conference;
+            myTitle.style = "padding-left:15px";
             myTitleRow.appendChild(myTitle);
             myPresentation.appendChild(myTitleRow);
             
