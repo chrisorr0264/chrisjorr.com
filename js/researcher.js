@@ -71,6 +71,7 @@ function populateInterests(obj) {
 
         const myInterest = document.createElement('div');
         myInterest.classList.add("col-12", "col-sm-4", "pb-5", "mx-auto");
+        myInterest.style = "margin-top:30px"
         
         const myFigure = document.createElement('figure');
         myFigure.classList.add("interests-card");
