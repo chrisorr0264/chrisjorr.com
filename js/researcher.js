@@ -421,10 +421,16 @@ function populatePublications(obj) {
                     + "AUTHOR = " + myCitation[0].author + ",<br>"
                     + "TITLE = " + myCitation[0].title + ", <br>"
                     + "YEAR = " + myCitation[0].year + ", <br>"
-                    + "JOURNAL = " + myCitation[0].journal + ", <br>"
-                    + "VOLUME = " + myCitation[0].volume + ", <br>"
-                    + "ISSUE = " + myCitation[0].issue + ", <br>"
-                    + "PAGES = " + myCitation[0].pages + ", <br>"
+                    + "JOURNAL = " + myCitation[0].journal + ", <br>";
+                    if (myCitation[0].volume != null){
+                        data = data + "VOLUME = " + myCitation[0].volume + ", <br>";
+                    };
+                    if (myCitation[0].issue != null){
+                        data = data + "ISSUE = " + myCitation[0].issue + ", <br>";
+                    };
+                    if (myCitation[0].pages != null){
+                        data = data + "PAGES = " + myCitation[0].pages + ", <br>"
+                    }
                     + "}";
 
 
