@@ -554,18 +554,21 @@ function populateExperience(obj) {
             myExperienceTitle.target="_blank";
             myExperienceTitle.innerText = experience.title + " ";
             myMedia.appendChild(myExperienceTitle);
-
+/*
             const myExpDate = document.createElement('span');
             myExpDate.style = "float: right", "font-size: .8rem";
             myExpDate.innerText = experience.date + " | " + experience.city
             myMedia.appendChild(myExpDate);
-
+*/
             const myExperienceCompany = document.createElement('div');
             myExperienceCompany.classList.add("article-style");
             myExperienceCompany.textContent = experience.company;
             const myExperienceLocation = document.createElement('p');
             myExperienceLocation.textContent = experience.location;
             myExperienceCompany.appendChild(myExperienceLocation);
+            const myExperienceDate = document.createElement('p');
+            myExperienceDate.innerText = experience.date + " | " + experience.city;
+            myExperienceCompany.appendChild(myExperienceDate);
             myMedia.appendChild(myExperienceCompany);
 
             const myExperienceText = document.createElement('div');
