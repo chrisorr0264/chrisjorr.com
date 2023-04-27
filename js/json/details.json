@@ -828,9 +828,9 @@
                 "author": "Orr NL, Albert A, Liu YD, Lum A, Hong J, Ionescu CL, Senz J, Nazeran TM, Lee AF, Noga H, Lawrenson K, Williams C, Allaire C, Bedaiwy MA, Anglesio MS, Yong, PJ",
                 "journal":"Journal of Pathology: Clinical Research",
                 "year":"2023",
-                "volume": "",
-                "issue": "",
-                "pages": ""
+                "volume": null,
+                "issue": null,
+                "pages": null
             },
             
             {
@@ -865,7 +865,7 @@
                 "journal":"JMIR Research Protocols",
                 "year":"2023",
                 "volume": "12",
-                "issue": "",
+                "issue": null,
                 "pages": "e39834"
             },
 
