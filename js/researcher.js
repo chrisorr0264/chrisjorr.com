@@ -471,6 +471,7 @@ function populatePresentations(obj) {
             
             const myTitle = document.createElement('a');
             myTitle.href = presentation.link;
+            myTitle.target= "_blank";
             myTitle.innerText = presentation.conference;
             myTitleRow.appendChild(myTitle);
             myPresentation.appendChild(myTitleRow);
@@ -542,6 +543,7 @@ function populateExperience(obj) {
 
             const myExperienceTitle = document.createElement('a');
             myExperienceTitle.href = experience.link;
+            myExperienceTitle.target="_blank";
             myExperienceTitle.innerText = experience.title + " ";
             myMedia.appendChild(myExperienceTitle);
 
@@ -596,6 +598,7 @@ function populateRecognitions(obj) {
 
             const myKudoOrg = document.createElement('a');
             myKudoOrg.href = recognition.link;
+            myKudoOrg.target="_blank";
             myKudoOrg.innerText = recognition.organization + " ";
             myKudoBody.appendChild(myKudoOrg);
 

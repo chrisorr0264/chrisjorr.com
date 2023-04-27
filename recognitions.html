@@ -24,9 +24,9 @@
     
   </head>
 
-  <body id=top class="page-wrapper no-navbar">
+  <body id=top class="page-wrapper no-navbar" onload = todayDate()>
     <span id="navigation"></span>  <!--to account for the javascript scrolling function-->
-    
+
     <section id=recognitions class="home-section wg-pages" style="padding-top:30px">
 
         <div class="container">
@@ -50,12 +50,14 @@
     <div class=page-footer>
         <div class="site-footer">
             <div class="col-12 footer-rows">
-                <div class="footer-container">I hope you have a great day!</div>
-            <div class="col-12 footer-rows">
-                <h4 class="powered-by" style="text-align:center">
-                    Published by Dr. Natasha Orr
-                </h4>
-            </div>
+                <div class="footer-container">
+                    I hope you have a great day!
+                </div>
+                
+               
+                <div class="col-12 footer-rows">
+                    <small>&copy; <em id="date"></em> Dr. Natasha Orr</small>
+                </div>
             </div>
         </div>
     </div>
