@@ -430,8 +430,8 @@ function populatePublications(obj) {
                     };
                     if (JSON.stringify(myCitation[0].pages)==JSON.stringify({})){
                         data = data + "PAGES = " + myCitation[0].pages + ", <br>"
-                    }
-                    + "}";
+                    };
+                    data = data + "}";
 
 
                 let modal = new Modal({ 
