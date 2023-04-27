@@ -422,13 +422,13 @@ function populatePublications(obj) {
                     + "TITLE = " + myCitation[0].title + ", <br>"
                     + "YEAR = " + myCitation[0].year + ", <br>"
                     + "JOURNAL = " + myCitation[0].journal + ", <br>";
-                    if (myCitation[0].volume != null){
+                    if (myCitation[0].volume != null || myCitation[0].volume != ""){
                         data = data + "VOLUME = " + myCitation[0].volume + ", <br>";
                     };
-                    if (myCitation[0].issue != null){
+                    if (myCitation[0].issue != null || myCitation[0].issue != ""){
                         data = data + "ISSUE = " + myCitation[0].issue + ", <br>";
                     };
-                    if (myCitation[0].pages != null){
+                    if (myCitation[0].pages != null || myCitation[0].pages != ""){
                         data = data + "PAGES = " + myCitation[0].pages + ", <br>"
                     }
                     + "}";
