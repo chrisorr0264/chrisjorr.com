@@ -656,12 +656,12 @@
             },
             {
                 "title":"Committee Member",
-                "company": "EndoAct",
+                "company": "EndoAct Canada",
                 "date":"Sep 2019 - Present",
                 "location":"",
                 "city": "Canada",
                 "link":"https://endoact.ca/members/",
-                "text":"EndoAct Canada is a group of people with endometriosis, researchers, and health care professionals working to advance patient-oriented research and care and evidence-based policy through advocating for a National Action Plan for endometriosis in Canada. I am a researcher member and serve as the secretary of EndoAct Canada. I have moderated public events including an EndoAct town hall event and the #ActOnEndo toolkit launch event. I also coordinate meetings between local endometriosis advocates, their Members of Parliament and EndoAct.",
+                "text":"I am a researcher member and serve as the secretary of EndoAct Canada. I have moderated public events including an EndoAct town hall event and the #ActOnEndo toolkit launch event. I also coordinate meetings between local endometriosis advocates, their Members of Parliament and EndoAct.",
                 "show": "main"
             },
             {
@@ -860,7 +860,7 @@
             {
                 "type": "ARTICLE",
                 "pmid":"36972117",
-                "title":"Ohnut Versus  a Waitlist Control for the Self-management of Endometriosis-Associated Deep Dyspareunia: Protocol for a Pilot Randomized Controlled Trial",
+                "title":"Ohnut Versus a Waitlist Control for the Self-management of Endometriosis-Associated Deep Dyspareunia: Protocol for a Pilot Randomized Controlled Trial",
                 "author": "Zhang SXJ, MacLeod RGK, Parmar G, Orr NL, Wahl KJ, Noga, H, Albert A, Flannigan R, Brotto LA, Yong PJ",
                 "journal":"JMIR Research Protocols",
                 "year":"2023",
@@ -885,7 +885,7 @@
                 "type": "ARTICLE",
                 "pmid": "30928249",
                 "title": "Deep Dyspareunia: Review of Pathophysiology and Proposed Future Research Priorities",
-                "authors": "Orr NL, Wahl KJ, Joannou A, Hartmann D, Valle L, Yong PJ",
+                "author": "Orr NL, Wahl KJ, Joannou A, Hartmann D, Valle L, Yong PJ",
                 "journal":"Sexual Medicine Reviews",
                 "year":"2020",
                 "volume": "8",
