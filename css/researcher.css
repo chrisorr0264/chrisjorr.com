@@ -6518,6 +6518,32 @@ html[dir=rtl] body {
     border-radius: 3px
 }
 
+ul.network-icon {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+#profile .network-icon {
+    margin-top: 30px
+}
+
+.network-icon li {
+    margin-right: 10px
+}
+
+.network-icon li:last-of-type {
+    margin-right: 0
+}
+
+.network-icon li:hover {
+    transform: scale(1.2)
+}
+
 .big-icon {
     font-size: 2rem
 }
